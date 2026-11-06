@@ -1,0 +1,66 @@
+EPISODE NUMBER: Episode 2
+EPISODE LOGLINE: A stranger arrives at night.
+CONTINUITY NOTES: Follows Episode 1.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. HALL – NIGHT
+Scene start: 00:00.00
+Scene end: 01:10.00
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:03.00)
+Wide on the empty hall.
+
+**ANNA:**
+Start: (00:03.00) | End: (00:08.00)
+"Who is there?"
+
+**ACTION:**
+Start: (00:08.00) | End: (00:12.00)
+A shadow moves in the doorway.
+
+**ANNA:**
+Start: (00:12.00) | End: (00:18.00)
+"Show yourself."
+
+**ACTION:**
+Start: (00:18.00) | End: (00:22.00)
+Steps echo on stone.
+
+**ANNA:**
+Start: (00:22.00) | End: (00:28.00)
+"I know you are there."
+
+**ACTION:**
+Start: (00:28.00) | End: (00:33.00)
+A figure steps into the light.
+
+**ANNA:**
+Start: (00:33.00) | End: (00:40.00)
+"Who sent you?"
+
+**ACTION:**
+Start: (00:40.00) | End: (00:46.00)
+The figure says nothing.
+
+**ANNA:**
+Start: (00:46.00) | End: (00:52.00)
+"Answer me."
+
+**ACTION:**
+Start: (00:52.00) | End: (00:58.00)
+The stranger smiles.
+
+**ANNA:**
+Start: (00:58.00) | End: (01:05.00)
+"You."
+
+**CAMERA:**
+Start: (00:05.00) | End: (00:07.00)
+Close on Anna's face.
+
+--- SCRIPT END ---

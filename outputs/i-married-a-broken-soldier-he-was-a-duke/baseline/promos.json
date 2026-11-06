@@ -1,0 +1,2490 @@
+[
+  {
+    "promo_id": "BASE-E01",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E01-B065",
+        "end_block": "E01-B095",
+        "episode": 1,
+        "start": 92.1,
+        "end": 138.0,
+        "start_tc": "01:32.10",
+        "end_tc": "02:18.00",
+        "duration": 45.900000000000006
+      }
+    ],
+    "hook": {
+      "block_id": "E01-B065",
+      "text": "You have embarrassed this family long enough.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E01-B093",
+      "text": "Juliana breathes through the agony, refusing to break down further in front of the congregation.",
+      "at": 41.70000000000002
+    },
+    "why": "Baseline: last ~45 s of episode 1",
+    "scores": {},
+    "rank": null,
+    "duration": 45.900000000000006,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E02",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E02-B049",
+        "end_block": "E02-B074",
+        "episode": 2,
+        "start": 66.0,
+        "end": 110.0,
+        "start_tc": "01:06.00",
+        "end_tc": "01:50.00",
+        "duration": 44.0
+      }
+    ],
+    "hook": {
+      "block_id": "E02-B050",
+      "text": "You should be grateful you're at least allowed to attend the wedding.",
+      "at": 0.09999999999999432
+    },
+    "cliffhanger": {
+      "block_id": "E02-B074",
+      "text": "Juliana breathes with steady resolve, holding her head high as the solemn orchestral score swells into the final beat.",
+      "at": 41.400000000000006
+    },
+    "why": "Baseline: last ~45 s of episode 2",
+    "scores": {},
+    "rank": null,
+    "duration": 44.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E03",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E03-B086",
+        "end_block": "E03-B118",
+        "episode": 3,
+        "start": 100.8,
+        "end": 145.75,
+        "start_tc": "01:40.80",
+        "end_tc": "02:25.75",
+        "duration": 44.95
+      }
+    ],
+    "hook": {
+      "block_id": "E03-B087",
+      "text": "...when your family is dragging a defenseless woman from a church.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E03-B118",
+      "text": "Juliana gazes down at her rugged savior, overcome with emotion as the swelling score holds on the cliffhanger.",
+      "at": 39.7
+    },
+    "why": "Baseline: last ~45 s of episode 3",
+    "scores": {},
+    "rank": null,
+    "duration": 44.95,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E04",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E04-B078",
+        "end_block": "E04-B109",
+        "episode": 4,
+        "start": 105.2,
+        "end": 151.4,
+        "start_tc": "01:45.20",
+        "end_tc": "02:31.40",
+        "duration": 46.2
+      }
+    ],
+    "hook": {
+      "block_id": "E04-B078",
+      "text": "You have my respect.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E04-B109",
+      "text": "Juliana and the Mysterious Bearded Man walk hand-in-hand through the towering doors into the sunlight together, turning their backs on the ruined wedding as the screen fades out.",
+      "at": 42.3
+    },
+    "why": "Baseline: last ~45 s of episode 4",
+    "scores": {},
+    "rank": null,
+    "duration": 46.2,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E05",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E05-B039",
+        "end_block": "E05-B062",
+        "episode": 5,
+        "start": 65.5,
+        "end": 110.5,
+        "start_tc": "01:05.50",
+        "end_tc": "01:50.50",
+        "duration": 45.0
+      }
+    ],
+    "hook": {
+      "block_id": "E05-B039",
+      "text": "Juliana drops to her knees onto the wet courtyard pavement, oblivious to the dirt soaking through her white bridal gown.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E05-B060",
+      "text": "Come.",
+      "at": 38.7
+    },
+    "why": "Baseline: last ~45 s of episode 5",
+    "scores": {},
+    "rank": null,
+    "duration": 45.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E06",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E06-B063",
+        "end_block": "E06-B097",
+        "episode": 6,
+        "start": 70.1,
+        "end": 115.0,
+        "start_tc": "01:10.10",
+        "end_tc": "01:55.00",
+        "duration": 44.900000000000006
+      }
+    ],
+    "hook": {
+      "block_id": "E06-B063",
+      "text": "If I stop now, I will think about everything I lost.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E06-B094",
+      "text": "Sitting here with him, I don't feel afraid.",
+      "at": 36.10000000000001
+    },
+    "why": "Baseline: last ~45 s of episode 6",
+    "scores": {},
+    "rank": null,
+    "duration": 44.900000000000006,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E07",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E07-B034",
+        "end_block": "E07-B058",
+        "episode": 7,
+        "start": 69.5,
+        "end": 116.0,
+        "start_tc": "01:09.50",
+        "end_tc": "01:56.00",
+        "duration": 46.5
+      }
+    ],
+    "hook": {
+      "block_id": "E07-B035",
+      "text": "Where is that beggar husband?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E07-B056",
+      "text": "I didn't need to.",
+      "at": 36.5
+    },
+    "why": "Baseline: last ~45 s of episode 7",
+    "scores": {},
+    "rank": null,
+    "duration": 46.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E08",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E08-B028",
+        "end_block": "E08-B063",
+        "episode": 8,
+        "start": 33.2,
+        "end": 78.0,
+        "start_tc": "00:33.20",
+        "end_tc": "01:18.00",
+        "duration": 44.8
+      }
+    ],
+    "hook": {
+      "block_id": "E08-B029",
+      "text": "Not yet.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E08-B063",
+      "text": "Juliana maintains her warm, peaceful gaze across the table as soft firelight flickers over her face into fade out.",
+      "at": 42.099999999999994
+    },
+    "why": "Baseline: last ~45 s of episode 8",
+    "scores": {},
+    "rank": null,
+    "duration": 44.8,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E09",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E09-B054",
+        "end_block": "E09-B089",
+        "episode": 9,
+        "start": 70.5,
+        "end": 115.5,
+        "start_tc": "01:10.50",
+        "end_tc": "01:55.50",
+        "duration": 45.0
+      }
+    ],
+    "hook": {
+      "block_id": "E09-B056",
+      "text": "I will tell the village what you did. They will never forget you.",
+      "at": 0.7000000000000028
+    },
+    "cliffhanger": {
+      "block_id": "E09-B088",
+      "text": "Impossible.",
+      "at": 39.3
+    },
+    "why": "Baseline: last ~45 s of episode 9",
+    "scores": {},
+    "rank": null,
+    "duration": 45.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E10",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E10-B037",
+        "end_block": "E10-B060",
+        "episode": 10,
+        "start": 49.5,
+        "end": 94.0,
+        "start_tc": "00:49.50",
+        "end_tc": "01:34.00",
+        "duration": 44.5
+      }
+    ],
+    "hook": {
+      "block_id": "E10-B038",
+      "text": "Your scars disagree.",
+      "at": 0.20000000000000284
+    },
+    "cliffhanger": {
+      "block_id": "E10-B059",
+      "text": "Your touch is the only medicine that has ever eased my pain.",
+      "at": 33.099999999999994
+    },
+    "why": "Baseline: last ~45 s of episode 10",
+    "scores": {},
+    "rank": null,
+    "duration": 44.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E11",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E11-B061",
+        "end_block": "E11-B085",
+        "episode": 11,
+        "start": 67.5,
+        "end": 112.75,
+        "start_tc": "01:07.50",
+        "end_tc": "01:52.75",
+        "duration": 45.25
+      }
+    ],
+    "hook": {
+      "block_id": "E11-B061",
+      "text": "Stand aside. Look at this place. A perfect hiding hole for a thief.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E11-B084",
+      "text": "There it is. Ha!",
+      "at": 36.7
+    },
+    "why": "Baseline: last ~45 s of episode 11",
+    "scores": {},
+    "rank": null,
+    "duration": 45.25,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E12",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E12-B030",
+        "end_block": "E12-B055",
+        "episode": 12,
+        "start": 42.2,
+        "end": 87.21000000000001,
+        "start_tc": "00:42.20",
+        "end_tc": "01:27.21",
+        "duration": 45.010000000000005
+      }
+    ],
+    "hook": {
+      "block_id": "E12-B030",
+      "text": "What do you want?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E12-B055",
+      "text": "Juliana locks eyes with Clarissa without flinching as the scene freezes on her brave, sacrificial defiance.",
+      "at": 42.5
+    },
+    "why": "Baseline: last ~45 s of episode 12",
+    "scores": {},
+    "rank": null,
+    "duration": 45.010000000000005,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E13",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E13-B049",
+        "end_block": "E13-B075",
+        "episode": 13,
+        "start": 74.0,
+        "end": 118.88,
+        "start_tc": "01:14.00",
+        "end_tc": "01:58.88",
+        "duration": 44.879999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E13-B050",
+      "text": "Juliana drags her body across the frozen, cracked soil beneath the dense roof of briars.",
+      "at": 0.5
+    },
+    "cliffhanger": {
+      "block_id": "E13-B070",
+      "text": "Juliana reaches out her torn, bloodied hand and wraps her fingers tightly around the emerald ring.",
+      "at": 35.0
+    },
+    "why": "Baseline: last ~45 s of episode 13",
+    "scores": {},
+    "rank": null,
+    "duration": 44.879999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E14",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E14-B028",
+        "end_block": "E14-B051",
+        "episode": 14,
+        "start": 43.5,
+        "end": 87.63,
+        "start_tc": "00:43.50",
+        "end_tc": "01:27.63",
+        "duration": 44.129999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E14-B029",
+      "text": "Alexander gently wraps clean linen bandages around Juliana's torn wrist and palm.",
+      "at": 0.5
+    },
+    "cliffhanger": {
+      "block_id": "E14-B050",
+      "text": "Alexander's muscular arm drops into frame beside the bloody bucket; his scarred knuckles slowly and tightly clench into an iron fist of brewing vengeance.",
+      "at": 40.5
+    },
+    "why": "Baseline: last ~45 s of episode 14",
+    "scores": {},
+    "rank": null,
+    "duration": 44.129999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E15",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E15-B029",
+        "end_block": "E15-B055",
+        "episode": 15,
+        "start": 41.0,
+        "end": 86.0,
+        "start_tc": "00:41.00",
+        "end_tc": "01:26.00",
+        "duration": 45.0
+      }
+    ],
+    "hook": {
+      "block_id": "E15-B029",
+      "text": "It is my home. You have no right to destroy anything here.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E15-B053",
+      "text": "What? You want to fight us, veteran?",
+      "at": 38.0
+    },
+    "why": "Baseline: last ~45 s of episode 15",
+    "scores": {},
+    "rank": null,
+    "duration": 45.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E16",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E16-B032",
+        "end_block": "E16-B064",
+        "episode": 16,
+        "start": 38.2,
+        "end": 83.19,
+        "start_tc": "00:38.20",
+        "end_tc": "01:23.19",
+        "duration": 44.989999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E16-B033",
+      "text": "Only my hands.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E16-B063",
+      "text": "Alexander and Juliana gaze deeply into each other's eyes, an unspoken bond forming between them as the ruined garden lies silent beneath the moon.",
+      "at": 40.599999999999994
+    },
+    "why": "Baseline: last ~45 s of episode 16",
+    "scores": {},
+    "rank": null,
+    "duration": 44.989999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E17",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E17-B049",
+        "end_block": "E17-B075",
+        "episode": 17,
+        "start": 73.5,
+        "end": 118.88,
+        "start_tc": "01:13.50",
+        "end_tc": "01:58.88",
+        "duration": 45.379999999999995
+      }
+    ],
+    "hook": null,
+    "cliffhanger": {
+      "block_id": "E17-B074",
+      "text": "But every day, he gives me another reason to trust him.",
+      "at": 38.7
+    },
+    "why": "Baseline: last ~45 s of episode 17",
+    "scores": {},
+    "rank": null,
+    "duration": 45.379999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": false,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": false,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E18",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E18-B071",
+        "end_block": "E18-B081",
+        "episode": 18,
+        "start": 145.8,
+        "end": 192.0,
+        "start_tc": "02:25.80",
+        "end_tc": "03:12.00",
+        "duration": 46.19999999999999
+      }
+    ],
+    "hook": {
+      "block_id": "E18-B071",
+      "text": "Why would anyone do this?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E18-B080",
+      "text": "What are you going to do?",
+      "at": 38.39999999999998
+    },
+    "why": "Baseline: last ~45 s of episode 18",
+    "scores": {},
+    "rank": null,
+    "duration": 46.19999999999999,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E19",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E19-B041",
+        "end_block": "E19-B063",
+        "episode": 19,
+        "start": 73.5,
+        "end": 119.63,
+        "start_tc": "01:13.50",
+        "end_tc": "01:59.63",
+        "duration": 46.129999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E19-B041",
+      "text": "The people who served your family for years have been dismissed, frightened away, or replaced.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E19-B062",
+      "text": "Alexander sits down beside her in the straw. Juliana leans gently against his shoulder, letting her weary head rest against his broad chest.",
+      "at": 36.3
+    },
+    "why": "Baseline: last ~45 s of episode 19",
+    "scores": {},
+    "rank": null,
+    "duration": 46.129999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E20",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E20-B042",
+        "end_block": "E20-B068",
+        "episode": 20,
+        "start": 69.2,
+        "end": 114.75,
+        "start_tc": "01:09.20",
+        "end_tc": "01:54.75",
+        "duration": 45.55
+      }
+    ],
+    "hook": {
+      "block_id": "E20-B042",
+      "text": "I do not yield to a cold draft.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E20-B067",
+      "text": "This house will only bow to me.",
+      "at": 37.599999999999994
+    },
+    "why": "Baseline: last ~45 s of episode 20",
+    "scores": {},
+    "rank": null,
+    "duration": 45.55,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E21",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E21-B050",
+        "end_block": "E21-B076",
+        "episode": 21,
+        "start": 70.5,
+        "end": 114.0,
+        "start_tc": "01:10.50",
+        "end_tc": "01:54.00",
+        "duration": 43.5
+      }
+    ],
+    "hook": {
+      "block_id": "E21-B053",
+      "text": "Oh, thank God! His chest is quiet! The rattling has stopped!",
+      "at": 1.5
+    },
+    "cliffhanger": {
+      "block_id": "E21-B075",
+      "text": "Lady Juliana sits motionless at the rustic wooden table, her bandaged hands holding open her late mother's leather-bound herbal ledger. Her eyes reflect deep apprehension as the dire truth settles over her.",
+      "at": 38.0
+    },
+    "why": "Baseline: last ~45 s of episode 21",
+    "scores": {},
+    "rank": null,
+    "duration": 43.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E22",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E22-B054",
+        "end_block": "E22-B081",
+        "episode": 22,
+        "start": 84.8,
+        "end": 131.0,
+        "start_tc": "01:24.80",
+        "end_tc": "02:11.00",
+        "duration": 46.2
+      }
+    ],
+    "hook": {
+      "block_id": "E22-B054",
+      "text": "Beyond the grand staircase. Few servants go there.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E22-B080",
+      "text": "Who has been treating you?",
+      "at": 42.400000000000006
+    },
+    "why": "Baseline: last ~45 s of episode 22",
+    "scores": {},
+    "rank": null,
+    "duration": 46.2,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E23",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E23-B045",
+        "end_block": "E23-B067",
+        "episode": 23,
+        "start": 86.0,
+        "end": 131.5,
+        "start_tc": "01:26.00",
+        "end_tc": "02:11.50",
+        "duration": 45.5
+      }
+    ],
+    "hook": {
+      "block_id": "E23-B045",
+      "text": "Arsenic.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E23-B063",
+      "text": "Juliana... someone is coming.",
+      "at": 32.8
+    },
+    "why": "Baseline: last ~45 s of episode 23",
+    "scores": {},
+    "rank": null,
+    "duration": 45.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E24",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E24-B035",
+        "end_block": "E24-B068",
+        "episode": 24,
+        "start": 45.5,
+        "end": 92.0,
+        "start_tc": "00:45.50",
+        "end_tc": "01:32.00",
+        "duration": 46.5
+      }
+    ],
+    "hook": {
+      "block_id": "E24-B036",
+      "text": "Good. Perhaps we can teach you your place.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E24-B067",
+      "text": "Juliana raises her head. Smudges of dark soot stain her fair cheek, but her piercing blue eyes burn with unwavering defiance and unyielding resolve as she stares toward the hallway.",
+      "at": 39.7
+    },
+    "why": "Baseline: last ~45 s of episode 24",
+    "scores": {},
+    "rank": null,
+    "duration": 46.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E25",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E25-B073",
+        "end_block": "E25-B095",
+        "episode": 25,
+        "start": 121.5,
+        "end": 168.0,
+        "start_tc": "02:01.50",
+        "end_tc": "02:48.00",
+        "duration": 46.5
+      }
+    ],
+    "hook": null,
+    "cliffhanger": {
+      "block_id": "E25-B094",
+      "text": "Alexander turns, falling into step beside Juliana. Together, side by side, they begin their quiet walk down the darkening forest path into the twilight.",
+      "at": 41.0
+    },
+    "why": "Baseline: last ~45 s of episode 25",
+    "scores": {},
+    "rank": null,
+    "duration": 46.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": false,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": false,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E26",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E26-B031",
+        "end_block": "E26-B051",
+        "episode": 26,
+        "start": 73.8,
+        "end": 120.88,
+        "start_tc": "01:13.80",
+        "end_tc": "02:00.88",
+        "duration": 47.08
+      }
+    ],
+    "hook": {
+      "block_id": "E26-B031",
+      "text": "Then tell me... why is a girl of such noble spirit working as a common maid?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E26-B049",
+      "text": "Where... where... Where did you get this ring? Speak to me!",
+      "at": 37.2
+    },
+    "why": "Baseline: last ~45 s of episode 26",
+    "scores": {},
+    "rank": null,
+    "duration": 47.08,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E27",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E27-B064",
+        "end_block": "E27-B095",
+        "episode": 27,
+        "start": 104.2,
+        "end": 150.5,
+        "start_tc": "01:44.20",
+        "end_tc": "02:30.50",
+        "duration": 46.3
+      }
+    ],
+    "hook": {
+      "block_id": "E27-B064",
+      "text": "...holding a substance no one authorized her to give.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E27-B093",
+      "text": "The guard twists Juliana around and drags her forcibly toward the doorway as she struggles against his grip.",
+      "at": 40.8
+    },
+    "why": "Baseline: last ~45 s of episode 27",
+    "scores": {},
+    "rank": null,
+    "duration": 46.3,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E28",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E28-B069",
+        "end_block": "E28-B096",
+        "episode": 28,
+        "start": 93.8,
+        "end": 138.5,
+        "start_tc": "01:33.80",
+        "end_tc": "02:18.50",
+        "duration": 44.7
+      }
+    ],
+    "hook": {
+      "block_id": "E28-B071",
+      "text": "Juliana gasps in horror, realizing her secret identity has been laid bare.",
+      "at": 1.4000000000000057
+    },
+    "cliffhanger": {
+      "block_id": "E28-B095",
+      "text": "...before he sends you to the gallows.",
+      "at": 40.8
+    },
+    "why": "Baseline: last ~45 s of episode 28",
+    "scores": {},
+    "rank": null,
+    "duration": 44.7,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E29",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E29-B045",
+        "end_block": "E29-B074",
+        "episode": 29,
+        "start": 71.8,
+        "end": 116.69,
+        "start_tc": "01:11.80",
+        "end_tc": "01:56.69",
+        "duration": 44.89
+      }
+    ],
+    "hook": {
+      "block_id": "E29-B046",
+      "text": "Your scarred soldier?",
+      "at": 0.29999999999999716
+    },
+    "cliffhanger": {
+      "block_id": "E29-B071",
+      "text": "They took her locket. But they will not take Alexander from me.",
+      "at": 37.2
+    },
+    "why": "Baseline: last ~45 s of episode 29",
+    "scores": {},
+    "rank": null,
+    "duration": 44.89,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E30",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E30-B054",
+        "end_block": "E30-B071",
+        "episode": 30,
+        "start": 106.6,
+        "end": 151.21,
+        "start_tc": "01:46.60",
+        "end_tc": "02:31.21",
+        "duration": 44.610000000000014
+      }
+    ],
+    "hook": {
+      "block_id": "E30-B055",
+      "text": "And the Dowager?",
+      "at": 0.7000000000000028
+    },
+    "cliffhanger": {
+      "block_id": "E30-B071",
+      "text": "Juliana clutches a rough burlap rag to her trembling chest, her tear-stained face lifting upward in dread and fragile hope as the frame holds, cutting abruptly to black.",
+      "at": 41.900000000000006
+    },
+    "why": "Baseline: last ~45 s of episode 30",
+    "scores": {},
+    "rank": null,
+    "duration": 44.610000000000014,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E31",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E31-B065",
+        "end_block": "E31-B087",
+        "episode": 31,
+        "start": 118.2,
+        "end": 160.0,
+        "start_tc": "01:58.20",
+        "end_tc": "02:40.00",
+        "duration": 41.8
+      }
+    ],
+    "hook": {
+      "block_id": "E31-B066",
+      "text": "Then why are you so desperate to make me kneel?",
+      "at": 0.20000000000000284
+    },
+    "cliffhanger": {
+      "block_id": "E31-B086",
+      "text": "Juliana recoils back against the hard dungeon wall, gasping for breath in raw terror as the searing iron stops inches from her eyes.",
+      "at": 33.3
+    },
+    "why": "Baseline: last ~45 s of episode 31",
+    "scores": {},
+    "rank": null,
+    "duration": 41.8,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E32",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E32-B083",
+        "end_block": "E32-B117",
+        "episode": 32,
+        "start": 109.4,
+        "end": 154.38,
+        "start_tc": "01:49.40",
+        "end_tc": "02:34.38",
+        "duration": 44.97999999999999
+      }
+    ],
+    "hook": {
+      "block_id": "E32-B084",
+      "text": "Nothing. Until you have nothing left beneath it.",
+      "at": 0.09999999999999432
+    },
+    "cliffhanger": {
+      "block_id": "E32-B116",
+      "text": "Juliana gasps, freezing as the glowing tip of the iron thrusts forward, stopping mere millimeters from her right eye.",
+      "at": 41.79999999999998
+    },
+    "why": "Baseline: last ~45 s of episode 32",
+    "scores": {},
+    "rank": null,
+    "duration": 44.97999999999999,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E33",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E33-B076",
+        "end_block": "E33-B099",
+        "episode": 33,
+        "start": 126.8,
+        "end": 174.04,
+        "start_tc": "02:06.80",
+        "end_tc": "02:54.04",
+        "duration": 47.239999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E33-B077",
+      "text": "No! She saved Toby! She made him breathe again!",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E33-B099",
+      "text": "The heartbroken maid weeps silently in the shadow of the desk, consumed by guilt and powerlessness.",
+      "at": 37.7
+    },
+    "why": "Baseline: last ~45 s of episode 33",
+    "scores": {},
+    "rank": null,
+    "duration": 47.239999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E34",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E34-B092",
+        "end_block": "E34-B116",
+        "episode": 34,
+        "start": 147.4,
+        "end": 190.0,
+        "start_tc": "02:27.40",
+        "end_tc": "03:10.00",
+        "duration": 42.599999999999994
+      }
+    ],
+    "hook": {
+      "block_id": "E34-B094",
+      "text": "No.",
+      "at": 2.4000000000000057
+    },
+    "cliffhanger": {
+      "block_id": "E34-B116",
+      "text": "The Judge extends his raised hand high in judgment over Lady Juliana as the scene holds on her standing still and unbroken before fading to black.",
+      "at": 37.599999999999994
+    },
+    "why": "Baseline: last ~45 s of episode 34",
+    "scores": {},
+    "rank": null,
+    "duration": 42.599999999999994,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E35",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E35-B053",
+        "end_block": "E35-B072",
+        "episode": 35,
+        "start": 113.5,
+        "end": 157.5,
+        "start_tc": "01:53.50",
+        "end_tc": "02:37.50",
+        "duration": 44.0
+      }
+    ],
+    "hook": {
+      "block_id": "E35-B054",
+      "text": "I crawled away from the battlefield, half dead, alone.",
+      "at": 0.5
+    },
+    "cliffhanger": {
+      "block_id": "E35-B070",
+      "text": "The men behind it... are the same men ruling Ashwood now.",
+      "at": 32.0
+    },
+    "why": "Baseline: last ~45 s of episode 35",
+    "scores": {},
+    "rank": null,
+    "duration": 44.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E36",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E36-B097",
+        "end_block": "E36-B121",
+        "episode": 36,
+        "start": 156.5,
+        "end": 200.75,
+        "start_tc": "02:36.50",
+        "end_tc": "03:20.75",
+        "duration": 44.25
+      }
+    ],
+    "hook": {
+      "block_id": "E36-B098",
+      "text": "They are marrying in two days...",
+      "at": 0.30000000000001137
+    },
+    "cliffhanger": {
+      "block_id": "E36-B120",
+      "text": "Alexander stares resolutely ahead into the dark, snowy woods as the camera holds on his grim, determined expression before cutting to black.",
+      "at": 40.5
+    },
+    "why": "Baseline: last ~45 s of episode 36",
+    "scores": {},
+    "rank": null,
+    "duration": 44.25,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E37",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E37-B062",
+        "end_block": "E37-B079",
+        "episode": 37,
+        "start": 113.5,
+        "end": 156.47,
+        "start_tc": "01:53.50",
+        "end_tc": "02:36.47",
+        "duration": 42.97
+      }
+    ],
+    "hook": {
+      "block_id": "E37-B063",
+      "text": "They cannot take who I am!",
+      "at": 0.09999999999999432
+    },
+    "cliffhanger": {
+      "block_id": "E37-B077",
+      "text": "Clarissa takes a slow sip of the red wine, her eyes gleaming with dark relish.",
+      "at": 32.0
+    },
+    "why": "Baseline: last ~45 s of episode 37",
+    "scores": {},
+    "rank": null,
+    "duration": 42.97,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E38",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E38-B028",
+        "end_block": "E38-B057",
+        "episode": 38,
+        "start": 43.2,
+        "end": 87.91,
+        "start_tc": "00:43.20",
+        "end_tc": "01:27.91",
+        "duration": 44.709999999999994
+      }
+    ],
+    "hook": {
+      "block_id": "E38-B028",
+      "text": "Do you know they condemned me?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E38-B055",
+      "text": "Alexander...",
+      "at": 39.3
+    },
+    "why": "Baseline: last ~45 s of episode 38",
+    "scores": {},
+    "rank": null,
+    "duration": 44.709999999999994,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E39",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E39-B033",
+        "end_block": "E39-B059",
+        "episode": 39,
+        "start": 52.8,
+        "end": 98.41,
+        "start_tc": "00:52.80",
+        "end_tc": "01:38.41",
+        "duration": 45.61
+      }
+    ],
+    "hook": null,
+    "cliffhanger": {
+      "block_id": "E39-B059",
+      "text": "Alexander's eyes burn with furious determination as the screen cuts sharply to black.",
+      "at": 45.0
+    },
+    "why": "Baseline: last ~45 s of episode 39",
+    "scores": {},
+    "rank": null,
+    "duration": 45.61,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": false,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": false,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E40",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E40-B032",
+        "end_block": "E40-B051",
+        "episode": 40,
+        "start": 65.0,
+        "end": 110.08,
+        "start_tc": "01:05.00",
+        "end_tc": "01:50.08",
+        "duration": 45.08
+      }
+    ],
+    "hook": {
+      "block_id": "E40-B032",
+      "text": "All entrances are covered?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E40-B051",
+      "text": "Rupert and Catherine exchange conspiratorial, triumphant smiles at the altar as the solemn organ chord holds and the scene cuts to black.",
+      "at": 44.0
+    },
+    "why": "Baseline: last ~45 s of episode 40",
+    "scores": {},
+    "rank": null,
+    "duration": 45.08,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E41",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E41-B031",
+        "end_block": "E41-B053",
+        "episode": 41,
+        "start": 52.8,
+        "end": 96.09,
+        "start_tc": "00:52.80",
+        "end_tc": "01:36.09",
+        "duration": 43.290000000000006
+      }
+    ],
+    "hook": {
+      "block_id": "E41-B032",
+      "text": "Juliana looks around the cathedral at the sea of pompous faces, then raises her eyes straight back to Catherine with utter disdain.",
+      "at": 2.0
+    },
+    "cliffhanger": {
+      "block_id": "E41-B052",
+      "text": "Silhouetted armed figures emerge through the smoke and rubble of the breached doorway. Juliana slowly turns her head, glancing back toward the light.",
+      "at": 36.2
+    },
+    "why": "Baseline: last ~45 s of episode 41",
+    "scores": {},
+    "rank": null,
+    "duration": 43.290000000000006,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E42",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E42-B022",
+        "end_block": "E42-B036",
+        "episode": 42,
+        "start": 33.8,
+        "end": 77.8,
+        "start_tc": "00:33.80",
+        "end_tc": "01:17.80",
+        "duration": 44.0
+      }
+    ],
+    "hook": {
+      "block_id": "E42-B023",
+      "text": "And yet, here I stand. That is the lie you built your life upon.",
+      "at": 0.20000000000000284
+    },
+    "cliffhanger": {
+      "block_id": "E42-B037",
+      "text": "And now, Rupert... we settle what you stole.",
+      "at": 40.0
+    },
+    "why": "Baseline: last ~45 s of episode 42",
+    "scores": {},
+    "rank": null,
+    "duration": 44.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E43",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E43-B057",
+        "end_block": "E43-B087",
+        "episode": 43,
+        "start": 69.0,
+        "end": 114.96000000000001,
+        "start_tc": "01:09.00",
+        "end_tc": "01:54.96",
+        "duration": 45.96000000000001
+      }
+    ],
+    "hook": {
+      "block_id": "E43-B057",
+      "text": "You sold my men to the enemy.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E43-B086",
+      "text": "Going somewhere, Lord Sterling?",
+      "at": 41.400000000000006
+    },
+    "why": "Baseline: last ~45 s of episode 43",
+    "scores": {},
+    "rank": null,
+    "duration": 45.96000000000001,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E44",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E44-B018",
+        "end_block": "E44-B053",
+        "episode": 44,
+        "start": 25.2,
+        "end": 70.5,
+        "start_tc": "00:25.20",
+        "end_tc": "01:10.50",
+        "duration": 45.3
+      }
+    ],
+    "hook": {
+      "block_id": "E44-B018",
+      "text": "Alexander... I thought you had died.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E44-B054",
+      "text": "Her?!",
+      "at": 44.89999999999999
+    },
+    "why": "Baseline: last ~45 s of episode 44",
+    "scores": {},
+    "rank": null,
+    "duration": 45.3,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E45",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E45-B053",
+        "end_block": "E45-B074",
+        "episode": 45,
+        "start": 74.8,
+        "end": 121.75,
+        "start_tc": "01:14.80",
+        "end_tc": "02:01.75",
+        "duration": 46.95
+      }
+    ],
+    "hook": {
+      "block_id": "E45-B053",
+      "text": "Lady Juliana Ashcroft is my lawful wife... and the Duchess of Ashburton!",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E45-B074",
+      "text": "Catherine raises her chin, a vindictive smirk spreading across her lips as she realizes her rival's claim has just been torn to pieces.",
+      "at": 43.2
+    },
+    "why": "Baseline: last ~45 s of episode 45",
+    "scores": {},
+    "rank": null,
+    "duration": 46.95,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E46",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E46-B056",
+        "end_block": "E46-B074",
+        "episode": 46,
+        "start": 100.5,
+        "end": 143.88,
+        "start_tc": "01:40.50",
+        "end_tc": "02:23.88",
+        "duration": 43.379999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E46-B058",
+      "text": "A Duke's marriage is judged by the Crown's peerage court, not by a parish priest's seal.",
+      "at": 1.2999999999999972
+    },
+    "cliffhanger": {
+      "block_id": "E46-B075",
+      "text": "Ten days is plenty of time.",
+      "at": 40.69999999999999
+    },
+    "why": "Baseline: last ~45 s of episode 46",
+    "scores": {},
+    "rank": null,
+    "duration": 43.379999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E47",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E47-B047",
+        "end_block": "E47-B070",
+        "episode": 47,
+        "start": 88.2,
+        "end": 134.0,
+        "start_tc": "01:28.20",
+        "end_tc": "02:14.00",
+        "duration": 45.8
+      }
+    ],
+    "hook": {
+      "block_id": "E47-B047",
+      "text": "But Ashbourne does not throw beggars into the mud.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E47-B069",
+      "text": "I accept, Your Grace.",
+      "at": 40.3
+    },
+    "why": "Baseline: last ~45 s of episode 47",
+    "scores": {},
+    "rank": null,
+    "duration": 45.8,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E48",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E48-B023",
+        "end_block": "E48-B043",
+        "episode": 48,
+        "start": 34.2,
+        "end": 80.0,
+        "start_tc": "00:34.20",
+        "end_tc": "01:20.00",
+        "duration": 45.8
+      }
+    ],
+    "hook": {
+      "block_id": "E48-B023",
+      "text": "Everyone in that chapel saw me humiliated today.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E48-B041",
+      "text": "And make sure no one sees him arrive.",
+      "at": 36.599999999999994
+    },
+    "why": "Baseline: last ~45 s of episode 48",
+    "scores": {},
+    "rank": null,
+    "duration": 45.8,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E49",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E49-B044",
+        "end_block": "E49-B063",
+        "episode": 49,
+        "start": 98.3,
+        "end": 144.75,
+        "start_tc": "01:38.30",
+        "end_tc": "02:24.75",
+        "duration": 46.45
+      }
+    ],
+    "hook": {
+      "block_id": "E49-B044",
+      "text": "Is that so unreasonable coming from a woman the church itself just humiliated back into relevance?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E49-B062",
+      "text": "We always have.",
+      "at": 44.7
+    },
+    "why": "Baseline: last ~45 s of episode 49",
+    "scores": {},
+    "rank": null,
+    "duration": 46.45,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  },
+  {
+    "promo_id": "BASE-E50",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E50-B018",
+        "end_block": "E50-B040",
+        "episode": 50,
+        "start": 35.8,
+        "end": 80.0,
+        "start_tc": "00:35.80",
+        "end_tc": "01:20.00",
+        "duration": 44.2
+      }
+    ],
+    "hook": {
+      "block_id": "E50-B019",
+      "text": "Unsupervised. In your hands alone.",
+      "at": 0.7000000000000028
+    },
+    "cliffhanger": {
+      "block_id": "E50-B038",
+      "text": "Agnes's jaw drops open in shock as she stifles a cry.",
+      "at": 41.0
+    },
+    "why": "Baseline: last ~45 s of episode 50",
+    "scores": {},
+    "rank": null,
+    "duration": 44.2,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    }
+  }
+]

@@ -26,12 +26,13 @@ Show: *I Married a Broken Soldier. He was a Duke* — 50 episodes, one `.txt` sc
 4. Dialogue lines sometimes overlap (10 cases); CAMERA and ACTION blocks overlap dialogue all the time (they are parallel tracks, not a sequence).
 
 ## Story-structure findings (these drive the design)
-1. **Every episode ends on a cliffhanger by construction.** The continuity notes of episode N+1 almost always say "Picks up immediately from Episode N's cliffhanger". The word "cliffhanger" literally appears in the final SOUND FX of 22 episodes.
-   → Cliffhangers are cheap to find. **Hooks in the first 3 seconds are the scarce resource.**
+1. **Most episodes end on a cliffhanger, but not all.** Ep 7, 10 and 19 end on warm, resolved beats (smile, tender look, embrace). In 14/50 episodes the last spoken line is followed by 5–8.5 s of CAMERA/SOUND FX, and often *that* is the real cliffhanger (Ep 23: the door latch turning; Ep 35: a horrified close-up plus an orchestral swell).
+   → A cliffhanger can be any block type, including CAMERA and SOUND FX, and "episode ending" ≠ "cliffhanger"; it must be judged.
 2. **No recaps**: episodes do not replay the previous ending; they continue straight on.
 3. **Keyword rules don't work for hooks.** A keyword count (slap/kiss/blood/duke/…) gives Episode 1 a score of **0**, yet the altar abandonment is one of the strongest hooks in the show. Judging a hook needs language understanding → an LLM is needed for judgement.
 4. **Dialogue is dense**: median gap between lines 0.6 s, 90th percentile 3.3 s. Clean cut points (no one mid-sentence) exist but must be chosen carefully.
 5. **The title is the promise.** "He was a Duke": the reveal happens across Ep 39–43 (regalia, cathedral explosion, guards salute the true Duke). Because the title already gives it away, these scenes are not spoilers; they are the payoff the ads sell.
+6. **Sound tails can cross scene boundaries**: E22-B023 (SOUND FX) ends 0.3 s after its scene ends. Cut points must allow this.
 
 ## Story arc (for judging "makes sense on its own")
 - Ep 1–5: jilted at the altar for her sister, disowned, marries a scarred stranger.

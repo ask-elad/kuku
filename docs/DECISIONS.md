@@ -47,3 +47,16 @@ Format: decision → why → alternatives rejected. Add a new entry every time w
 
 ### D9 — Parsed script goes to `build/` (gitignored), not `outputs/`
 - **Why**: the parsed JSON contains the full confidential script. `outputs/` is committed and holds only the final promo results.
+
+### D10 — One promo format + one validator for every method
+- **Why**: the baseline and the AI pipeline are judged by identical rules, so comparisons are fair. Segments are stored as block IDs only; all times are derived by code.
+
+### D11 — Hard vs soft checks
+- **Hard** (reject): IDs exist, 20–60 s, no cut mid-dialogue-line, no overlap, hook/cliffhanger inside the clip.
+- **Soft** (flag): hook in first 3 s, cliffhanger in last 5 s. Soft checks are structural (a hook *exists*), not quality (a hook is *good*); quality is judged later.
+
+### D12 — Baseline = last ~45 s of each episode, frozen
+- **Why**: every episode ends on a written cliffhanger, so this is the strongest "no-AI" approach. Frozen so it stays a fair yardstick.
+
+### D13 — Committed outputs quote only hook and cliffhanger lines
+- **Why**: outputs/ is public; the script is confidential.
