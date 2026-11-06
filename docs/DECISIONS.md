@@ -60,3 +60,14 @@ Format: decision → why → alternatives rejected. Add a new entry every time w
 
 ### D13 — Committed outputs quote only hook and cliffhanger lines
 - **Why**: outputs/ is public; the script is confidential.
+
+### D14 — One OpenAI-compatible client for every model
+- **Why**: Gemini, Groq, OpenRouter, Ollama and OpenAI all speak the OpenAI API. Swapping models = changing `LLM_BASE_URL` / `LLM_API_KEY` / `LLM_MODEL` in `.env`, no code change.
+- **Rejected**: the Gemini-specific SDK (locks us to one vendor).
+
+### D15 — Disk cache + rate limiter + usage log
+- **Why**: free tier ≈ 10 requests/min and ~250/day. The cache makes re-runs free and outputs reproducible; the usage log gives real token numbers for the cost-at-scale estimate.
+- **Note**: free-tier prompts may be used by Google for product improvement. Fine for this assignment (Kuku allows AI tools on the pack); production would use a paid tier.
+
+### D16 — Fail loudly
+- Invalid JSON → one repair retry → error. A truncated answer → error. Never return an empty or partial result as if it were real.

@@ -5,6 +5,7 @@ data/
 # Generated / local
 build/
 cache/
+logs/
 .venv/
 __pycache__/
 *.pyc
