@@ -1,0 +1,10 @@
+# Confidential input pack: never commit
+data/
+# Secrets
+.env
+# Generated / local
+cache/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
