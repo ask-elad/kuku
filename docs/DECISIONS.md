@@ -41,3 +41,9 @@ Format: decision → why → alternatives rejected. Add a new entry every time w
 - A3: Multi-segment promos may join moments from different episodes; each segment keeps its own episode + timestamps.
 - A4: Promos should send viewers to Episode 1, so an earlier source episode is a small ranking bonus (less "catch-up" needed).
 - A5: Scenes from the Duke reveal are allowed because the title already promises it.
+
+### D8 — Parser keeps CAMERA blocks
+- **Why**: visual hooks (slap close-ups, "cut to black") exist only in CAMERA lines. We can drop them later to save tokens; we can't get them back if the parser discards them.
+
+### D9 — Parsed script goes to `build/` (gitignored), not `outputs/`
+- **Why**: the parsed JSON contains the full confidential script. `outputs/` is committed and holds only the final promo results.

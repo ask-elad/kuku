@@ -3,6 +3,7 @@ data/
 # Secrets
 .env
 # Generated / local
+build/
 cache/
 .venv/
 __pycache__/

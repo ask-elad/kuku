@@ -1,0 +1,26 @@
+EPISODE NUMBER: Episode 2
+EPISODE LOGLINE: The scholar explores the garden.
+CONTINUITY NOTES: Follows episode 1.
+
+--- SCRIPT START ---
+
+SCENE 01
+SCENE HEADING: EXT. GARDEN – NIGHT
+SCENE START: 00:00.00
+SCENE END: 00:45.00
+
+ACTIONS AND DIALOGUE:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:03.00)
+Moonlit garden with stone paths.
+
+**LIBRARIAN (Calm, Wise):**
+Start: (00:03.50) | End: (00:05.00)
+"You should not be here."
+
+**(Whispers):**
+Start: (00:05.00) | End: (00:06.00)
+A quiet sound.
+
+--- SCRIPT END ---
