@@ -1,0 +1,5 @@
+{
+  "resolved_or_soft_endings": [7, 10, 19],
+  "min_top_hook_power": [{"episode": 1, "min": 4}],
+  "cliff_types_near_end": [{"episode": 23, "types": ["CAMERA", "SOUND_FX"], "within_last_s": 8.0}]
+}

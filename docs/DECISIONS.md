@@ -71,3 +71,29 @@ Format: decision → why → alternatives rejected. Add a new entry every time w
 
 ### D16 — Fail loudly
 - Invalid JSON → one repair retry → error. A truncated answer → error. Never return an empty or partial result as if it were real.
+
+### D17 — Beats: one LLM call per episode; generous now, strict later
+- **Why**: focused attention on a 2-min script; 50 calls fits the free tier; per-episode cache means a new episode costs one call. Up to 5 hooks / 5 cliffhangers per episode; the judge filters later.
+
+### D18 — Anchored 1–5 scores ("most moments are 2–3")
+- **Why**: without anchors, LLMs inflate scores and ranking becomes meaningless.
+
+### D19 — Gold checks in `evals/<show>.json`, written by a human
+- **Why**: human labels from our study (Ep 7/10/19 resolved endings, Ep 23 visual cliffhanger, Ep 1 strong hook) become automatic pass/fail checks. A new show gets its own file; the code stays generic.
+
+### D20 — Pilot before full run
+- **Why**: 3 calls to catch prompt problems before spending 50.
+
+### D21 — Beat scores pick candidates; they never rank promos
+- **Evidence (pilot)**: all 23 IDs were correct and the moment choices were strong, but scores were inflated (all hooks 4–5) and `context_needed: "none"` was wrong for E07-B042 and E23-B045, because the model knew the story.
+- **Decision**: beat scores only filter candidates. The final ranking comes from a cold-viewer judge that sees only the clip text and compares clips side by side (comparison is more reliable than absolute scores).
+- **Also**: the E01 "top hook ≥ 4" gold check is too lenient to count as evidence.
+
+### D22 — Two kinds of clip: single stretch + bridge across episodes; flash-forward deferred
+- **Why**: each episode picks up immediately from the previous one, so N → N+1 plays continuously. The bridge drops N's silent tail / cut-to-black. Flash-forward cold opens (used by real apps) are harder to get right; listed as future work.
+
+### D23 — Cold-viewer judge: clip text only, 8 per batch, 2 rounds
+- **Why**: the beat model knew the story, so it misjudged "context needed". The judge sees no IDs, episode numbers or logline, and only knows names spoken aloud. Batches allow comparison; two rounds with different batch-mates reduce luck; their disagreement measures judge noise.
+
+### D24 — Baseline judged by the same judge
+- **Why**: turns "our promos look good" into a measured comparison. Baselines are batched only with baselines.

@@ -33,6 +33,7 @@ Show: *I Married a Broken Soldier. He was a Duke* — 50 episodes, one `.txt` sc
 4. **Dialogue is dense**: median gap between lines 0.6 s, 90th percentile 3.3 s. Clean cut points (no one mid-sentence) exist but must be chosen carefully.
 5. **The title is the promise.** "He was a Duke": the reveal happens across Ep 39–43 (regalia, cathedral explosion, guards salute the true Duke). Because the title already gives it away, these scenes are not spoilers; they are the payoff the ads sell.
 6. **Sound tails can cross scene boundaries**: E22-B023 (SOUND FX) ends 0.3 s after its scene ends. Cut points must allow this.
+7. **Gemini 2.5 bills hidden "thinking" tokens**: the ping showed prompt 31 + completion 18 = 49, but total = 83, so cost estimates must use `total_tokens`, not prompt + completion.
 
 ## Story arc (for judging "makes sense on its own")
 - Ep 1–5: jilted at the altar for her sister, disowned, marries a scarred stranger.

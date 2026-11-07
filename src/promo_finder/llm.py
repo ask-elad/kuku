@@ -44,6 +44,11 @@ class LLMError(RuntimeError):
     pass
 
 
+class LLMQuotaExhausted(LLMError):
+    """Raised when the daily API quota is exhausted. No point retrying."""
+    pass
+
+
 # ---------------------------------------------------------------------------
 # Client factory (replaceable in tests)
 # ---------------------------------------------------------------------------
@@ -219,6 +224,10 @@ def _call_api(client: openai.OpenAI, messages: list[dict], temperature: float,
             raise LLMError(f"Model or endpoint not found: {exc}") from exc
 
         except openai.RateLimitError as exc:
+            if _is_daily_quota(exc):
+                raise LLMQuotaExhausted(
+                    f"Daily quota exhausted: {exc}"
+                ) from exc
             if attempt >= len(_RETRY_DELAYS):
                 raise LLMError(f"Rate limit exceeded after retries: {exc}") from exc
             retry_after = _parse_retry_after(exc)
@@ -233,6 +242,12 @@ def _call_api(client: openai.OpenAI, messages: list[dict], temperature: float,
             continue
 
     raise LLMError("Exhausted all retries")
+
+
+def _is_daily_quota(exc: Exception) -> bool:
+    """Return True if a RateLimitError indicates the daily quota is exhausted."""
+    body = str(exc).lower()
+    return "perday" in body or "per day" in body or "daily" in body
 
 
 def _parse_retry_after(exc: Exception) -> float:
