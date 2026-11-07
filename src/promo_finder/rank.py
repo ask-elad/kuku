@@ -19,6 +19,7 @@ from .timeutil import fmt_time
 _SCORE_WEIGHTS = {"hook": 0.4, "cliffhanger": 0.3, "standalone": 0.3}
 _SENSITIVE_PENALTY = 0.5
 _TOP_N = 10
+_RETARGETING_N = 5
 
 
 # ---------------------------------------------------------------------------
@@ -30,6 +31,14 @@ def _weighted_score(scores: dict) -> float:
         sum(_SCORE_WEIGHTS[f] * scores[f] for f in _SCORE_WEIGHTS),
         4,
     )
+
+
+def _acquisition_score(score: float, first_episode: int, n_episodes: int) -> float:
+    """Penalise late-episode promos: E01 → no penalty, last ep → −0.5."""
+    if n_episodes <= 1:
+        return score
+    penalty = 0.5 * (first_episode - 1) / (n_episodes - 1)
+    return round(score - penalty, 4)
 
 
 # ---------------------------------------------------------------------------
@@ -111,6 +120,15 @@ def _sort_key(p: dict) -> tuple:
     return (-p["score"], first_ep, p.get("duration", 0.0), p["promo_id"])
 
 
+def _acq_sort_key(p: dict) -> tuple:
+    """acquisition_score desc → earlier first_ep → shorter duration → promo_id."""
+    first_ep = min(
+        (s.get("episode", 9999) for s in p.get("segments", []) if s.get("episode") is not None),
+        default=9999,
+    )
+    return (-p["acquisition_score"], first_ep, p.get("duration", 0.0), p["promo_id"])
+
+
 # ---------------------------------------------------------------------------
 # Segment label for output (e.g. "E23 01:19.00–02:11.50")
 # ---------------------------------------------------------------------------
@@ -130,8 +148,15 @@ def _segments_str(promo: dict) -> str:
 # Core ranking
 # ---------------------------------------------------------------------------
 
-def rank_promos(judged: list[dict], show) -> list[dict]:
-    """Return ranked promos (unsafe excluded, sensitive penalised, clusters resolved)."""
+def rank_promos(judged: list[dict], show) -> tuple[list[dict], list[dict]]:
+    """Return ranked promos (unsafe excluded, sensitive penalised, clusters resolved).
+
+    Main ranking uses acquisition_score (penalises late-episode promos) so that
+    new-viewer promos surface first. Each promo also gets an audience field:
+    "retargeting" for the top-5 late-episode promos, "acquisition" for all others.
+    """
+    n_episodes = max((ep["episode"] for ep in show.episodes), default=1)
+
     # Score + safety
     scored: list[dict] = []
     excluded: list[dict] = []
@@ -163,7 +188,7 @@ def rank_promos(judged: list[dict], show) -> list[dict]:
 
         scored.append(p)
 
-    # Cluster overlaps
+    # Cluster overlaps (best-score promo wins within each cluster)
     clusters = _cluster_overlaps(scored)
     main_promos: list[dict] = []
     for group in clusters:
@@ -182,8 +207,16 @@ def rank_promos(judged: list[dict], show) -> list[dict]:
         main["alternatives"] = alternatives
         main_promos.append(main)
 
-    # Sort
-    main_promos.sort(key=_sort_key)
+    # Compute acquisition_score for each main promo
+    for p in main_promos:
+        first_ep = min(
+            (s.get("episode", 9999) for s in p.get("segments", []) if s.get("episode") is not None),
+            default=9999,
+        )
+        p["acquisition_score"] = _acquisition_score(p["score"], first_ep, n_episodes)
+
+    # Sort by acquisition_score (new viewers first)
+    main_promos.sort(key=_acq_sort_key)
 
     # Variety top 10: at most one per starting episode
     top10: list[dict] = []
@@ -205,7 +238,33 @@ def rank_promos(judged: list[dict], show) -> list[dict]:
     for i, p in enumerate(ranked):
         p["rank"] = i + 1
 
-    return ranked, excluded  # type: ignore[return-value]
+    # Retargeting: top-5 by raw score from last third of series, one per episode
+    ret_threshold = int(2 / 3 * n_episodes)
+    ret_candidates = sorted(
+        (
+            p for p in main_promos
+            if min(
+                (s.get("episode", 0) for s in p.get("segments", []) if s.get("episode") is not None),
+                default=0,
+            ) > ret_threshold
+        ),
+        key=lambda p: (-p["score"], p["promo_id"]),
+    )
+    retargeting_ids: set[str] = set()
+    seen_ret_ep: set[int] = set()
+    for p in ret_candidates:
+        first_ep = min(
+            (s.get("episode", 9999) for s in p.get("segments", []) if s.get("episode") is not None),
+            default=9999,
+        )
+        if len(retargeting_ids) < _RETARGETING_N and first_ep not in seen_ret_ep:
+            retargeting_ids.add(p["promo_id"])
+            seen_ret_ep.add(first_ep)
+
+    for p in ranked:
+        p["audience"] = "retargeting" if p["promo_id"] in retargeting_ids else "acquisition"
+
+    return ranked, excluded
 
 
 # ---------------------------------------------------------------------------
@@ -218,11 +277,13 @@ def _fmt_duration(secs: float) -> str:
 
 def _scores_line(p: dict) -> str:
     s = p.get("scores", {})
+    acq = p.get("acquisition_score")
+    acq_str = f"  acq={acq:.2f}" if acq is not None else ""
     return (
         f"hook={s.get('hook', '?')} "
         f"cliff={s.get('cliffhanger', '?')} "
         f"stand={s.get('standalone', '?')} "
-        f"→ **{p.get('score', 0.0):.2f}**"
+        f"→ **{p.get('score', 0.0):.2f}**{acq_str}"
     )
 
 
@@ -242,6 +303,8 @@ def _build_promos_json(ranked: list[dict]) -> list[dict]:
             "cliffhanger": p.get("cliffhanger", {}),
             "scores": p.get("scores", {}),
             "score": p.get("score", 0.0),
+            "acquisition_score": p.get("acquisition_score", p.get("score", 0.0)),
+            "audience": p.get("audience", "acquisition"),
             "safety": p.get("safety", {}),
             "flags": p.get("flags", []),
             "confusions": p.get("confusions", []),
@@ -258,8 +321,8 @@ def _build_promos_json(ranked: list[dict]) -> list[dict]:
 
 def _build_promos_csv(ranked: list[dict]) -> str:
     fieldnames = [
-        "rank", "promo_id", "segments", "duration", "score",
-        "hook", "cliffhanger", "standalone",
+        "rank", "promo_id", "segments", "duration", "score", "acquisition_score",
+        "audience", "hook", "cliffhanger", "standalone",
         "safety", "hook_text", "cliffhanger_text", "why",
     ]
     import io
@@ -274,6 +337,8 @@ def _build_promos_csv(ranked: list[dict]) -> str:
             "segments": _segments_str(p),
             "duration": f"{p.get('duration', 0.0):.1f}",
             "score": f"{p.get('score', 0.0):.2f}",
+            "acquisition_score": f"{p.get('acquisition_score', p.get('score', 0.0)):.4f}",
+            "audience": p.get("audience", "acquisition"),
             "hook": s.get("hook", ""),
             "cliffhanger": s.get("cliffhanger", ""),
             "standalone": s.get("standalone", ""),
@@ -303,19 +368,36 @@ def _build_promos_md(
     lines.append(f"Model: {model}  |  Date: {date}  |  Promos: {len(ranked)}  |  Spend: {spend}\n")
 
     top10 = [p for p in ranked if p["rank"] <= _TOP_N]
-    rest = [p for p in ranked if p["rank"] > _TOP_N]
+    retargeting = [p for p in ranked if p.get("audience") == "retargeting"]
 
-    # Top 10 table
-    lines.append("## Top 10\n")
-    lines.append("| Rank | Segments | Duration | Hook | Why | Flags |")
-    lines.append("|------|----------|----------|------|-----|-------|")
+    # Top 10 table (acquisition — new viewers)
+    lines.append("## Post these first: new viewers (top 10)\n")
+    lines.append("| Rank | Segments | Duration | Score | Acq Score | Hook | Why | Flags |")
+    lines.append("|------|----------|----------|-------|-----------|------|-----|-------|")
     for p in top10:
         hook_text = (p.get("hook") or {}).get("text", "")
         flags = ", ".join(p.get("flags", [])) or "—"
+        acq = p.get("acquisition_score", p.get("score", 0.0))
         lines.append(
             f"| {p['rank']} | {_segments_str(p)} | {_fmt_duration(p.get('duration', 0.0))} "
+            f"| {p.get('score', 0.0):.2f} | {acq:.4f} "
             f"| {hook_text[:60]} | {p.get('why', '')[:80]} | {flags} |"
         )
+    lines.append("")
+
+    # Retargeting top 5
+    lines.append("## For existing viewers: retargeting (top 5)\n")
+    if retargeting:
+        lines.append("| Rank | Segments | Duration | Score | Hook | Why |")
+        lines.append("|------|----------|----------|-------|------|-----|")
+        for p in sorted(retargeting, key=lambda x: -x.get("score", 0.0))[:_RETARGETING_N]:
+            hook_text = (p.get("hook") or {}).get("text", "")
+            lines.append(
+                f"| {p['rank']} | {_segments_str(p)} | {_fmt_duration(p.get('duration', 0.0))} "
+                f"| {p.get('score', 0.0):.2f} | {hook_text[:60]} | {p.get('why', '')[:80]} |"
+            )
+    else:
+        lines.append("_(none — no promos from the last third of the series)_")
     lines.append("")
 
     # Why these first
@@ -324,12 +406,15 @@ def _build_promos_md(
         "1. **Hook-weighted score** (0.4 × hook + 0.3 × cliffhanger + 0.3 × standalone) ranks every promo."
     )
     lines.append(
-        "2. **One per episode** in the top 10: new viewers discover the show sequentially, "
-        "so variety across episodes maximises reach."
+        "2. **Acquisition score** = score − 0.5 × (episode − 1) / (total − 1): "
+        "late-episode promos are penalised because new viewers have not watched 40+ episodes "
+        "of context, and late payoffs spoil the story's endgame."
     )
     lines.append(
-        "3. **Ties** resolve by earlier starting episode then shorter duration — Episode 1 promos "
-        "introduce the show, and tighter clips lose fewer viewers.\n"
+        "3. **One per episode** in the top 10: variety across episodes maximises reach."
+    )
+    lines.append(
+        "4. **Ties** resolve by earlier starting episode then shorter duration.\n"
     )
 
     # All promos
@@ -365,6 +450,22 @@ def _build_promos_md(
 # ---------------------------------------------------------------------------
 # ranking_report.md
 # ---------------------------------------------------------------------------
+
+def _old_top10_by_score(ranked: list[dict]) -> list[dict]:
+    """Re-derive the pre-task top 10 using raw score (no acquisition penalty)."""
+    sorted_by_score = sorted(ranked, key=_sort_key)
+    seen_eps: set[int] = set()
+    top10: list[dict] = []
+    for p in sorted_by_score:
+        first_ep = min(
+            (s.get("episode", 9999) for s in p.get("segments", []) if s.get("episode") is not None),
+            default=9999,
+        )
+        if len(top10) < _TOP_N and first_ep not in seen_eps:
+            top10.append(p)
+            seen_eps.add(first_ep)
+    return top10
+
 
 def _build_ranking_report(
     ranked: list[dict],
@@ -487,6 +588,38 @@ def _build_ranking_report(
         lines.append("  " + ", ".join(p["promo_id"] for p in unsafe_list))
     lines.append("")
 
+    # New top 10 (acquisition_score) vs old top 10 (raw score)
+    new_top10 = [p for p in ranked if p["rank"] <= _TOP_N]
+    old_top10 = _old_top10_by_score(ranked)
+    new_ids = {p["promo_id"] for p in new_top10}
+    old_ids = {p["promo_id"] for p in old_top10}
+    moved_in = new_ids - old_ids
+    moved_out = old_ids - new_ids
+
+    lines.append("## New top 10 vs old top 10 (acquisition_score vs raw score)\n")
+    lines.append("| # | New top 10 (acq) | Acq score | # | Old top 10 (score) | Score |")
+    lines.append("|---|-----------------|-----------|---|-------------------|-------|")
+    for i in range(max(len(new_top10), len(old_top10))):
+        new_p = new_top10[i] if i < len(new_top10) else None
+        old_p = old_top10[i] if i < len(old_top10) else None
+        new_cell = (
+            f"{'→ ' if new_p['promo_id'] in moved_in else ''}{new_p['promo_id']}"
+            if new_p else ""
+        )
+        old_cell = (
+            f"{'← ' if old_p['promo_id'] in moved_out else ''}{old_p['promo_id']}"
+            if old_p else ""
+        )
+        new_acq = f"{new_p.get('acquisition_score', 0.0):.4f}" if new_p else ""
+        old_score = f"{old_p.get('score', 0.0):.2f}" if old_p else ""
+        lines.append(
+            f"| {i+1} | {new_cell} | {new_acq} | {i+1} | {old_cell} | {old_score} |"
+        )
+    lines.append("")
+    lines.append(f"**Moved in** (new viewers): {', '.join(sorted(moved_in)) or '—'}")
+    lines.append(f"**Moved out** (demoted by episode penalty): {', '.join(sorted(moved_out)) or '—'}")
+    lines.append("")
+
     return "\n".join(lines)
 
 
@@ -500,7 +633,7 @@ def _build_review_sheet(top10: list[dict], show) -> str:
         lines.append(f"## #{p['rank']} — {p['promo_id']}")
         lines.append(f"**Segments**: {_segments_str(p)}\n")
         lines.append("```")
-        lines.append(format_clip(p, show))
+        lines.append(format_clip(p, show, redact=False))
         lines.append("```\n")
         lines.append("- [ ] Hook lands in first 3 s (would I stop scrolling?)")
         lines.append("- [ ] Ends on an unresolved moment (do I need to know what happens next?)")

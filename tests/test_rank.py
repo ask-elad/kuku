@@ -5,6 +5,7 @@ import pytest
 
 from promo_finder.rank import (
     _weighted_score,
+    _acquisition_score,
     _promos_overlap,
     _cluster_overlaps,
     _block_text,
@@ -388,3 +389,156 @@ def test_block_text_camera_no_speaker():
     blocks = [_bl("E01-B001", "CAMERA", 0.0, 5.0, "Close on her face.")]
     show = Show(title="T", slug="t", episodes=[_ep(1, blocks)])
     assert _block_text(show, "E01-B001") == "Close on her face."
+
+
+# ---------------------------------------------------------------------------
+# acquisition_score formula
+# ---------------------------------------------------------------------------
+
+def test_acquisition_score_first_episode_no_penalty():
+    # E01 of a 10-episode show gets no penalty
+    assert _acquisition_score(3.0, first_episode=1, n_episodes=10) == pytest.approx(3.0)
+
+
+def test_acquisition_score_last_episode_max_penalty():
+    # Last episode of a 10-episode show gets −0.5
+    assert _acquisition_score(3.0, first_episode=10, n_episodes=10) == pytest.approx(2.5)
+
+
+def test_acquisition_score_middle_episode():
+    # E5 of a 9-episode show: penalty = 0.5 * (5-1)/(9-1) = 0.5 * 0.5 = 0.25
+    assert _acquisition_score(3.0, first_episode=5, n_episodes=9) == pytest.approx(2.75)
+
+
+def test_acquisition_score_single_episode_show_no_penalty():
+    # Degenerate: n_episodes=1 → no penalty (avoid division by zero)
+    assert _acquisition_score(4.0, first_episode=1, n_episodes=1) == pytest.approx(4.0)
+
+
+# ---------------------------------------------------------------------------
+# Late promo with higher raw score loses to early promo in acquisition ranking
+# ---------------------------------------------------------------------------
+
+def test_late_promo_higher_raw_score_loses_to_early():
+    """A late-episode promo with score 4.0 should rank below an early promo
+    with score 3.0 if the acquisition penalty brings the late score below 3.0."""
+    # 10 episodes: late promo at E10 with score 4.0 → acq = 4.0 - 0.5 = 3.5
+    # early promo at E01 with score 3.5 → acq = 3.5
+    # Tie on acq_score → E01 wins by episode tie-break
+    # Let's make it cleaner: E01 score=3.6, E10 score=4.0 → acq E01=3.6, acq E10=3.5 → E01 wins
+    all_blocks = {ep: [_bl(f"E{ep:02d}-B001", "CAMERA", 0.0, 60.0)] for ep in range(1, 11)}
+    show = _make_show(all_blocks)
+
+    def _p(pid: str, ep: int, score_val: float) -> dict:
+        bid = f"E{ep:02d}-B001"
+        v = int(score_val)
+        return {
+            "promo_id": pid,
+            "segments": [{"episode": ep, "start": 0.0, "end": 30.0,
+                          "start_block": bid, "end_block": bid,
+                          "start_tc": "00:00.00", "end_tc": "00:30.00", "duration": 30.0}],
+            "hook": {"block_id": bid, "at": 0.0},
+            "cliffhanger": {"block_id": bid, "at": 25.0},
+            "beat_notes": {}, "why": "", "method": "pipeline", "duration": 30.0,
+            "checks": {}, "scores": {"hook": score_val, "cliffhanger": score_val, "standalone": score_val},
+            "safety": {"level": "ok", "reason": ""}, "confusions": [], "judge_rounds": 2,
+        }
+
+    early = _p("EARLY", ep=1, score_val=3.6)
+    late = _p("LATE", ep=10, score_val=4.0)
+    ranked, _ = rank_promos([late, early], show)
+
+    # EARLY has acq_score=3.6, LATE has acq_score=4.0-0.5=3.5 → EARLY ranks first
+    assert ranked[0]["promo_id"] == "EARLY"
+    assert ranked[1]["promo_id"] == "LATE"
+
+
+# ---------------------------------------------------------------------------
+# Retargeting list
+# ---------------------------------------------------------------------------
+
+def test_retargeting_only_from_last_third():
+    """Retargeting set must only contain promos whose first_episode > 2/3 × n_episodes."""
+    # 9 episodes: threshold = int(2/3*9) = 6; retargeting → episodes 7, 8, 9
+    all_blocks = {ep: [_bl(f"E{ep:02d}-B001", "CAMERA", 0.0, 60.0)] for ep in range(1, 10)}
+    show = _make_show(all_blocks)
+
+    def _p(ep: int) -> dict:
+        bid = f"E{ep:02d}-B001"
+        return {
+            "promo_id": f"P-E{ep:02d}",
+            "segments": [{"episode": ep, "start": 0.0, "end": 30.0,
+                          "start_block": bid, "end_block": bid,
+                          "start_tc": "00:00.00", "end_tc": "00:30.00", "duration": 30.0}],
+            "hook": {"block_id": bid, "at": 0.0},
+            "cliffhanger": {"block_id": bid, "at": 25.0},
+            "beat_notes": {}, "why": "", "method": "pipeline", "duration": 30.0,
+            "checks": {}, "scores": {"hook": 4, "cliffhanger": 4, "standalone": 4},
+            "safety": {"level": "ok", "reason": ""}, "confusions": [], "judge_rounds": 2,
+        }
+
+    promos = [_p(ep) for ep in range(1, 10)]
+    ranked, _ = rank_promos(promos, show)
+
+    retargeting = [p for p in ranked if p.get("audience") == "retargeting"]
+    ret_episodes = [
+        min(s.get("episode", 9999) for s in p["segments"])
+        for p in retargeting
+    ]
+    assert all(ep > 6 for ep in ret_episodes), f"Non-last-third ep in retargeting: {ret_episodes}"
+    assert len(retargeting) <= 5
+
+
+def test_retargeting_one_per_episode():
+    """Retargeting set has at most one promo per starting episode."""
+    # 9 episodes: two non-overlapping promos per episode in the last third
+    all_blocks = {ep: [_bl(f"E{ep:02d}-B001", "CAMERA", 0.0, 300.0)] for ep in range(1, 10)}
+    show = _make_show(all_blocks)
+
+    promos = []
+    for ep in range(7, 10):  # episodes 7, 8, 9
+        bid = f"E{ep:02d}-B001"
+        for i in range(2):
+            seg = {"episode": ep, "start": float(i * 100), "end": float(i * 100 + 30),
+                   "start_block": bid, "end_block": bid,
+                   "start_tc": "00:00.00", "end_tc": "00:30.00", "duration": 30.0}
+            promos.append({
+                "promo_id": f"P-E{ep:02d}-{i}",
+                "segments": [seg],
+                "hook": {"block_id": bid, "at": 0.0},
+                "cliffhanger": {"block_id": bid, "at": 25.0},
+                "beat_notes": {}, "why": "", "method": "pipeline", "duration": 30.0,
+                "checks": {}, "scores": {"hook": 4, "cliffhanger": 4, "standalone": 4},
+                "safety": {"level": "ok", "reason": ""}, "confusions": [], "judge_rounds": 2,
+            })
+
+    ranked, _ = rank_promos(promos, show)
+    retargeting = [p for p in ranked if p.get("audience") == "retargeting"]
+    ret_episodes = [min(s.get("episode", 9999) for s in p["segments"]) for p in retargeting]
+    assert len(ret_episodes) == len(set(ret_episodes)), "Duplicate episode in retargeting"
+
+
+def test_retargeting_max_five():
+    """Retargeting list is capped at 5 entries."""
+    # 15 episodes: last third = eps 11-15 (threshold = int(2/3*15) = 10)
+    all_blocks = {ep: [_bl(f"E{ep:02d}-B001", "CAMERA", 0.0, 60.0)] for ep in range(1, 16)}
+    show = _make_show(all_blocks)
+
+    def _p(ep: int) -> dict:
+        bid = f"E{ep:02d}-B001"
+        return {
+            "promo_id": f"P-E{ep:02d}",
+            "segments": [{"episode": ep, "start": 0.0, "end": 30.0,
+                          "start_block": bid, "end_block": bid,
+                          "start_tc": "00:00.00", "end_tc": "00:30.00", "duration": 30.0}],
+            "hook": {"block_id": bid, "at": 0.0},
+            "cliffhanger": {"block_id": bid, "at": 25.0},
+            "beat_notes": {}, "why": "", "method": "pipeline", "duration": 30.0,
+            "checks": {}, "scores": {"hook": 4, "cliffhanger": 4, "standalone": 4},
+            "safety": {"level": "ok", "reason": ""}, "confusions": [], "judge_rounds": 2,
+        }
+
+    promos = [_p(ep) for ep in range(1, 16)]
+    ranked, _ = rank_promos(promos, show)
+    retargeting = [p for p in ranked if p.get("audience") == "retargeting"]
+    assert len(retargeting) <= 5

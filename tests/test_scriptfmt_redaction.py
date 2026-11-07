@@ -83,3 +83,35 @@ def test_format_clip_redaction_does_not_touch_other_words():
     result = format_clip(promo, show)
     # "cliff, hanging" is two words, not "cliffhanger", so it must be preserved
     assert "cliff, hanging" in result
+
+
+# ---------------------------------------------------------------------------
+# redact=False preserves the original word
+# ---------------------------------------------------------------------------
+
+def test_format_clip_redact_false_keeps_cliffhanger():
+    blocks = [_bl("E01-B001", "CAMERA", 0.0, 30.0,
+                  "cutting to an intense cliffhanger moment")]
+    show = Show(title="T", slug="t", episodes=[_ep(1, blocks)])
+    seg = _seg(1, 0.0, 30.0, "E01-B001", "E01-B001")
+    promo = _promo("C-E01-01", seg, "E01-B001", "E01-B001")
+
+    result = format_clip(promo, show, redact=False)
+
+    assert _CLIFFHANGER_PATTERN.search(result), (
+        f"redact=False should preserve 'cliffhanger' but got: {result!r}"
+    )
+
+
+def test_format_clip_redact_true_removes_cliffhanger():
+    blocks = [_bl("E01-B001", "CAMERA", 0.0, 30.0,
+                  "cutting to an intense cliffhanger moment")]
+    show = Show(title="T", slug="t", episodes=[_ep(1, blocks)])
+    seg = _seg(1, 0.0, 30.0, "E01-B001", "E01-B001")
+    promo = _promo("C-E01-01", seg, "E01-B001", "E01-B001")
+
+    result = format_clip(promo, show, redact=True)
+
+    assert not _CLIFFHANGER_PATTERN.search(result), (
+        f"redact=True should remove 'cliffhanger' but got: {result!r}"
+    )

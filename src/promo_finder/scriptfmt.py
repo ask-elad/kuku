@@ -42,7 +42,7 @@ def format_blocks(blocks: list[dict], scenes: dict[str, dict] | None = None) -> 
     return "\n".join(lines)
 
 
-def format_clip(promo: dict, show) -> str:
+def format_clip(promo: dict, show, redact: bool = True) -> str:
     """Format a resolved promo as clip text for the LLM judge.
 
     Times are rebased so the clip starts at 00:00. Segments are separated by
@@ -50,6 +50,9 @@ def format_clip(promo: dict, show) -> str:
     scene heading text (e.g. INT. HALL – DAY) is shown on scene changes.
 
     Line format: 00:03.20–00:05.10 | DIALOGUE | GERALD (Cold): text
+
+    redact: when True (default) replaces "cliffhanger" variants with "moment"
+    so the LLM judge cannot anchor on the word when scoring.
     """
     segments = promo.get("segments", [])
     parts: list[str] = []
@@ -106,4 +109,6 @@ def format_clip(promo: dict, show) -> str:
         cum_offset += seg_end - seg_start
 
     result = "\n== CUT ==\n".join(parts)
-    return _CLIFFHANGER_RE.sub("moment", result)
+    if redact:
+        result = _CLIFFHANGER_RE.sub("moment", result)
+    return result
