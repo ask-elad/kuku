@@ -1,7 +1,11 @@
 """Format episode blocks into the script text the LLM receives."""
 from __future__ import annotations
 
+import re
+
 from .timeutil import fmt_time
+
+_CLIFFHANGER_RE = re.compile(r"cliff-?hangers?", re.IGNORECASE)
 
 _EPS = 0.05
 
@@ -101,4 +105,5 @@ def format_clip(promo: dict, show) -> str:
         parts.append("\n".join(segment_lines))
         cum_offset += seg_end - seg_start
 
-    return "\n== CUT ==\n".join(parts)
+    result = "\n== CUT ==\n".join(parts)
+    return _CLIFFHANGER_RE.sub("moment", result)

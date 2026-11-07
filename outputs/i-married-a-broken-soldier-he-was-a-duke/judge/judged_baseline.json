@@ -1,0 +1,3340 @@
+[
+  {
+    "promo_id": "BASE-E01",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E01-B065",
+        "end_block": "E01-B095",
+        "episode": 1,
+        "start": 92.1,
+        "end": 138.0,
+        "start_tc": "01:32.10",
+        "end_tc": "02:18.00",
+        "duration": 45.900000000000006
+      }
+    ],
+    "hook": {
+      "block_id": "E01-B065",
+      "text": "You have embarrassed this family long enough.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E01-B093",
+      "text": "Juliana breathes through the agony, refusing to break down further in front of the congregation.",
+      "at": 41.70000000000002
+    },
+    "why": "Relatable public humiliation and a clear villain-beloved rivalry, but the opening is a verbal jab and the ending is a fade on sadness, not a question.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 3.0,
+      "standalone": 3.5
+    },
+    "rank": null,
+    "duration": 45.900000000000006,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who the Matriarch is and her link to Juliana",
+      "Why Gerald dumps Juliana for Clarissa",
+      "Whether Juliana's humiliation leads anywhere",
+      "Who the Lady in Gold Gown is"
+    ],
+    "hook_moment": "Matriarch coldly tells Juliana she has embarrassed the family"
+  },
+  {
+    "promo_id": "BASE-E02",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E02-B049",
+        "end_block": "E02-B074",
+        "episode": 2,
+        "start": 66.0,
+        "end": 110.0,
+        "start_tc": "01:06.00",
+        "end_tc": "01:50.00",
+        "duration": 44.0
+      }
+    ],
+    "hook": {
+      "block_id": "E02-B050",
+      "text": "You should be grateful you're at least allowed to attend the wedding.",
+      "at": 0.09999999999999432
+    },
+    "cliffhanger": {
+      "block_id": "E02-B074",
+      "text": "Juliana breathes with steady resolve, holding her head high as the solemn orchestral score swells into the final beat.",
+      "at": 41.400000000000006
+    },
+    "why": "Satisfying comeback speech with strong dignity beats, but it ends on a triumphant resolution with no unanswered question pulling the viewer forward.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 2.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who the off-screen Matriarch and Gerald are to Juliana",
+      "Why Juliana was abandoned at the altar",
+      "What Clarissa's role in the betrayal is",
+      "Who the off-screen voice belongs to"
+    ],
+    "hook_moment": "Matriarch sneers that Juliana should be grateful to attend the wedding"
+  },
+  {
+    "promo_id": "BASE-E03",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E03-B086",
+        "end_block": "E03-B118",
+        "episode": 3,
+        "start": 100.8,
+        "end": 145.75,
+        "start_tc": "01:40.80",
+        "end_tc": "02:25.75",
+        "duration": 44.95
+      }
+    ],
+    "hook": {
+      "block_id": "E03-B087",
+      "text": "...when your family is dragging a defenseless woman from a church.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E03-B118",
+      "text": "Juliana gazes down at her rugged savior, overcome with emotion as the swelling score holds on the cliffhanger.",
+      "at": 39.7
+    },
+    "why": "Strong public-rescue romance with a clear payoff, but it ends on a soft fade rather than a true cliffhanger.",
+    "scores": {
+      "hook": 3.5,
+      "cliffhanger": 3.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.95,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who the bearded stranger is and why he intervenes",
+      "Why Juliana's family is forcing her",
+      "Who Gerald is and what he did",
+      "Who the bearded stranger is"
+    ],
+    "hook_moment": "Stern accusation over whispering congregation, then a man's quiet rescue line"
+  },
+  {
+    "promo_id": "BASE-E04",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E04-B078",
+        "end_block": "E04-B109",
+        "episode": 4,
+        "start": 105.2,
+        "end": 151.4,
+        "start_tc": "01:45.20",
+        "end_tc": "02:31.40",
+        "duration": 46.2
+      }
+    ],
+    "hook": {
+      "block_id": "E04-B078",
+      "text": "You have my respect.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E04-B109",
+      "text": "Juliana and the Mysterious Bearded Man walk hand-in-hand through the towering doors into the sunlight together, turning their backs on the ruined wedding as the screen fades out.",
+      "at": 42.3
+    },
+    "why": "Triumphant defiance and a warm exit make a satisfying payoff but weak tension. The ending feels settled, so it gives viewers little reason to keep watching.",
+    "scores": {
+      "hook": 2.5,
+      "cliffhanger": 2.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 46.2,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who is the mysterious bearded man?",
+      "How is Juliana connected to the Ashcrofts?",
+      "Who is Clarissa and why is she there?",
+      "Who is Gerald, and why is he so furious?"
+    ],
+    "hook_moment": "Quiet 'You have my respect' between two strangers"
+  },
+  {
+    "promo_id": "BASE-E05",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E05-B039",
+        "end_block": "E05-B062",
+        "episode": 5,
+        "start": 65.5,
+        "end": 110.5,
+        "start_tc": "01:05.50",
+        "end_tc": "01:50.50",
+        "duration": 45.0
+      }
+    ],
+    "hook": {
+      "block_id": "E05-B039",
+      "text": "Juliana drops to her knees onto the wet courtyard pavement, oblivious to the dirt soaking through her white bridal gown.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E05-B060",
+      "text": "Come.",
+      "at": 38.7
+    },
+    "why": "Visual humiliation hook, but the ending is a calm walk away and the 'beggar's wife' insult lands only with context.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 2.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 45.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who is Gerald, and why does he mock her?",
+      "Why has Juliana lost her family's status?",
+      "Why does the ledger matter so much to Juliana?",
+      "Who is the Bearded Man, and why is he protecting her?"
+    ],
+    "hook_moment": "Bridal gown soaked as Juliana kneels in a puddle, reaching for a ledger"
+  },
+  {
+    "promo_id": "BASE-E06",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E06-B063",
+        "end_block": "E06-B097",
+        "episode": 6,
+        "start": 70.1,
+        "end": 115.0,
+        "start_tc": "01:10.10",
+        "end_tc": "01:55.00",
+        "duration": 44.900000000000006
+      }
+    ],
+    "hook": {
+      "block_id": "E06-B063",
+      "text": "If I stop now, I will think about everything I lost.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E06-B094",
+      "text": "Sitting here with him, I don't feel afraid.",
+      "at": 36.10000000000001
+    },
+    "why": "A warm, quiet domestic scene with no tension or hook, so it gives viewers no reason to keep watching.",
+    "scores": {
+      "hook": 2.0,
+      "cliffhanger": 1.0,
+      "standalone": 2.5
+    },
+    "rank": null,
+    "duration": 44.900000000000006,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who the mysterious bearded man is",
+      "Why Juliana lost her home and family",
+      "What danger she is running from",
+      "What did Juliana lose, and why is she homeless?"
+    ],
+    "hook_moment": "Nothing stops the scroll; a quiet vulnerable confession"
+  },
+  {
+    "promo_id": "BASE-E07",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E07-B034",
+        "end_block": "E07-B058",
+        "episode": 7,
+        "start": 69.5,
+        "end": 116.0,
+        "start_tc": "01:09.50",
+        "end_tc": "01:56.00",
+        "duration": 46.5
+      }
+    ],
+    "hook": {
+      "block_id": "E07-B035",
+      "text": "Where is that beggar husband?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E07-B056",
+      "text": "I didn't need to.",
+      "at": 36.5
+    },
+    "why": "Eerie fog and a menace-to-meek payoff, but the ending is warm and resolved, giving the viewer no reason to tap next.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 1.5,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 46.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who Gerald is and why he is threatening this cottage",
+      "Who the Scarred Bearded Man is to Juliana",
+      "Why Gerald fears the man so badly",
+      "Who is Gerald, and what is his link to Juliana?"
+    ],
+    "hook_moment": "Towering figure in fog; Gerald snarls 'Where is that beggar husband?'"
+  },
+  {
+    "promo_id": "BASE-E08",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E08-B028",
+        "end_block": "E08-B063",
+        "episode": 8,
+        "start": 33.2,
+        "end": 78.0,
+        "start_tc": "00:33.20",
+        "end_tc": "01:18.00",
+        "duration": 44.8
+      }
+    ],
+    "hook": {
+      "block_id": "E08-B029",
+      "text": "Not yet.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E08-B063",
+      "text": "Juliana maintains her warm, peaceful gaze across the table as soft firelight flickers over her face into fade out.",
+      "at": 42.099999999999994
+    },
+    "why": "Quiet, cozy domestic scene with no tension; it resolves warmly and gives a scroller no reason to keep watching.",
+    "scores": {
+      "hook": 1.5,
+      "cliffhanger": 1.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.8,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who are these two to each other?",
+      "Why is 'Not yet' significant?",
+      "Why 'not yet' and what is growing",
+      "Why he refuses to let her trim his beard"
+    ],
+    "hook_moment": "nothing"
+  },
+  {
+    "promo_id": "BASE-E09",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E09-B054",
+        "end_block": "E09-B089",
+        "episode": 9,
+        "start": 70.5,
+        "end": 115.5,
+        "start_tc": "01:10.50",
+        "end_tc": "01:55.50",
+        "duration": 45.0
+      }
+    ],
+    "hook": {
+      "block_id": "E09-B056",
+      "text": "I will tell the village what you did. They will never forget you.",
+      "at": 0.7000000000000028
+    },
+    "cliffhanger": {
+      "block_id": "E09-B088",
+      "text": "Impossible.",
+      "at": 39.3
+    },
+    "why": "The ending dread shot is effective, but the slow, dialogue-heavy opening gives scrollers no reason to stay. Relies on earlier episodes to make sense.",
+    "scores": {
+      "hook": 1.5,
+      "cliffhanger": 4.0,
+      "standalone": 2.5
+    },
+    "rank": null,
+    "duration": 45.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": "Quiet dialogue, no violence or sensitive content"
+    },
+    "confusions": [
+      "Who the Former Groom is and why he is rattled",
+      "Who the war veteran is and why the Duke resemblance matters",
+      "Why the Blond Nobleman reacts with such dread",
+      "Who the Blond Nobleman is"
+    ],
+    "hook_moment": "Nothing stops the scroll early; a mother leaves a rainy cottage with a sleeping child"
+  },
+  {
+    "promo_id": "BASE-E10",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E10-B037",
+        "end_block": "E10-B060",
+        "episode": 10,
+        "start": 49.5,
+        "end": 94.0,
+        "start_tc": "00:49.50",
+        "end_tc": "01:34.00",
+        "duration": 44.5
+      }
+    ],
+    "hook": {
+      "block_id": "E10-B038",
+      "text": "Your scars disagree.",
+      "at": 0.20000000000000284
+    },
+    "cliffhanger": {
+      "block_id": "E10-B059",
+      "text": "Your touch is the only medicine that has ever eased my pain.",
+      "at": 33.099999999999994
+    },
+    "why": "Slow-burn romance with a soft opening and a sweet, non-urgent ending that gives no reason to keep watching.",
+    "scores": {
+      "hook": 2.5,
+      "cliffhanger": 2.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": "Intimate touching, not sexual; mild sensuality only"
+    },
+    "confusions": [
+      "Why Alexander is wounded and who he is",
+      "What their relationship history is",
+      "Why he is so intense about her",
+      "Why are they in a cottage, and who is Alexander?"
+    ],
+    "hook_moment": "Nothing stops the scroll; a quiet joke about scars"
+  },
+  {
+    "promo_id": "BASE-E11",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E11-B061",
+        "end_block": "E11-B085",
+        "episode": 11,
+        "start": 67.5,
+        "end": 112.75,
+        "start_tc": "01:07.50",
+        "end_tc": "01:52.75",
+        "duration": 45.25
+      }
+    ],
+    "hook": {
+      "block_id": "E11-B061",
+      "text": "Stand aside. Look at this place. A perfect hiding hole for a thief.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E11-B084",
+      "text": "There it is. Ha!",
+      "at": 36.7
+    },
+    "why": "Clear villain and frame-up plot with a strong freeze-frame reveal. Alexander's identity is only partly clear, but the betrayal works on its own.",
+    "scores": {
+      "hook": 3.5,
+      "cliffhanger": 4.5,
+      "standalone": 3.5
+    },
+    "rank": null,
+    "duration": 45.25,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who is Alexander, and what is his tie to Juliana?",
+      "Why is Gerald framing Juliana?",
+      "Whose watch is it, and why does it matter?",
+      "Who Gerald is to Juliana and Alexander"
+    ],
+    "hook_moment": "Gerald's cruel 'A perfect hiding hole for a thief'"
+  },
+  {
+    "promo_id": "BASE-E12",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E12-B030",
+        "end_block": "E12-B055",
+        "episode": 12,
+        "start": 42.2,
+        "end": 87.21000000000001,
+        "start_tc": "00:42.20",
+        "end_tc": "01:27.21",
+        "duration": 45.010000000000005
+      }
+    ],
+    "hook": {
+      "block_id": "E12-B030",
+      "text": "What do you want?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E12-B055",
+      "text": "Juliana locks eyes with Clarissa without flinching as the scene freezes on her brave, sacrificial defiance.",
+      "at": 42.5
+    },
+    "why": "Villainous threats and a husband-at-risk stake drive curiosity, but the family and legal setup is hard to follow.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 4.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 45.010000000000005,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who Clarissa is to Juliana, and why 'sister' matters",
+      "Why the ring is lost and why Juliana must retrieve it",
+      "Who Gerald and the Constable are",
+      "Why Juliana must retrieve the ring"
+    ],
+    "hook_moment": "Clarissa's sneering 'I want to see you crawl, sister.'"
+  },
+  {
+    "promo_id": "BASE-E13",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E13-B049",
+        "end_block": "E13-B075",
+        "episode": 13,
+        "start": 74.0,
+        "end": 118.88,
+        "start_tc": "01:14.00",
+        "end_tc": "01:58.88",
+        "duration": 44.879999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E13-B050",
+      "text": "Juliana drags her body across the frozen, cracked soil beneath the dense roof of briars.",
+      "at": 0.5
+    },
+    "cliffhanger": {
+      "block_id": "E13-B070",
+      "text": "Juliana reaches out her torn, bloodied hand and wraps her fingers tightly around the emerald ring.",
+      "at": 35.0
+    },
+    "why": "Visceral peril and a ring-discovery payoff create a strong question, though the opening is slow before the first line.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 4.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.879999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": "Thorn injuries only, no graphic violence"
+    },
+    "confusions": [
+      "Why Juliana crawls into the briars",
+      "Why the emerald ring matters so much",
+      "Who the Constable is and what he's stopping",
+      "Why Juliana is crawling through briars"
+    ],
+    "hook_moment": "Woman dragging herself through dark frozen briars"
+  },
+  {
+    "promo_id": "BASE-E14",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E14-B028",
+        "end_block": "E14-B051",
+        "episode": 14,
+        "start": 43.5,
+        "end": 87.63,
+        "start_tc": "00:43.50",
+        "end_tc": "01:27.63",
+        "duration": 44.129999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E14-B029",
+      "text": "Alexander gently wraps clean linen bandages around Juliana's torn wrist and palm.",
+      "at": 0.5
+    },
+    "cliffhanger": {
+      "block_id": "E14-B050",
+      "text": "Alexander's muscular arm drops into frame beside the bloody bucket; his scarred knuckles slowly and tightly clench into an iron fist of brewing vengeance.",
+      "at": 40.5
+    },
+    "why": "Tender opening is slow for a thumb-stopper, but the closing vow and fist of vengeance create a good tease for what comes next.",
+    "scores": {
+      "hook": 2.0,
+      "cliffhanger": 4.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.129999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": "Blood-soaked water is mild, non-graphic imagery."
+    },
+    "confusions": [
+      "Why Juliana's wrist is injured and what happened",
+      "What 'you have taken my place today' means",
+      "Who is Alexander to Juliana and why she is in danger",
+      "Who Juliana is and what injured her hands"
+    ],
+    "hook_moment": "Quiet firelit bandaging of Juliana's torn wrist"
+  },
+  {
+    "promo_id": "BASE-E15",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E15-B029",
+        "end_block": "E15-B055",
+        "episode": 15,
+        "start": 41.0,
+        "end": 86.0,
+        "start_tc": "00:41.00",
+        "end_tc": "01:26.00",
+        "duration": 45.0
+      }
+    ],
+    "hook": {
+      "block_id": "E15-B029",
+      "text": "It is my home. You have no right to destroy anything here.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E15-B053",
+      "text": "What? You want to fight us, veteran?",
+      "at": 38.0
+    },
+    "why": "Clear good-versus-villain stakes, a shove, a raised club and a rescue cliffhanger; the cello cut sells the tension.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 4.5,
+      "standalone": 4.0
+    },
+    "rank": null,
+    "duration": 45.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Why the herbs matter so much to Juliana",
+      "Who 'the veteran' is and why he appears",
+      "How Juliana got her bloody bandages",
+      "Who Alexander is to Juliana"
+    ],
+    "hook_moment": "Thug steps into Juliana's face, snarling 'Get out of the way!'"
+  },
+  {
+    "promo_id": "BASE-E16",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E16-B032",
+        "end_block": "E16-B064",
+        "episode": 16,
+        "start": 38.2,
+        "end": 83.19,
+        "start_tc": "00:38.20",
+        "end_tc": "01:23.19",
+        "duration": 44.989999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E16-B033",
+      "text": "Only my hands.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E16-B063",
+      "text": "Alexander and Juliana gaze deeply into each other's eyes, an unspoken bond forming between them as the ruined garden lies silent beneath the moon.",
+      "at": 40.599999999999994
+    },
+    "why": "Action hook with a villain reveal, but the ending slides into quiet romance, which drains the tension.",
+    "scores": {
+      "hook": 4.0,
+      "cliffhanger": 2.0,
+      "standalone": 3.5
+    },
+    "rank": null,
+    "duration": 44.989999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "sensitive",
+      "reason": "Thug choked against wall, strong physical violence"
+    },
+    "confusions": [
+      "Why Juliana's hands are bandaged and who attacked them",
+      "Who Alexander is and his soldier past",
+      "Who Gerald is and why he paid thugs",
+      "Who sent the thugs and why were they paid?"
+    ],
+    "hook_moment": "Bloody bandaged hands, then a man lifts a thug by the collar"
+  },
+  {
+    "promo_id": "BASE-E17",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E17-B049",
+        "end_block": "E17-B075",
+        "episode": 17,
+        "start": 73.5,
+        "end": 118.88,
+        "start_tc": "01:13.50",
+        "end_tc": "01:58.88",
+        "duration": 45.379999999999995
+      }
+    ],
+    "hook": null,
+    "cliffhanger": {
+      "block_id": "E17-B074",
+      "text": "But every day, he gives me another reason to trust him.",
+      "at": 38.7
+    },
+    "why": "Sweet romance with a mild V.O. question, but no stakes or conflict to pull a stranger in.",
+    "scores": {
+      "hook": 1.0,
+      "cliffhanger": 2.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 45.379999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": false,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": false,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "What does 'Not yet' refer to, again?",
+      "Why does Juliana know 'almost nothing' about her husband?",
+      "Why she knows almost nothing about her husband",
+      "Why he says 'not yet' to her"
+    ],
+    "hook_moment": "nothing"
+  },
+  {
+    "promo_id": "BASE-E18",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E18-B071",
+        "end_block": "E18-B081",
+        "episode": 18,
+        "start": 145.8,
+        "end": 192.0,
+        "start_tc": "02:25.80",
+        "end_tc": "03:12.00",
+        "duration": 46.19999999999999
+      }
+    ],
+    "hook": {
+      "block_id": "E18-B071",
+      "text": "Why would anyone do this?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E18-B080",
+      "text": "What are you going to do?",
+      "at": 38.39999999999998
+    },
+    "why": "Emotional devastation shifts into Alexander's cold fury and a vow of vengeance. The question of what he will do drives the cliffhanger, though the backstory is thin.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 4.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 46.19999999999999,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who is Alexander and what is their history?",
+      "Who is 'someone' who wanted them out?",
+      "What vengeance is Alexander planning?",
+      "What happened to their home"
+    ],
+    "hook_moment": "Juliana's anguished 'Why would anyone do this?'"
+  },
+  {
+    "promo_id": "BASE-E19",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E19-B041",
+        "end_block": "E19-B063",
+        "episode": 19,
+        "start": 73.5,
+        "end": 119.63,
+        "start_tc": "01:13.50",
+        "end_tc": "01:59.63",
+        "duration": 46.129999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E19-B041",
+      "text": "The people who served your family for years have been dismissed, frightened away, or replaced.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E19-B062",
+      "text": "Alexander sits down beside her in the straw. Juliana leans gently against his shoulder, letting her weary head rest against his broad chest.",
+      "at": 36.3
+    },
+    "why": "Opens with exposition and ends on a tender, settled moment. The vengeance vow is strong, but the barn scene softens the cliffhanger.",
+    "scores": {
+      "hook": 2.5,
+      "cliffhanger": 2.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 46.129999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who is Alexander, and why is he believed dead?",
+      "What is Ashburg and why does it belong to him?",
+      "Who is the informant and what proof is needed?",
+      "Who is the informant, and why does the proof matter?"
+    ],
+    "hook_moment": "Informant's expository line about dismissed household staff"
+  },
+  {
+    "promo_id": "BASE-E20",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E20-B042",
+        "end_block": "E20-B068",
+        "episode": 20,
+        "start": 69.2,
+        "end": 114.75,
+        "start_tc": "01:09.20",
+        "end_tc": "01:54.75",
+        "duration": 45.55
+      }
+    ],
+    "hook": {
+      "block_id": "E20-B042",
+      "text": "I do not yield to a cold draft.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E20-B067",
+      "text": "This house will only bow to me.",
+      "at": 37.599999999999994
+    },
+    "why": "Class-status conflict and Catherine's villainy are engaging, but the two-location jumps and settled ending weaken the pull.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 3.5,
+      "standalone": 2.5
+    },
+    "rank": null,
+    "duration": 45.55,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Why Juliana lost her status and the chapel's fate",
+      "Who Rupert is and his role in the plot",
+      "What the Duchess threat means for Ashbury",
+      "How Juliana, Seamus, and Catherine are related"
+    ],
+    "hook_moment": "Seamus's shout 'You are a viscount's daughter!'"
+  },
+  {
+    "promo_id": "BASE-E21",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E21-B050",
+        "end_block": "E21-B076",
+        "episode": 21,
+        "start": 70.5,
+        "end": 114.0,
+        "start_tc": "01:10.50",
+        "end_tc": "01:54.00",
+        "duration": 43.5
+      }
+    ],
+    "hook": {
+      "block_id": "E21-B053",
+      "text": "Oh, thank God! His chest is quiet! The rattling has stopped!",
+      "at": 1.5
+    },
+    "cliffhanger": {
+      "block_id": "E21-B075",
+      "text": "Lady Juliana sits motionless at the rustic wooden table, her bandaged hands holding open her late mother's leather-bound herbal ledger. Her eyes reflect deep apprehension as the dire truth settles over her.",
+      "at": 38.0
+    },
+    "why": "The 'she is dying' and 'no one can stop it' reveal ends well, but a relief-filled opening gives no reason to stay.",
+    "scores": {
+      "hook": 1.5,
+      "cliffhanger": 4.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 43.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who Toby is and why he was ill",
+      "Who the Dowager Duchess is",
+      "How Juliana and Prudence are connected",
+      "Who are Toby and Prudence, and how are they tied to Juliana?"
+    ],
+    "hook_moment": "Sick boy sleeping peacefully; nothing stops the scroll"
+  },
+  {
+    "promo_id": "BASE-E22",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E22-B054",
+        "end_block": "E22-B081",
+        "episode": 22,
+        "start": 84.8,
+        "end": 131.0,
+        "start_tc": "01:24.80",
+        "end_tc": "02:11.00",
+        "duration": 46.2
+      }
+    ],
+    "hook": {
+      "block_id": "E22-B054",
+      "text": "Beyond the grand staircase. Few servants go there.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E22-B080",
+      "text": "Who has been treating you?",
+      "at": 42.400000000000006
+    },
+    "why": "Slow, hushed opening, but the poisoning reveal ending at peak tension is a strong reason to keep watching.",
+    "scores": {
+      "hook": 2.0,
+      "cliffhanger": 5.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 46.2,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Why Juliana is posing as a servant",
+      "Who the Dowager Duchess is to her",
+      "Who has been poisoning the Duchess",
+      "Why is Juliana sneaking into the Duchess's room?"
+    ],
+    "hook_moment": "Quiet whispered warning about the grand staircase"
+  },
+  {
+    "promo_id": "BASE-E23",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E23-B045",
+        "end_block": "E23-B067",
+        "episode": 23,
+        "start": 86.0,
+        "end": 131.5,
+        "start_tc": "01:26.00",
+        "end_tc": "02:11.50",
+        "duration": 45.5
+      }
+    ],
+    "hook": {
+      "block_id": "E23-B045",
+      "text": "Arsenic.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E23-B063",
+      "text": "Juliana... someone is coming.",
+      "at": 32.8
+    },
+    "why": "A blunt poisoning reveal opens hard and ends on a door creaking open, a classic peak-tension cut that begs a tap.",
+    "scores": {
+      "hook": 5.0,
+      "cliffhanger": 5.0,
+      "standalone": 4.0
+    },
+    "rank": null,
+    "duration": 45.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who poisoned the Duchess and why",
+      "Who is coming through the door",
+      "Prudence's role in the household",
+      "Who is the Duchess to Juliana and Prudence?"
+    ],
+    "hook_moment": "'Arsenic.' followed by the Duchess violently choking"
+  },
+  {
+    "promo_id": "BASE-E24",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E24-B035",
+        "end_block": "E24-B068",
+        "episode": 24,
+        "start": 45.5,
+        "end": 92.0,
+        "start_tc": "00:45.50",
+        "end_tc": "01:32.00",
+        "duration": 46.5
+      }
+    ],
+    "hook": {
+      "block_id": "E24-B036",
+      "text": "Good. Perhaps we can teach you your place.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E24-B067",
+      "text": "Juliana raises her head. Smudges of dark soot stain her fair cheek, but her piercing blue eyes burn with unwavering defiance and unyielding resolve as she stares toward the hallway.",
+      "at": 39.7
+    },
+    "why": "Vivid cruelty and a defiant closing line make it engaging. The crop-to-face threat may draw review, and the ending feels more like a promise than a cliffhanger.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 3.5,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 46.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "sensitive",
+      "reason": "Crop threatened at face; humiliation and forced servitude"
+    },
+    "confusions": [
+      "Who is the noblewoman to Juliana?",
+      "What is the healer and why is it dangerous?",
+      "What is the antidote vial for?",
+      "Why Juliana is being humiliated as a servant"
+    ],
+    "hook_moment": "Noblewoman's gloved hands turning a riding crop"
+  },
+  {
+    "promo_id": "BASE-E25",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E25-B073",
+        "end_block": "E25-B095",
+        "episode": 25,
+        "start": 121.5,
+        "end": 168.0,
+        "start_tc": "02:01.50",
+        "end_tc": "02:48.00",
+        "duration": 46.5
+      }
+    ],
+    "hook": null,
+    "cliffhanger": {
+      "block_id": "E25-B094",
+      "text": "Alexander turns, falling into step beside Juliana. Together, side by side, they begin their quiet walk down the darkening forest path into the twilight.",
+      "at": 41.0
+    },
+    "why": "Emotional and romantic, but the opening is slow and the ending resolves into a calm walk away.",
+    "scores": {
+      "hook": 2.0,
+      "cliffhanger": 2.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 46.5,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": false,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": false,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who is 'her' being poisoned, and why?",
+      "Who are 'they' that struck Juliana?",
+      "Why is Juliana in danger in the first place?",
+      "Who are Alexander and Juliana to each other?"
+    ],
+    "hook_moment": "Alexander's darkened, furious face as he grips her hands"
+  },
+  {
+    "promo_id": "BASE-E26",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E26-B031",
+        "end_block": "E26-B051",
+        "episode": 26,
+        "start": 73.8,
+        "end": 120.88,
+        "start_tc": "01:13.80",
+        "end_tc": "02:00.88",
+        "duration": 47.08
+      }
+    ],
+    "hook": {
+      "block_id": "E26-B031",
+      "text": "Then tell me... why is a girl of such noble spirit working as a common maid?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E26-B049",
+      "text": "Where... where... Where did you get this ring? Speak to me!",
+      "at": 37.2
+    },
+    "why": "The ring reveal and urgent 'Where did you get this ring?' cut to black at peak tension. The relationship stakes are unclear, but the question is irresistible.",
+    "scores": {
+      "hook": 2.5,
+      "cliffhanger": 5.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 47.08,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Why does the ring matter to the Duchess?",
+      "Who is the Dowager Duchess to Juliana?",
+      "What is Juliana's family history?",
+      "Why the signet ring matters so much"
+    ],
+    "hook_moment": "Duchess's breathless 'Let me see your hand.'"
+  },
+  {
+    "promo_id": "BASE-E27",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E27-B064",
+        "end_block": "E27-B095",
+        "episode": 27,
+        "start": 104.2,
+        "end": 150.5,
+        "start_tc": "01:44.20",
+        "end_tc": "02:30.50",
+        "duration": 46.3
+      }
+    ],
+    "hook": {
+      "block_id": "E27-B064",
+      "text": "...holding a substance no one authorized her to give.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E27-B093",
+      "text": "The guard twists Juliana around and drags her forcibly toward the doorway as she struggles against his grip.",
+      "at": 40.8
+    },
+    "why": "Accusation and 'Poison.' give clear stakes, and the guard dragging Juliana away ends on a strong trap cliffhanger.",
+    "scores": {
+      "hook": 2.5,
+      "cliffhanger": 5.0,
+      "standalone": 4.0
+    },
+    "rank": null,
+    "duration": 46.3,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who the Duchess is and why she is poisoned",
+      "Why Juliana is treated as a servant",
+      "Who the blond nobleman is to them",
+      "Who is the Duchess, and what is the poison?"
+    ],
+    "hook_moment": "Mid-line 'substance no one authorized her to give' lacks shock"
+  },
+  {
+    "promo_id": "BASE-E28",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E28-B069",
+        "end_block": "E28-B096",
+        "episode": 28,
+        "start": 93.8,
+        "end": 138.5,
+        "start_tc": "01:33.80",
+        "end_tc": "02:18.50",
+        "duration": 44.7
+      }
+    ],
+    "hook": {
+      "block_id": "E28-B071",
+      "text": "Juliana gasps in horror, realizing her secret identity has been laid bare.",
+      "at": 1.4000000000000057
+    },
+    "cliffhanger": {
+      "block_id": "E28-B095",
+      "text": "...before he sends you to the gallows.",
+      "at": 40.8
+    },
+    "why": "Villainess reveal and a dragged-away cliffhanger threatening the gallows; the stakes are easy to grasp without prior episodes.",
+    "scores": {
+      "hook": 3.5,
+      "cliffhanger": 5.0,
+      "standalone": 4.0
+    },
+    "rank": null,
+    "duration": 44.7,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Why the herbarium book is so damaging to Juliana",
+      "Who the Blond Nobleman is and his authority",
+      "What Juliana's secret identity is hiding",
+      "Why 'Juliana Ashcroft' being exposed is dangerous"
+    ],
+    "hook_moment": "Close-up of 'Juliana Ashcroft' handwritten inscription, then her gasp"
+  },
+  {
+    "promo_id": "BASE-E29",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E29-B045",
+        "end_block": "E29-B074",
+        "episode": 29,
+        "start": 71.8,
+        "end": 116.69,
+        "start_tc": "01:11.80",
+        "end_tc": "01:56.69",
+        "duration": 44.89
+      }
+    ],
+    "hook": {
+      "block_id": "E29-B046",
+      "text": "Your scarred soldier?",
+      "at": 0.29999999999999716
+    },
+    "cliffhanger": {
+      "block_id": "E29-B071",
+      "text": "They took her locket. But they will not take Alexander from me.",
+      "at": 37.2
+    },
+    "why": "Good mocking hook, but the middle is mostly guards marching her into a cell, and the ending fizzles to black.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 3.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.89,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who is the 'scarred soldier' Catherine mocks?",
+      "Why did the Duchess need saving, and what happened?",
+      "What Ashbrook is and why it matters",
+      "Why the ledger and locket matter"
+    ],
+    "hook_moment": "Catherine's scornful laugh and 'Your scarred soldier?' jab"
+  },
+  {
+    "promo_id": "BASE-E30",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E30-B054",
+        "end_block": "E30-B071",
+        "episode": 30,
+        "start": 106.6,
+        "end": 151.21,
+        "start_tc": "01:46.60",
+        "end_tc": "02:31.21",
+        "duration": 44.610000000000014
+      }
+    ],
+    "hook": {
+      "block_id": "E30-B055",
+      "text": "And the Dowager?",
+      "at": 0.7000000000000028
+    },
+    "cliffhanger": {
+      "block_id": "E30-B071",
+      "text": "Juliana clutches a rough burlap rag to her trembling chest, her tear-stained face lifting upward in dread and fragile hope as the frame holds, cutting abruptly to black.",
+      "at": 41.900000000000006
+    },
+    "why": "Clear witch-trial stakes and a chained-prisoner cliffhanger, though the opening is slow and dialogue-heavy.",
+    "scores": {
+      "hook": 2.0,
+      "cliffhanger": 4.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.610000000000014,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": "Threatened hanging and chains, non-graphic"
+    },
+    "confusions": [
+      "Who the Dowager is and why she is accused",
+      "Why Juliana is called a witch's daughter",
+      "What role Rupert plays in the plot",
+      "Who is the Dowager, and why is she being accused?"
+    ],
+    "hook_moment": "Quiet question about the Dowager; nothing sharp until later"
+  },
+  {
+    "promo_id": "BASE-E31",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E31-B065",
+        "end_block": "E31-B087",
+        "episode": 31,
+        "start": 118.2,
+        "end": 160.0,
+        "start_tc": "01:58.20",
+        "end_tc": "02:40.00",
+        "duration": 41.8
+      }
+    ],
+    "hook": {
+      "block_id": "E31-B066",
+      "text": "Then why are you so desperate to make me kneel?",
+      "at": 0.20000000000000284
+    },
+    "cliffhanger": {
+      "block_id": "E31-B086",
+      "text": "Juliana recoils back against the hard dungeon wall, gasping for breath in raw terror as the searing iron stops inches from her eyes.",
+      "at": 33.3
+    },
+    "why": "Visceral villain-versus-heroine confrontation ending on an eye-level burn threat; very ad-ready but needs sensitivity review.",
+    "scores": {
+      "hook": 4.0,
+      "cliffhanger": 5.0,
+      "standalone": 4.0
+    },
+    "rank": null,
+    "duration": 41.8,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "sensitive",
+      "reason": "Torture-style cruelty; branding iron threatened near Juliana's face"
+    },
+    "confusions": [
+      "Why must Juliana kneel, and to whom?",
+      "What is the botanical book's significance to her?",
+      "Why Catherine wants Juliana to kneel",
+      "Why the book matters so much"
+    ],
+    "hook_moment": "Juliana's smirk and 'make me kneel' challenge, then Catherine's smug face freezing"
+  },
+  {
+    "promo_id": "BASE-E32",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E32-B083",
+        "end_block": "E32-B117",
+        "episode": 32,
+        "start": 109.4,
+        "end": 154.38,
+        "start_tc": "01:49.40",
+        "end_tc": "02:34.38",
+        "duration": 44.97999999999999
+      }
+    ],
+    "hook": {
+      "block_id": "E32-B084",
+      "text": "Nothing. Until you have nothing left beneath it.",
+      "at": 0.09999999999999432
+    },
+    "cliffhanger": {
+      "block_id": "E32-B116",
+      "text": "Juliana gasps, freezing as the glowing tip of the iron thrusts forward, stopping mere millimeters from her right eye.",
+      "at": 41.79999999999998
+    },
+    "why": "Ends on a superb eye-level standoff with a powerful insult duel, but the opening line is cryptic and needs context.",
+    "scores": {
+      "hook": 2.5,
+      "cliffhanger": 5.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.97999999999999,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "sensitive",
+      "reason": "Branding iron aimed at eye; cruelty and threatened torture"
+    },
+    "confusions": [
+      "What does 'Nothing until you have nothing left beneath it' mean?",
+      "Why is Catherine torturing Juliana?",
+      "Why Juliana is chained in the dungeon",
+      "What 'the title' Catherine wants means"
+    ],
+    "hook_moment": "Serene Juliana's cryptic 'Nothing. Until you have nothing left beneath it.'"
+  },
+  {
+    "promo_id": "BASE-E33",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E33-B076",
+        "end_block": "E33-B099",
+        "episode": 33,
+        "start": 126.8,
+        "end": 174.04,
+        "start_tc": "02:06.80",
+        "end_tc": "02:54.04",
+        "duration": 47.239999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E33-B077",
+      "text": "No! She saved Toby! She made him breathe again!",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E33-B099",
+      "text": "The heartbroken maid weeps silently in the shadow of the desk, consumed by guilt and powerlessness.",
+      "at": 37.7
+    },
+    "why": "Immediate emotional outburst and a witch-trial injustice make a strong hook; the grief and trial stakes carry the clip.",
+    "scores": {
+      "hook": 4.0,
+      "cliffhanger": 4.0,
+      "standalone": 3.5
+    },
+    "rank": null,
+    "duration": 47.239999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who Toby is and what Juliana did for him",
+      "Why the maid must give false testimony",
+      "What the magistrate and trial mean here",
+      "Who 'she' is and why she is accused"
+    ],
+    "hook_moment": "Maid screams 'She saved Toby! She made him breathe again!'"
+  },
+  {
+    "promo_id": "BASE-E34",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E34-B092",
+        "end_block": "E34-B116",
+        "episode": 34,
+        "start": 147.4,
+        "end": 190.0,
+        "start_tc": "02:27.40",
+        "end_tc": "03:10.00",
+        "duration": 42.599999999999994
+      }
+    ],
+    "hook": {
+      "block_id": "E34-B094",
+      "text": "No.",
+      "at": 2.4000000000000057
+    },
+    "cliffhanger": {
+      "block_id": "E34-B116",
+      "text": "The Judge extends his raised hand high in judgment over Lady Juliana as the scene holds on her standing still and unbroken before fading to black.",
+      "at": 37.599999999999994
+    },
+    "why": "Strong, tense courtroom standoff ending on a pending sentence. Viewers need to know the stakes, but the fade on the raised hand is a compelling hook.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 4.5,
+      "standalone": 3.5
+    },
+    "rank": null,
+    "duration": 42.599999999999994,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Why is the burned grimoire important?",
+      "What sentence is the Judge about to pronounce?",
+      "Why is healing considered witchcraft here?",
+      "Why is the grimoire burned, and whose is it?"
+    ],
+    "hook_moment": "Flat 'No.' over a burned grimoire on the court table"
+  },
+  {
+    "promo_id": "BASE-E35",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E35-B053",
+        "end_block": "E35-B072",
+        "episode": 35,
+        "start": 113.5,
+        "end": 157.5,
+        "start_tc": "01:53.50",
+        "end_tc": "02:37.50",
+        "duration": 44.0
+      }
+    ],
+    "hook": {
+      "block_id": "E35-B054",
+      "text": "I crawled away from the battlefield, half dead, alone.",
+      "at": 0.5
+    },
+    "cliffhanger": {
+      "block_id": "E35-B070",
+      "text": "The men behind it... are the same men ruling Ashwood now.",
+      "at": 32.0
+    },
+    "why": "The conspiracy reveal ending is a powerful unanswered question, but the quiet opening and unclear backstory slow the start.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 4.5,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "What battle Alexander survived and why men died",
+      "Who Ashwood's rulers are and why they matter",
+      "Who the mother is to Alexander",
+      "Who is Alexander, and why was he thought dead?"
+    ],
+    "hook_moment": "Alexander's somber 'half dead, alone' confession"
+  },
+  {
+    "promo_id": "BASE-E36",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E36-B097",
+        "end_block": "E36-B121",
+        "episode": 36,
+        "start": 156.5,
+        "end": 200.75,
+        "start_tc": "02:36.50",
+        "end_tc": "03:20.75",
+        "duration": 44.25
+      }
+    ],
+    "hook": {
+      "block_id": "E36-B098",
+      "text": "They are marrying in two days...",
+      "at": 0.30000000000001137
+    },
+    "cliffhanger": {
+      "block_id": "E36-B120",
+      "text": "Alexander stares resolutely ahead into the dark, snowy woods as the camera holds on his grim, determined expression before cutting to black.",
+      "at": 40.5
+    },
+    "why": "The wedding-murder threat grabs attention instantly, but the ending is a vow rather than an open question.",
+    "scores": {
+      "hook": 4.5,
+      "cliffhanger": 3.5,
+      "standalone": 4.0
+    },
+    "rank": null,
+    "duration": 44.25,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": "Threats of violence only, no depicted harm"
+    },
+    "confusions": [
+      "Who is marrying whom in two days",
+      "Why Alexander is presumed dead",
+      "Where Juliana is being held",
+      "Who is 'their dead Duke' and why is he dead?"
+    ],
+    "hook_moment": "'They are marrying in two days... and killing my wife afterward.'"
+  },
+  {
+    "promo_id": "BASE-E37",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E37-B062",
+        "end_block": "E37-B079",
+        "episode": 37,
+        "start": 113.5,
+        "end": 156.47,
+        "start_tc": "01:53.50",
+        "end_tc": "02:36.47",
+        "duration": 42.97
+      }
+    ],
+    "hook": {
+      "block_id": "E37-B063",
+      "text": "They cannot take who I am!",
+      "at": 0.09999999999999432
+    },
+    "cliffhanger": {
+      "block_id": "E37-B077",
+      "text": "Clarissa takes a slow sip of the red wine, her eyes gleaming with dark relish.",
+      "at": 32.0
+    },
+    "why": "Strong opening image and villainess monologue. The execution clause ending creates a clear 'what happens next' pull, though the backstory is thin.",
+    "scores": {
+      "hook": 4.0,
+      "cliffhanger": 4.0,
+      "standalone": 2.5
+    },
+    "rank": null,
+    "duration": 42.97,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": "Dungeon imagery and villain threats, no graphic violence"
+    },
+    "confusions": [
+      "Who Juliana is and why she is in the dungeon",
+      "Clarissa's relationship to Juliana and why she hates her",
+      "What the execution clause is and who it condemns",
+      "Who Clarissa is and why she's vengeful"
+    ],
+    "hook_moment": "Shackled hand clutching iron ring, then defiant 'They cannot take who I am!'"
+  },
+  {
+    "promo_id": "BASE-E38",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E38-B028",
+        "end_block": "E38-B057",
+        "episode": 38,
+        "start": 43.2,
+        "end": 87.91,
+        "start_tc": "00:43.20",
+        "end_tc": "01:27.91",
+        "duration": 44.709999999999994
+      }
+    ],
+    "hook": {
+      "block_id": "E38-B028",
+      "text": "Do you know they condemned me?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E38-B055",
+      "text": "Alexander...",
+      "at": 39.3
+    },
+    "why": "Bells and the whispered husband's name build a strong emotional cliffhanger, but the tearful opening is slow for scrollers.",
+    "scores": {
+      "hook": 3.0,
+      "cliffhanger": 4.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 44.709999999999994,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 2,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who condemned Juliana and why",
+      "Whose wedding the bells signal",
+      "What 'I'm next' implies",
+      "Who condemned Juliana and for what"
+    ],
+    "hook_moment": "Tearful woman asking if they condemned her"
+  },
+  {
+    "promo_id": "BASE-E39",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E39-B033",
+        "end_block": "E39-B059",
+        "episode": 39,
+        "start": 52.8,
+        "end": 98.41,
+        "start_tc": "00:52.80",
+        "end_tc": "01:38.41",
+        "duration": 45.61
+      }
+    ],
+    "hook": null,
+    "cliffhanger": {
+      "block_id": "E39-B059",
+      "text": "Alexander's eyes burn with furious determination as the screen cuts sharply to black.",
+      "at": 45.0
+    },
+    "why": "The 'they buried me, I'm bringing my wife home' reveal is a satisfying return-arc hook, but the opening is a slow montage.",
+    "scores": {
+      "hook": 2.0,
+      "cliffhanger": 3.5,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 45.61,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": false,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": false,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who the wife is and where she is",
+      "Why Alexander was exiled and presumed dead",
+      "Who 'they' are who buried him",
+      "Who the wife is and why she needs bringing home"
+    ],
+    "hook_moment": "Slow grooming shot over a uniform on a table"
+  },
+  {
+    "promo_id": "BASE-E40",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E40-B032",
+        "end_block": "E40-B051",
+        "episode": 40,
+        "start": 65.0,
+        "end": 110.08,
+        "start_tc": "01:05.00",
+        "end_tc": "01:50.08",
+        "duration": 45.08
+      }
+    ],
+    "hook": {
+      "block_id": "E40-B032",
+      "text": "All entrances are covered?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E40-B051",
+      "text": "Rupert and Catherine exchange conspiratorial, triumphant smiles at the altar as the solemn organ chord holds and the scene cuts to black.",
+      "at": 44.0
+    },
+    "why": "The 'witch will be dead' threat is a strong villain beat, but the slow opening and smug wedding ending lack urgency.",
+    "scores": {
+      "hook": 2.0,
+      "cliffhanger": 3.0,
+      "standalone": 2.5
+    },
+    "rank": null,
+    "duration": 45.08,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who is the 'witch' and why she must die",
+      "Who Rupert and Catherine are",
+      "What the 'ignored cousin' jab refers to",
+      "Who is the witch, and why will she be killed?"
+    ],
+    "hook_moment": "Quiet nobleman asking if entrances are covered"
+  },
+  {
+    "promo_id": "BASE-E41",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E41-B031",
+        "end_block": "E41-B053",
+        "episode": 41,
+        "start": 52.8,
+        "end": 96.09,
+        "start_tc": "00:52.80",
+        "end_tc": "01:36.09",
+        "duration": 43.290000000000006
+      }
+    ],
+    "hook": {
+      "block_id": "E41-B032",
+      "text": "Juliana looks around the cathedral at the sea of pompous faces, then raises her eyes straight back to Catherine with utter disdain.",
+      "at": 2.0
+    },
+    "cliffhanger": {
+      "block_id": "E41-B052",
+      "text": "Silhouetted armed figures emerge through the smoke and rubble of the breached doorway. Juliana slowly turns her head, glancing back toward the light.",
+      "at": 36.2
+    },
+    "why": "Explosion payoff is a strong mid-clip shock, but the opening is slow and the hope-ending leaves the rescuers unknown, which is a good question.",
+    "scores": {
+      "hook": 2.0,
+      "cliffhanger": 4.5,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 43.290000000000006,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Why Juliana is chained and standing between guards",
+      "Who the armed figures emerging from smoke are",
+      "What the Ashburgh title and altar wedding mean",
+      "Who Rupert is and why he's at the altar"
+    ],
+    "hook_moment": "Chained woman calmly stares down a chapel full of nobles"
+  },
+  {
+    "promo_id": "BASE-E42",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E42-B022",
+        "end_block": "E42-B036",
+        "episode": 42,
+        "start": 33.8,
+        "end": 77.8,
+        "start_tc": "00:33.80",
+        "end_tc": "01:17.80",
+        "duration": 44.0
+      }
+    ],
+    "hook": {
+      "block_id": "E42-B023",
+      "text": "And yet, here I stand. That is the lie you built your life upon.",
+      "at": 0.20000000000000284
+    },
+    "cliffhanger": {
+      "block_id": "E42-B037",
+      "text": "And now, Rupert... we settle what you stole.",
+      "at": 40.0
+    },
+    "why": "Strong reveal energy and a vengeful ending line, though the family politics need prior context.",
+    "scores": {
+      "hook": 4.0,
+      "cliffhanger": 4.0,
+      "standalone": 3.5
+    },
+    "rank": null,
+    "duration": 44.0,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "What lie did Rupert and Catherine build their lives on?",
+      "What did Rupert steal, and from whom?",
+      "Who is the mother, and why does her reaction matter?",
+      "What Rupert stole from Alexander"
+    ],
+    "hook_moment": "Cold 'That is the lie you built your life upon' line over a striding silhouette"
+  },
+  {
+    "promo_id": "BASE-E43",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E43-B057",
+        "end_block": "E43-B087",
+        "episode": 43,
+        "start": 69.0,
+        "end": 114.96000000000001,
+        "start_tc": "01:09.00",
+        "end_tc": "01:54.96",
+        "duration": 45.96000000000001
+      }
+    ],
+    "hook": {
+      "block_id": "E43-B057",
+      "text": "You sold my men to the enemy.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E43-B086",
+      "text": "Going somewhere, Lord Sterling?",
+      "at": 41.400000000000006
+    },
+    "why": "Immediate accusation and a blocked escape on the final frame create a strong, unresolved question for the viewer.",
+    "scores": {
+      "hook": 4.0,
+      "cliffhanger": 4.5,
+      "standalone": 4.0
+    },
+    "rank": null,
+    "duration": 45.96000000000001,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Why Alexander was declared dead",
+      "What the red-ribboned document proves",
+      "Lord Sterling's role in the betrayal",
+      "Why Catherine is shocked at this wedding"
+    ],
+    "hook_moment": "'You sold my men to the enemy.' shouted at a noble"
+  },
+  {
+    "promo_id": "BASE-E44",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E44-B018",
+        "end_block": "E44-B053",
+        "episode": 44,
+        "start": 25.2,
+        "end": 70.5,
+        "start_tc": "00:25.20",
+        "end_tc": "01:10.50",
+        "duration": 45.3
+      }
+    ],
+    "hook": {
+      "block_id": "E44-B018",
+      "text": "Alexander... I thought you had died.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E44-B054",
+      "text": "Her?!",
+      "at": 44.89999999999999
+    },
+    "why": "Strong reunion-betrayal hook; ends on a shocking reveal that Alexander chose the chained woman. Stranger needs context, but emotional stakes are clear.",
+    "scores": {
+      "hook": 4.0,
+      "cliffhanger": 4.5,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 45.3,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who Alexander is to Catherine, and why she thought him dead",
+      "Why Juliana is in chains and who she is",
+      "What the Duchess title and claim mean",
+      "Who Catherine and Rupert are"
+    ],
+    "hook_moment": "Catherine tearfully tells Alexander 'I thought you had died'"
+  },
+  {
+    "promo_id": "BASE-E45",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E45-B053",
+        "end_block": "E45-B074",
+        "episode": 45,
+        "start": 74.8,
+        "end": 121.75,
+        "start_tc": "01:14.80",
+        "end_tc": "02:01.75",
+        "duration": 46.95
+      }
+    ],
+    "hook": {
+      "block_id": "E45-B053",
+      "text": "Lady Juliana Ashcroft is my lawful wife... and the Duchess of Ashburton!",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E45-B074",
+      "text": "Catherine raises her chin, a vindictive smirk spreading across her lips as she realizes her rival's claim has just been torn to pieces.",
+      "at": 43.2
+    },
+    "why": "Bold bombshell opening and a smirking rival ending set up a legal showdown; the legal jargon adds some confusion for newcomers.",
+    "scores": {
+      "hook": 4.5,
+      "cliffhanger": 4.5,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 46.95,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Why a Crown marriage license matters so much",
+      "Who Catherine is and her link to Alexander",
+      "What the Duchess of Ashburton title means",
+      "Why the marriage is declared invalid"
+    ],
+    "hook_moment": "Alexander proclaims Juliana his lawful wife and Duchess"
+  },
+  {
+    "promo_id": "BASE-E46",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E46-B056",
+        "end_block": "E46-B074",
+        "episode": 46,
+        "start": 100.5,
+        "end": 143.88,
+        "start_tc": "01:40.50",
+        "end_tc": "02:23.88",
+        "duration": 43.379999999999995
+      }
+    ],
+    "hook": {
+      "block_id": "E46-B058",
+      "text": "A Duke's marriage is judged by the Crown's peerage court, not by a parish priest's seal.",
+      "at": 1.2999999999999972
+    },
+    "cliffhanger": {
+      "block_id": "E46-B075",
+      "text": "Ten days is plenty of time.",
+      "at": 40.69999999999999
+    },
+    "why": "Confrontation builds to a strong villain reveal with Catherine's smile. Her connection to the plot is unclear, but the ten-day countdown creates urgency.",
+    "scores": {
+      "hook": 2.5,
+      "cliffhanger": 4.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 43.379999999999995,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who is Catherine and what is her role?",
+      "Why does a High Priest control the marriage ruling?",
+      "What does the ten-day deadline mean for Alexander?",
+      "What the ten-day deadline decides"
+    ],
+    "hook_moment": "Alexander defying the High Priest: 'A Duke's marriage is judged...'"
+  },
+  {
+    "promo_id": "BASE-E47",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E47-B047",
+        "end_block": "E47-B070",
+        "episode": 47,
+        "start": 88.2,
+        "end": 134.0,
+        "start_tc": "01:28.20",
+        "end_tc": "02:14.00",
+        "duration": 45.8
+      }
+    ],
+    "hook": {
+      "block_id": "E47-B047",
+      "text": "But Ashbourne does not throw beggars into the mud.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E47-B069",
+      "text": "I accept, Your Grace.",
+      "at": 40.3
+    },
+    "why": "Strong power-reversal humiliation, but the opening is quiet and the ending feels settled, so it loses scrollers early.",
+    "scores": {
+      "hook": 2.0,
+      "cliffhanger": 2.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 45.8,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 0,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Why Juliana is punishing Catherine, and what 'impostor' means",
+      "Who Alexander and Lady Ashbourne are",
+      "Why Catherine must serve in the house",
+      "Why Catherine is being punished and who she really is"
+    ],
+    "hook_moment": "Juliana's calm 'beggars into the mud' line; no visible shock"
+  },
+  {
+    "promo_id": "BASE-E48",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E48-B023",
+        "end_block": "E48-B043",
+        "episode": 48,
+        "start": 34.2,
+        "end": 80.0,
+        "start_tc": "00:34.20",
+        "end_tc": "01:20.00",
+        "duration": 45.8
+      }
+    ],
+    "hook": {
+      "block_id": "E48-B023",
+      "text": "Everyone in that chapel saw me humiliated today.",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E48-B041",
+      "text": "And make sure no one sees him arrive.",
+      "at": 36.599999999999994
+    },
+    "why": "Villain scheming with a sinister ending hook, but talky with no visual shock and many unexplained names.",
+    "scores": {
+      "hook": 3.5,
+      "cliffhanger": 4.0,
+      "standalone": 3.0
+    },
+    "rank": null,
+    "duration": 45.8,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": false
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "confusions": [
+      "Who the Duke is and why bailiffs watch roads",
+      "What the upcoming hearing is about",
+      "Why Father Thomas's help is so dangerous",
+      "Who Father Thomas is and his role"
+    ],
+    "hook_moment": "Villainess hisses she was humiliated before the whole chapel"
+  },
+  {
+    "promo_id": "BASE-E49",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E49-B044",
+        "end_block": "E49-B063",
+        "episode": 49,
+        "start": 98.3,
+        "end": 144.75,
+        "start_tc": "01:38.30",
+        "end_tc": "02:24.75",
+        "duration": 46.45
+      }
+    ],
+    "hook": {
+      "block_id": "E49-B044",
+      "text": "Is that so unreasonable coming from a woman the church itself just humiliated back into relevance?",
+      "at": 0.0
+    },
+    "cliffhanger": {
+      "block_id": "E49-B062",
+      "text": "We always have.",
+      "at": 44.7
+    },
+    "why": "Conspiracy and seduction carry intrigue, but the ending is a romantic fade with the stakes left vague.",
+    "scores": {
+      "hook": 2.5,
+      "cliffhanger": 3.0,
+      "standalone": 2.5
+    },
+    "rank": null,
+    "duration": 46.45,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "ok",
+      "reason": "Seductive tension and a pact; no sexual content"
+    },
+    "confusions": [
+      "Who the Duke is and what treason means",
+      "Why the church humiliated Catherine",
+      "What Father Thomas is agreeing to do",
+      "Who Father Thomas is and what the pact covers"
+    ],
+    "hook_moment": "Catherine's bitter line about being humiliated by the church"
+  },
+  {
+    "promo_id": "BASE-E50",
+    "method": "baseline",
+    "segments": [
+      {
+        "start_block": "E50-B018",
+        "end_block": "E50-B040",
+        "episode": 50,
+        "start": 35.8,
+        "end": 80.0,
+        "start_tc": "00:35.80",
+        "end_tc": "01:20.00",
+        "duration": 44.2
+      }
+    ],
+    "hook": {
+      "block_id": "E50-B019",
+      "text": "Unsupervised. In your hands alone.",
+      "at": 0.7000000000000028
+    },
+    "cliffhanger": {
+      "block_id": "E50-B038",
+      "text": "Agnes's jaw drops open in shock as she stifles a cry.",
+      "at": 41.0
+    },
+    "why": "Sexualized, forbidden-romance content is not suitable for paid ads on major platforms, despite the discovery cliffhanger.",
+    "scores": {
+      "hook": 2.5,
+      "cliffhanger": 4.5,
+      "standalone": 3.5
+    },
+    "rank": null,
+    "duration": 44.2,
+    "checks": {
+      "hard": {
+        "ids_exist": true,
+        "segment_same_episode": true,
+        "segment_order": true,
+        "no_overlap": true,
+        "duration_20_60": true,
+        "no_mid_line_cut": true,
+        "hook_inside": true,
+        "cliff_inside": true
+      },
+      "soft": {
+        "has_hook": true,
+        "has_cliffhanger": true,
+        "hook_in_first_3s": true,
+        "cliff_in_last_5s": true
+      },
+      "errors": [],
+      "valid": true
+    },
+    "judge_rounds": 2,
+    "judge_disagreement": 1,
+    "safety": {
+      "level": "unsafe",
+      "reason": "Sexualized content: shirtless embrace, bed, carnal dialogue"
+    },
+    "confusions": [
+      "Who Father Thomas is to Catherine and why it matters",
+      "Who Agnes is and why her discovery is dangerous",
+      "What the hearing and the secret involve",
+      "Who is Agnes and why is she horrified?"
+    ],
+    "hook_moment": "Candlelit near-kiss with ambiguous 'Unsupervised' line"
+  }
+]

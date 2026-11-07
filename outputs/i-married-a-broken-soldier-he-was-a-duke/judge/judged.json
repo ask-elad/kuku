@@ -27,7 +27,7 @@
       "open_question": "Will her father ever stand up for Juliana, or abandon her too?",
       "tension": 3
     },
-    "why": "Public humiliation at a wedding is instantly relatable and dramatic. The ending is emotional but not a sharp cliffhanger.",
+    "why": "Public humiliation at a wedding is an easy, emotional hook, but the ending is an emotional beat rather than a peak question.",
     "method": "pipeline",
     "duration": 51.699999999999996,
     "checks": {
@@ -63,12 +63,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is the smug woman in gold, and how is she tied to Juliana?",
-      "Why does the father refuse to look at her?",
+      "Why Gerald married the Lady in Gold",
+      "Whether the father will ever help Juliana",
       "Why is the sister marrying Gerald instead?",
       "Who arranged the betrayal, and why?"
     ],
-    "hook_moment": "'Because he is marrying me.' A bride's wedding is ruined on the spot"
+    "hook_moment": "'Because he is marrying me.' gloating bombshell at the altar"
   },
   {
     "segments": [
@@ -98,7 +98,7 @@
       "open_question": "Will her father ever stand up for Juliana, or abandon her too?",
       "tension": 3
     },
-    "why": "Clear betrayal and emotional stakes, but the ending is sad rather than suspenseful.",
+    "why": "Betrayal is instantly legible and emotional, but it ends on a quiet, settled rejection rather than peak tension.",
     "method": "pipeline",
     "duration": 44.0,
     "checks": {
@@ -134,8 +134,8 @@
       "reason": ""
     },
     "confusions": [
-      "Why the father refuses to acknowledge her",
-      "Who the Lady in Gold Gown is to Juliana",
+      "Why the father refuses to help her",
+      "What the wider conspiracy involves",
       "Who is the Lady in Gold Gown to Gerald?",
       "Why won't the father look at Juliana?"
     ],
@@ -169,7 +169,7 @@
       "open_question": "Will her father ever stand up for Juliana, or abandon her too?",
       "tension": 3
     },
-    "why": "A sharp bombshell opener, but it repeats clip C's ending without a stronger hook.",
+    "why": "Largely repeats Clip C's beats with a quieter opening and a settled ending, so it is less compelling as a standalone promo.",
     "method": "pipeline",
     "duration": 30.699999999999996,
     "checks": {
@@ -195,22 +195,22 @@
     "promo_id": "C-E01-03",
     "judge_rounds": 2,
     "scores": {
-      "hook": 4.0,
+      "hook": 3.5,
       "cliffhanger": 3.0,
       "standalone": 3.0
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "ok",
       "reason": ""
     },
     "confusions": [
-      "Who the former groom is to Juliana",
-      "Why Gerald abandoned the wedding",
-      "Who is the Lady in Gold Gown, and what did she do?",
-      "Why does the father refuse to help Juliana?"
+      "Who the groom and Lady in Gold Gown are",
+      "Why the wedding is being cancelled",
+      "The father's role in the betrayal",
+      "Who is the Lady in Gold Gown, and what did she do?"
     ],
-    "hook_moment": "Cold 'I changed my mind' from the groom at the altar"
+    "hook_moment": "Cold 'I changed my mind' line over a close-up of Gerald"
   },
   {
     "segments": [
@@ -240,7 +240,7 @@
       "open_question": "Will Juliana's father ever come to her defense, or has she lost her family too?",
       "tension": 2
     },
-    "why": "Blunt rejection and cruel insults make a strong emotional hook. The ending is a sad beat, not a tense cliffhanger.",
+    "why": "A clear, cruel rejection hooks fast, but the ending is a crushed emotional beat with no pressing question left.",
     "method": "pipeline",
     "duration": 47.4,
     "checks": {
@@ -276,12 +276,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is Clarissa, and why is she gloating?",
-      "Why does the father reject Juliana so coldly?",
-      "Why Juliana's father refuses to help her",
-      "Who Clarissa is to the story"
+      "Who Clarissa is to Gerald",
+      "Why the father refuses to intervene",
+      "Who is Clarissa and why is she gloating?",
+      "Why does the father refuse to defend Juliana?"
     ],
-    "hook_moment": "'I cannot marry you, Juliana.' Groom publicly rejects the bride"
+    "hook_moment": "'I cannot marry you, Juliana.' cold public rejection"
   },
   {
     "segments": [
@@ -311,7 +311,7 @@
       "open_question": "Will Gerald answer Juliana's public rebuke, or is his silence hiding a counterattack?",
       "tension": 3
     },
-    "why": "Good humiliation-and-comeback arc, but it resolves into a satisfying verbal win. It has little unresolved tension to pull viewers into the next episode.",
+    "why": "Catty humiliation and a satisfying comeback, but it ends on Juliana's win, so there's little pull to keep watching.",
     "method": "pipeline",
     "duration": 50.400000000000006,
     "checks": {
@@ -337,9 +337,9 @@
     "promo_id": "C-E02-02",
     "judge_rounds": 2,
     "scores": {
-      "hook": 2.5,
+      "hook": 3.0,
       "cliffhanger": 2.0,
-      "standalone": 3.0
+      "standalone": 3.5
     },
     "judge_disagreement": 1,
     "safety": {
@@ -347,12 +347,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who the sister and Gerald are to Juliana",
-      "Why Juliana was jilted at her own wedding",
-      "Who the matriarch and the former groom are",
-      "Why Juliana was abandoned at the wedding"
+      "Who Clarissa is to Juliana",
+      "Why Gerald is leaving Juliana for Clarissa",
+      "Why Juliana was a disgraced outcast",
+      "Who is the matriarch, and why does she scold Juliana?"
     ],
-    "hook_moment": "Gold-gowned woman mocks Juliana as a kitchen maid"
+    "hook_moment": "Gold-gowned sister mocks Juliana: 'Why are you surprised, sister?'"
   },
   {
     "segments": [
@@ -382,7 +382,7 @@
       "open_question": "Will Juliana accept a stranger's proposal in front of her shocked family and society?",
       "tension": 5
     },
-    "why": "Instant action hook and a romantic proposal payoff; the ring question keeps viewers hooked on the answer.",
+    "why": "Action-hero beat plus a kneeling proposal creates a clear, romantic payoff question.",
     "method": "pipeline",
     "duration": 56.30000000000001,
     "checks": {
@@ -408,22 +408,22 @@
     "promo_id": "C-E03-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 5.0,
+      "hook": 4.5,
       "cliffhanger": 4.5,
       "standalone": 3.5
     },
     "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": ""
+      "reason": "Brief punch with no gore."
     },
     "confusions": [
-      "Who is the Bearded Stranger and why does he intervene?",
-      "Why does Juliana have to be taken from the church?",
+      "Who the Bearded Stranger is",
+      "Why the guards are attacking Juliana",
       "Who is the Bearded Stranger, and why does he intervene?",
       "Why was Juliana being dragged from the church?"
     ],
-    "hook_moment": "Bearded stranger instantly punches down an armed guard at a wedding."
+    "hook_moment": "Stranger drops an armed guard with a single punch"
   },
   {
     "segments": [
@@ -666,7 +666,7 @@
       "open_question": "Will Gerald retaliate against the bearded man after his arrogant grin wavers?",
       "tension": 3
     },
-    "why": "The opening is quiet and low-stakes. The 'Choose your next words carefully' ending creates real tension, but the setup takes too long to land.",
+    "why": "Slow, quiet opening that a scroller would skip. The 'choose your words carefully' threat is a good ending, but it comes too late.",
     "method": "pipeline",
     "duration": 31.0,
     "checks": {
@@ -702,12 +702,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who Gerald is and why he is hostile",
-      "Why Juliana is now a beggar's wife",
-      "Why was the ledger destroyed, and what does it mean?",
-      "Who is Gerald, and why does he mock Juliana?"
+      "Why the ledger matters so much to Juliana",
+      "Who the bearded man is to Juliana",
+      "Why Gerald is mocking her as a beggar's wife",
+      "Why was the ledger destroyed, and what does it mean?"
     ],
-    "hook_moment": "Man quietly retrieves a wet ledger from the steps"
+    "hook_moment": "Nothing; a quiet kneel to pick up a wet book"
   },
   {
     "segments": [
@@ -737,7 +737,7 @@
       "open_question": "What will the scarred husband do when he confronts Gerald at the gate?",
       "tension": 3
     },
-    "why": "Confrontation builds to an ominous husband arrival, but the relationships need explaining for a stranger.",
+    "why": "Clear rivalry and a menacing reveal of the husband walking out of the fog create a strong pull.",
     "method": "pipeline",
     "duration": 24.0,
     "checks": {
@@ -763,9 +763,9 @@
     "promo_id": "C-E07-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.5,
+      "hook": 4.0,
       "cliffhanger": 4.5,
-      "standalone": 3.0
+      "standalone": 3.5
     },
     "judge_disagreement": 1,
     "safety": {
@@ -774,11 +774,11 @@
     },
     "confusions": [
       "Who Gerald is to Juliana",
-      "Who the scarred bearded man is",
       "Why the husband is called a beggar",
+      "What the forest figure will do",
       "Who is the 'scarred beggar' and why he matters"
     ],
-    "hook_moment": "Gerald sneers about the scarred beggar husband"
+    "hook_moment": "Gerald's sneer: 'You chose that scarred beggar'"
   },
   {
     "segments": [
@@ -879,7 +879,7 @@
       "open_question": "Is the war veteran really the late Duke, and what will the Nobleman do?",
       "tension": 4
     },
-    "why": "Strong mystery of a rumored returning Duke and a rattled nobleman, but the setup is slow and needs context.",
+    "why": "Slow-burn intrigue with a strong ending, but the rumor plot needs setup a stranger lacks.",
     "method": "pipeline",
     "duration": 35.900000000000006,
     "checks": {
@@ -907,20 +907,20 @@
     "scores": {
       "hook": 3.0,
       "cliffhanger": 4.0,
-      "standalone": 3.0
+      "standalone": 2.5
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "ok",
       "reason": ""
     },
     "confusions": [
-      "Who is Alexander, and why does he matter?",
-      "Why would a dead Duke's scar be significant?",
-      "Who is the 'war veteran' being rumored about?",
+      "Who Alexander is and why gossip threatens him",
+      "Why the Nobleman fears the veteran's scar",
+      "What the 'late Duke' has to do with anyone",
       "Who is the war veteran in the rumor?"
     ],
-    "hook_moment": "Alexander's ominous 'Gossip becomes dangerous' line over Juliana's defiant stance"
+    "hook_moment": "Juliana steps in front of Alexander, defiant, during a dark warning"
   },
   {
     "segments": [
@@ -950,7 +950,7 @@
       "open_question": "Is Alexander's hand-touch excuse hiding a deeper confession he is about to make?",
       "tension": 2
     },
-    "why": "Romantic tension and the 'Perhaps it is your hand' ending work well, but the opening is slow to hook.",
+    "why": "The visual hook and slow-burn romantic tension end on an intimate, unanswered beat that suits romance-drama audiences.",
     "method": "pipeline",
     "duration": 45.8,
     "checks": {
@@ -976,9 +976,9 @@
     "promo_id": "C-E10-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.5,
+      "hook": 4.0,
       "cliffhanger": 3.5,
-      "standalone": 3.0
+      "standalone": 3.5
     },
     "judge_disagreement": 1,
     "safety": {
@@ -986,12 +986,12 @@
       "reason": ""
     },
     "confusions": [
+      "What 'It is over' refers to",
       "Why Alexander is so scarred",
-      "Who Juliana and Alexander are to each other",
       "Why is Alexander so scarred?",
       "Who are these two to each other?"
     ],
-    "hook_moment": "Shirt pulled off to reveal a scarred, bloodied torso"
+    "hook_moment": "Alexander strips his shirt, revealing scars and fresh wounds"
   },
   {
     "segments": [
@@ -1031,7 +1031,7 @@
       "open_question": "What will the search reveal, and why is Alexander willing to let it happen?",
       "tension": 3
     },
-    "why": "Accusation and search standoff builds a strong question. The slow, romantic opening gives scrollers little reason to stay.",
+    "why": "Opens on a soft romantic line, so the scroller may leave; the search-and-'Let them' ending is a strong question.",
     "method": "pipeline",
     "duration": 56.90000000000001,
     "checks": {
@@ -1067,12 +1067,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is Clarissa, and why is she smiling in the carriage?",
-      "What is Alexander hiding that makes 'Let them' so calm?",
-      "Who is speaking the opening romantic line?",
-      "Why is Gerald's carriage arriving at the cottage?"
+      "Why Gerald accuses Alexander of stealing a watch",
+      "Clarissa's role in the accusation",
+      "Why Alexander says 'Let them'",
+      "Who is speaking the opening romantic line?"
     ],
-    "hook_moment": "Nothing; opens on a soft romantic line about medicine and pain"
+    "hook_moment": "Romantic mid-line dialogue; nothing striking in first 3s"
   },
   {
     "segments": [
@@ -1102,7 +1102,7 @@
       "open_question": "What will the search reveal, and why is Alexander willing to let it happen?",
       "tension": 3
     },
-    "why": "Immediate accusation, rising hostility, and a clear search threat; the calm 'Let them' leaves a compelling question.",
+    "why": "Clear accusation and a constable search with an ominous 'Let them.' Easy to follow and tense.",
     "method": "pipeline",
     "duration": 36.8,
     "checks": {
@@ -1138,12 +1138,12 @@
       "reason": ""
     },
     "confusions": [
-      "Why does Alexander calmly agree to be searched?",
-      "What is the significance of the stolen pocket watch?",
+      "Why Alexander agrees to the search",
+      "Whether the stolen watch is actually hidden",
       "Who is Gerald to Juliana, and why does he hate her?",
       "What is the gold pocket watch's significance?"
     ],
-    "hook_moment": "Gerald snarls 'Your husband stole my gold pocket watch!'"
+    "hook_moment": "Gerald accuses: 'Your husband stole my gold pocket watch!'"
   },
   {
     "segments": [
@@ -1173,7 +1173,7 @@
       "open_question": "What will the search reveal, and why is Alexander willing to let it happen?",
       "tension": 3
     },
-    "why": "Clear conflict and a sharp insult, and 'Let them' ends on a tense unanswered question.",
+    "why": "Clear confrontation with a sharp ending, though the opening insult is not an instant scroll-stopper.",
     "method": "pipeline",
     "duration": 24.3,
     "checks": {
@@ -1199,22 +1199,22 @@
     "promo_id": "C-E11-02",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.0,
+      "hook": 3.5,
       "cliffhanger": 4.0,
       "standalone": 3.5
     },
     "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": ""
+      "reason": "Verbal menace and standoff; no violence"
     },
     "confusions": [
-      "What exactly was stolen?",
-      "Why is Gerald accusing Alexander of theft?",
-      "What was stolen and by whom",
-      "Why Gerald is accusing Juliana"
+      "What was stolen and who the accusation targets",
+      "Why Alexander is so willing to let them search",
+      "Why Gerald is so hostile toward Juliana",
+      "What exactly is Gerald accusing Juliana of stealing?"
     ],
-    "hook_moment": "Gerald insults Juliana: 'You married a beggar!'"
+    "hook_moment": "Gerald's 'You married a beggar!' insult starts the clash"
   },
   {
     "segments": [
@@ -1283,7 +1283,7 @@
       "Who the 'her' in 'one blow would destroy her life' is",
       "Why the pocket watch is a frame-up and what it means",
       "Why Alexander is restrained and what he is about to do",
-      "Why does the pocket watch matter?"
+      "Why the pocket watch matters to the frame-up"
     ],
     "hook_moment": "'One blow would end this' over Alexander being held back by the Constable"
   },
@@ -1418,14 +1418,14 @@
     },
     "judge_disagreement": 0,
     "safety": {
-      "level": "ok",
-      "reason": ""
+      "level": "sensitive",
+      "reason": "Threatened hand mutilation and hanging; coercive cruelty"
     },
     "confusions": [
       "Why must Juliana retrieve something with bare hands?",
       "Who is Clarissa to Juliana and why the threat?",
       "What is the garden, and why does it matter?",
-      "What must Juliana retrieve, and why?"
+      "What 'it' is that Juliana must retrieve"
     ],
     "hook_moment": "Clarissa's brutal order to retrieve it with bare hands"
   },
@@ -1457,7 +1457,7 @@
       "open_question": "Will Juliana survive the briars to save Alexander from the gallows?",
       "tension": 5
     },
-    "why": "Clear life-or-death threat and a freeze on defiance make a strong hook and cliffhanger for a stranger.",
+    "why": "Strong threat and a freeze-frame on defiance give a clear hook and open question.",
     "method": "pipeline",
     "duration": 21.810000000000002,
     "checks": {
@@ -1490,15 +1490,15 @@
     "judge_disagreement": 0,
     "safety": {
       "level": "ok",
-      "reason": "Threat of execution, no depicted violence"
+      "reason": "Threats and emotional tension only"
     },
     "confusions": [
-      "Who Clarissa is and her power",
-      "Why the garden matters",
-      "Why Juliana is sacrificing herself",
-      "What task Juliana must complete"
+      "Who Clarissa is and why she threatens them",
+      "What the garden is and why it matters",
+      "Why Juliana is making a sacrificial choice",
+      "Why does the garden matter to Clarissa's demands?"
     ],
-    "hook_moment": "Husband will hang if she fails or refuses"
+    "hook_moment": "Clarissa threatens husband will hang from gallows"
   },
   {
     "segments": [
@@ -1567,7 +1567,7 @@
       "Why is Juliana searching a garden in briars?",
       "What is the emerald ring, and why does it matter?",
       "Why is Alexander restrained by the Constable?",
-      "Who Gerald is and why he taunts Juliana"
+      "Why Juliana is searching the thorns"
     ],
     "hook_moment": "Gerald's taunt about husband's freedom in the garden"
   },
@@ -1626,10 +1626,10 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 5.0,
-      "cliffhanger": 3.5,
+      "cliffhanger": 4.0,
       "standalone": 3.0
     },
-    "judge_disagreement": 1,
+    "judge_disagreement": 0,
     "safety": {
       "level": "sensitive",
       "reason": "Graphic bloody thorn injuries and sustained physical pain imagery"
@@ -1638,7 +1638,7 @@
       "Why Juliana is crawling through the briars",
       "What the emerald ring means",
       "Who the Constable is",
-      "Why Juliana is crawling through thorns"
+      "Why Juliana is crawling into the thorns"
     ],
     "hook_moment": "Macro shot of a blackthorn stabbing into bleeding hand"
   },
@@ -1670,7 +1670,7 @@
       "open_question": "Will Juliana survive her wounds, and will the ring actually free Alexander from the gallows?",
       "tension": 4
     },
-    "why": "Striking bloody image draws the eye, but the ring's significance is unexplained and the end is a static hold.",
+    "why": "Striking bloody image draws attention, but the ring payoff is a low-stakes, vague ending.",
     "method": "pipeline",
     "duration": 21.879999999999995,
     "checks": {
@@ -1698,20 +1698,20 @@
     "scores": {
       "hook": 4.0,
       "cliffhanger": 3.0,
-      "standalone": 3.0
+      "standalone": 2.5
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": "Bloodied cuts from thorns, non-graphic injury"
+      "reason": "Injuries shown, no gore or graphic harm"
     },
     "confusions": [
-      "Why Juliana is trapped in the briars",
-      "What the ring means and who Alexander is",
-      "Who the ring belongs to",
-      "Why Juliana is in the briars"
+      "Why Juliana is bleeding in the briars",
+      "What the emerald ring means to the story",
+      "Who Alexander is and why he is terrified",
+      "Why Juliana is crawling through blackthorn briars"
     ],
-    "hook_moment": "Bloodied Juliana lies among frozen thorns"
+    "hook_moment": "Bloodied Juliana face-down among frozen thorns"
   },
   {
     "segments": [
@@ -1741,7 +1741,7 @@
       "open_question": "Will Alexander and the thugs fight, and will Juliana's garden survive?",
       "tension": 4
     },
-    "why": "Immediate physical shock grabs attention, and the club raised over the herbs ends on a cello-swell cliffhanger. Juliana's bond with Alexander is unclear.",
+    "why": "Immediate physical violence and a rescue that ends with a club raised and a suspense cello swell. The hook is strong, but the strong violence may need review.",
     "method": "pipeline",
     "duration": 38.6,
     "checks": {
@@ -1767,22 +1767,22 @@
     "promo_id": "C-E15-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.5,
-      "cliffhanger": 4.5,
-      "standalone": 3.5
+      "hook": 4.0,
+      "cliffhanger": 4.0,
+      "standalone": 4.0
     },
-    "judge_disagreement": 1,
+    "judge_disagreement": 0,
     "safety": {
-      "level": "ok",
-      "reason": "Shoves and club threat; no gore shown"
+      "level": "sensitive",
+      "reason": "Assault with club, blood on bandages; may need review"
     },
     "confusions": [
-      "Why thugs are attacking Juliana",
+      "Why Juliana's hands are bleeding through bandages",
       "Who Alexander is to Juliana",
-      "Why are the thugs attacking Juliana?",
-      "Who is Alexander to Juliana?"
+      "Why the thugs are attacking her garden",
+      "Why the thugs are destroying Juliana's herbs"
     ],
-    "hook_moment": "Thug violently shoves Juliana onto wet stone path"
+    "hook_moment": "Thug violently shoves Juliana, who crashes onto wet stone"
   },
   {
     "segments": [
@@ -1812,7 +1812,7 @@
       "open_question": "Will Alexander and the thugs fight, and will Juliana's garden survive?",
       "tension": 4
     },
-    "why": "Visceral suffering, a raised club, and a cello-swell cut at the rescue-or-violence peak drive strong urgency.",
+    "why": "Vivid suffering and a raised club cut off by a cello swell make a strong suspense hook.",
     "method": "pipeline",
     "duration": 36.0,
     "checks": {
@@ -1840,20 +1840,20 @@
     "scores": {
       "hook": 4.0,
       "cliffhanger": 5.0,
-      "standalone": 4.0
+      "standalone": 3.5
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": ""
+      "reason": "Injury imagery and threatened violence, not graphic."
     },
     "confusions": [
-      "Why are the thugs attacking Juliana in the garden?",
-      "Who is 'veteran' and what is his link to Juliana?",
-      "Why the thugs are attacking Juliana and her mother's plants",
-      "Who Alexander is to Juliana"
+      "Why thugs are attacking Juliana",
+      "Who Alexander is to Juliana",
+      "Why the herbal garden matters",
+      "Why Juliana is bleeding so badly"
     ],
-    "hook_moment": "Bloody, bandaged woman crawling in the dirt as thugs mock her."
+    "hook_moment": "Bloodied woman crawling through the dirt toward her ruined plants"
   },
   {
     "segments": [
@@ -1883,7 +1883,7 @@
       "open_question": "Will Alexander and the thugs fight, and will Juliana's garden survive?",
       "tension": 4
     },
-    "why": "Immediate threat and a peak-tension cut on a standoff; the viewer wants to know if violence happens.",
+    "why": "Immediate menace and a rescue cut to a knife-edge standoff; the gist lands even without backstory.",
     "method": "pipeline",
     "duration": 26.0,
     "checks": {
@@ -1909,8 +1909,8 @@
     "promo_id": "C-E15-03",
     "judge_rounds": 2,
     "scores": {
-      "hook": 4.0,
-      "cliffhanger": 4.5,
+      "hook": 4.5,
+      "cliffhanger": 5.0,
       "standalone": 3.0
     },
     "judge_disagreement": 1,
@@ -1919,10 +1919,10 @@
       "reason": ""
     },
     "confusions": [
-      "Why is the thug about to smash the herbs?",
-      "What does 'veteran' mean and who is Alexander?",
       "Who Alexander is to Juliana",
-      "Why the thugs are attacking her garden"
+      "Why the thugs want the herbs",
+      "Why Alexander is called a veteran",
+      "Why thugs are destroying the herb garden"
     ],
     "hook_moment": "Club raised over Juliana as she screams 'Stop!'"
   },
@@ -1954,7 +1954,7 @@
       "open_question": "Will Alexander and the thugs fight, and will Juliana's garden survive?",
       "tension": 4
     },
-    "why": "Strong rescue setup with a clear standoff, though the relationships need the earlier episode.",
+    "why": "Strong rescue-standoff energy with a clear threat, but the thugs' motives and Alexander's role are unclear to a newcomer.",
     "method": "pipeline",
     "duration": 22.5,
     "checks": {
@@ -1980,9 +1980,9 @@
     "promo_id": "C-E15-04",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.5,
+      "hook": 4.0,
       "cliffhanger": 4.0,
-      "standalone": 3.0
+      "standalone": 3.5
     },
     "judge_disagreement": 1,
     "safety": {
@@ -1990,12 +1990,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who Juliana is to Alexander",
-      "Why the thugs are attacking her",
-      "What 'veteran' implies about Alexander",
-      "Who the thugs are and why they attacked"
+      "Who the three thugs are and why they attack",
+      "Alexander's relationship to Juliana",
+      "Why he is called a veteran",
+      "Why thugs are attacking Juliana"
     ],
-    "hook_moment": "Alexander storms forward, breath misting, radiating lethal rage"
+    "hook_moment": "Alexander storms forward in rage through the misty night"
   },
   {
     "segments": [
@@ -2025,7 +2025,7 @@
       "open_question": "If they were only paid to destroy the garden, who truly wants Juliana ruined, and why?",
       "tension": 4
     },
-    "why": "Explosive opening that stops thumbs, but the choking and beatings may trigger ad-review limits.",
+    "why": "Instant, legible shock hook with a clear reveal ending; violence is intense and may need ad review.",
     "method": "pipeline",
     "duration": 43.800000000000004,
     "checks": {
@@ -2052,21 +2052,21 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 5.0,
-      "cliffhanger": 3.0,
-      "standalone": 3.0
+      "cliffhanger": 3.5,
+      "standalone": 3.5
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "sensitive",
-      "reason": "Sustained choking and violent beatings; may need review"
+      "reason": "Violent beatings and throat-choking against a wall"
     },
     "confusions": [
-      "Who is Gerald Harrington, and what is his grudge?",
-      "Why does Alexander have this fighting prowess?",
-      "Who is Juliana to these attackers?",
-      "Who Alexander is to Juliana"
+      "Why Gerald Harrington wants the garden destroyed",
+      "Juliana's relationship to Alexander is unclear",
+      "Who Gerald Harrington is and his motive",
+      "Why the garden is being destroyed"
     ],
-    "hook_moment": "Thug's club swing is caught bare-handed by Alexander in mid-air"
+    "hook_moment": "Alexander catches a swinging club bare-handed mid-air"
   },
   {
     "segments": [
@@ -2096,7 +2096,7 @@
       "open_question": "If they were only paid to destroy the garden, who truly wants Juliana ruined, and why?",
       "tension": 4
     },
-    "why": "Instant, legible action with a hero and villains. The Gerald reveal hooks curiosity, but the ending leans toward resolution.",
+    "why": "Instant physical shock and a hero reveal, but the ending resolves the fight and leaves only a mild name hook.",
     "method": "pipeline",
     "duration": 39.0,
     "checks": {
@@ -2124,20 +2124,20 @@
     "scores": {
       "hook": 5.0,
       "cliffhanger": 3.0,
-      "standalone": 4.0
+      "standalone": 3.5
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "sensitive",
-      "reason": "Strong violence: body slams, choking a man against a wall"
+      "reason": "Strong violence, choking a man against a wall"
     },
     "confusions": [
-      "Why are these thugs attacking Juliana's garden?",
-      "Who is Gerald Harrington, and why does he matter?",
-      "Who the thugs are and who sent them",
-      "Who Alexander is to Juliana"
+      "Who Gerald Harrington is and why he paid thugs",
+      "Why someone is destroying Juliana's garden",
+      "Who the thugs work for and why",
+      "Who is Gerald Harrington, and why does he want Juliana hurt?"
     ],
-    "hook_moment": "Alexander slams a thug into the mud in the first two seconds"
+    "hook_moment": "Alexander slams a thug into the muddy ground instantly"
   },
   {
     "segments": [
@@ -2167,7 +2167,7 @@
       "open_question": "Will Alexander and Juliana's growing bond survive Gerald's treachery and the threat behind it?",
       "tension": 3
     },
-    "why": "Immediate violent shock, but the ending is warm and quiet, so it lacks a strong pull forward.",
+    "why": "Violent opener grabs attention, but the ending is a romantic beat with no urgent question.",
     "method": "pipeline",
     "duration": 36.89,
     "checks": {
@@ -2194,21 +2194,21 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 5.0,
-      "cliffhanger": 3.0,
-      "standalone": 4.0
+      "cliffhanger": 2.0,
+      "standalone": 3.5
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "sensitive",
-      "reason": "Strong violence: throat grip, thug slammed against wall"
+      "reason": "Chokehold against wall; bloodied knuckles; strong physical violence"
     },
     "confusions": [
-      "Why is Alexander attacking the thug?",
-      "Who is Gerald Harrington and why does he matter?",
-      "Who is Gerald Harrington and why would he hire thugs?",
-      "Why did the thugs wreck the garden?"
+      "Who Gerald Harrington is and why he matters",
+      "Why Alexander's fighting skill is significant",
+      "Whether Juliana and Alexander are already connected",
+      "Who Alexander is and why he's violent"
     ],
-    "hook_moment": "Alexander lifts a thug by the throat against a wall"
+    "hook_moment": "Alexander lifts a thug by the throat: 'Wrong answer.'"
   },
   {
     "segments": [
@@ -2238,7 +2238,7 @@
       "open_question": "Will Alexander and Juliana's growing bond survive Gerald's treachery and the threat behind it?",
       "tension": 3
     },
-    "why": "Strong betrayal reveal, but it resolves the mystery early. The ending is a romantic gaze rather than a tense hook.",
+    "why": "Strong opening betrayal reveal, but ends on a soft romantic beat rather than peak tension, so the next-episode pull is weaker.",
     "method": "pipeline",
     "duration": 33.39,
     "checks": {
@@ -2274,12 +2274,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is Gerald Harrington, and why would he pay thugs?",
-      "Who is Alexander to Juliana?",
-      "Why is the cottage garden being destroyed?",
-      "Who is Gerald Harrington and why he betrayed her"
+      "Who Gerald Harrington is and why he matters",
+      "Why thugs are wrecking the garden",
+      "Who Alexander is and what his past is",
+      "Who is Gerald Harrington and why would he pay thugs?"
     ],
-    "hook_moment": "Thug's bulging-eyed close-up, then screaming 'Gerald Harrington paid us!'"
+    "hook_moment": "Thug's bulging eyes and frantic scream naming Gerald Harrington"
   },
   {
     "segments": [
@@ -2309,7 +2309,7 @@
       "open_question": "Who is Alexander really, and what is he hiding from the wife who trusts him?",
       "tension": 3
     },
-    "why": "Warm romance with no urgency in the opening; the 'man I married' line teases, but the clip is too quiet to stop scrolls.",
+    "why": "Tender romance with a slow opening. The final 'know almost nothing' line hooks, but the start loses scrollers.",
     "method": "pipeline",
     "duration": 50.7,
     "checks": {
@@ -2335,8 +2335,8 @@
     "promo_id": "C-E17-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 1.0,
-      "cliffhanger": 3.0,
+      "hook": 1.5,
+      "cliffhanger": 3.5,
       "standalone": 3.5
     },
     "judge_disagreement": 1,
@@ -2345,12 +2345,12 @@
       "reason": ""
     },
     "confusions": [
-      "Why is Juliana saying she is losing him?",
-      "Why does Juliana know almost nothing about her husband?",
-      "Why Juliana says 'I know almost nothing'",
-      "Whether they are newlyweds or strangers"
+      "Why Juliana knows almost nothing about her husband",
+      "Why the bandaged hand matters",
+      "What 'of losing you' refers to",
+      "What 'losing you' refers to"
     ],
-    "hook_moment": "Nothing; opens on a whispered, mid-conversation romantic line"
+    "hook_moment": "Nothing; opens on a soft whispered line mid-embrace"
   },
   {
     "segments": [
@@ -2380,7 +2380,7 @@
       "open_question": "Who set the fire, and what revenge will Alexander take?",
       "tension": 4
     },
-    "why": "Vengeance tone is compelling, but it is vague and low-energy, with no visible conflict or stakes early on.",
+    "why": "Vague opening and missing context make it hard to follow, though 'What are you going to do?' gives a clear vengeance hook.",
     "method": "pipeline",
     "duration": 34.0,
     "checks": {
@@ -2407,7 +2407,7 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 2.5,
-      "cliffhanger": 3.0,
+      "cliffhanger": 3.5,
       "standalone": 2.5
     },
     "judge_disagreement": 1,
@@ -2416,12 +2416,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who are 'they' who took their home?",
-      "Why are they homeless, and who wanted them out?",
-      "Who 'they' are and why they took the home",
-      "Who Alexander is to Juliana"
+      "Who 'they' are and who took their home",
+      "Why they have nowhere to go",
+      "What Alexander plans to do",
+      "Who 'they' are and why they took the home"
     ],
-    "hook_moment": "Quiet ominous line 'Someone wanted us out' over a calm frame"
+    "hook_moment": "Ominous voiceover with no visual action"
   },
   {
     "segments": [
@@ -2451,7 +2451,7 @@
       "open_question": "Who set the fire, and what revenge will Alexander take?",
       "tension": 4
     },
-    "why": "Vague and emotional with no clear stakes. A stranger has little reason to stay past the first seconds.",
+    "why": "Starts mid-conversation with no visual shock, and the vague vow gives a scroller little reason to stay.",
     "method": "pipeline",
     "duration": 20.19999999999999,
     "checks": {
@@ -2477,9 +2477,9 @@
     "promo_id": "C-E18-02",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.0,
-      "cliffhanger": 2.5,
-      "standalone": 2.5
+      "hook": 2.5,
+      "cliffhanger": 3.5,
+      "standalone": 2.0
     },
     "judge_disagreement": 1,
     "safety": {
@@ -2487,12 +2487,12 @@
       "reason": ""
     },
     "confusions": [
-      "What home was taken, and who are 'they'?",
-      "What is burning, and why is Alexander vowing vengeance?",
-      "Who 'they' are and why the home was taken",
-      "What vengeance Alexander is planning"
+      "What home was taken and who took it",
+      "Why Alexander is vowing vengeance",
+      "Who Juliana is to him",
+      "Who are 'they' who took the home?"
     ],
-    "hook_moment": "Cold voiceover line about a stolen home, then an embrace"
+    "hook_moment": "Alexander's vague vow about taking their home"
   },
   {
     "segments": [
@@ -2619,11 +2619,11 @@
     "promo_id": "C-E20-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 2.0,
-      "cliffhanger": 3.0,
+      "hook": 2.5,
+      "cliffhanger": 2.5,
       "standalone": 2.0
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "ok",
       "reason": ""
@@ -2632,7 +2632,7 @@
       "Who is 'her' that Rupert is protecting?",
       "What is the plot against the village or Juliana?",
       "Why is Juliana suddenly sorting herbs in a barn?",
-      "Who is 'her' and what happened to her?"
+      "Who 'her' is in Rupert's opening line"
     ],
     "hook_moment": "Rupert's cold 'Not through the winter' line, unexplained"
   },
@@ -2664,7 +2664,7 @@
       "open_question": "Will Catherine's ruthless ambition destroy the Dowager and claim Ashbury?",
       "tension": 4
     },
-    "why": "Two-scene cut feels scattered, and the ending hold is menacing but not a clear urgent question.",
+    "why": "Two scenes with many faces and a mild shout open; the Ashbury threat ending is vague.",
     "method": "pipeline",
     "duration": 44.150000000000006,
     "checks": {
@@ -2692,20 +2692,20 @@
     "scores": {
       "hook": 3.0,
       "cliffhanger": 3.0,
-      "standalone": 3.0
+      "standalone": 2.5
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": "Emotional arguments and villainous talk only"
+      "reason": "Emotional arguments and scheming only"
     },
     "confusions": [
-      "Who Seamus is to Juliana",
-      "Why Catherine wants the village gone",
-      "How Catherine and Rupert connect to Ashbury",
-      "Who the 'old Duchess' is and why she matters"
+      "Who Catherine is to Juliana",
+      "Why Juliana is treated as a peasant",
+      "What Ashbury is and why it matters",
+      "Who Catherine and Rupert are and their history"
     ],
-    "hook_moment": "Seamus shouts she is a viscount's daughter"
+    "hook_moment": "Seamus shouts 'You are a viscount's daughter!'"
   },
   {
     "segments": [
@@ -2735,7 +2735,7 @@
       "open_question": "Who is entering the room, and will they discover Juliana's illegal cure?",
       "tension": 5
     },
-    "why": "A poisoning mystery with a door creaking open at the end is a clear, urgent cliffhanger that stands on its own.",
+    "why": "Poisoning mystery with a door creaking open at the peak of tension is a compelling ad cut.",
     "method": "pipeline",
     "duration": 52.5,
     "checks": {
@@ -2761,22 +2761,22 @@
     "promo_id": "C-E23-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 4.5,
+      "hook": 4.0,
       "cliffhanger": 5.0,
-      "standalone": 4.0
+      "standalone": 3.0
     },
-    "judge_disagreement": 1,
+    "judge_disagreement": 0,
     "safety": {
       "level": "ok",
-      "reason": ""
+      "reason": "Poisoning and choking, no graphic gore."
     },
     "confusions": [
-      "Who is the Duchess, and who is poisoning her?",
-      "Who is coming through the door, and why is it dangerous?",
-      "Who the poisoned woman is",
-      "Who is behind the door"
+      "Who is being poisoned and why",
+      "Who is behind the door",
+      "Juliana's role as healer",
+      "Who 'her' is and who is being poisoned"
     ],
-    "hook_moment": "Juliana's cold line: 'Someone is poisoning her.' Then 'Arsenic.'"
+    "hook_moment": "'Someone is poisoning her.' followed by 'Arsenic.'"
   },
   {
     "segments": [
@@ -2806,7 +2806,7 @@
       "open_question": "Who is entering the room, and will they discover Juliana's illegal cure?",
       "tension": 5
     },
-    "why": "Dramatic poisoning and a door creaking open at the end create strong urgency with a clear unanswered question.",
+    "why": "Sudden collapse and a door opening into a heart-stopping moment drive a strong cliffhanger, though the setup needs context.",
     "method": "pipeline",
     "duration": 45.5,
     "checks": {
@@ -2834,20 +2834,20 @@
     "scores": {
       "hook": 4.5,
       "cliffhanger": 5.0,
-      "standalone": 4.0
+      "standalone": 3.5
     },
     "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": ""
+      "reason": "Medical crisis and suspense; no graphic harm"
     },
     "confusions": [
-      "Who is the Duchess and why is she poisoned?",
-      "Who is at the door and why is it dangerous?",
-      "Who the Duchess is and why she was poisoned",
-      "Who is at the door and why it matters"
+      "Who the Duchess is and why she's poisoned",
+      "Who Juliana is to the household and why she's secretive",
+      "Who is at the door and why it matters",
+      "Who the Duchess is to Juliana"
     ],
-    "hook_moment": "Juliana whispers 'Arsenic' as the Duchess violently chokes"
+    "hook_moment": "Duchess chokes on the bed as Juliana whispers 'Arsenic.'"
   },
   {
     "segments": [
@@ -2877,7 +2877,7 @@
       "open_question": "Who is entering the room, and will they discover Juliana's illegal cure?",
       "tension": 5
     },
-    "why": "Immediate medical emergency and a door opening at the peak make a compelling, self-contained thriller.",
+    "why": "A medical emergency with a door handle turning at the end delivers a clear, tense suspense hook that works without prior episodes.",
     "method": "pipeline",
     "duration": 43.5,
     "checks": {
@@ -2913,12 +2913,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is poisoning the Duchess and why",
-      "Juliana's status in the household",
-      "Why the Duchess is dying and what poisoned her",
-      "Who is behind the door and why it matters"
+      "Who the Duchess is and why she is poisoned",
+      "Who Prudence is to the household",
+      "Who is entering the chamber",
+      "Who is the Duchess and why is she dying?"
     ],
-    "hook_moment": "Duchess violently chokes and spasms on the bed"
+    "hook_moment": "The Duchess violently chokes and spasms on the bed"
   },
   {
     "segments": [
@@ -2987,7 +2987,7 @@
       "Who is the noblewoman, and why is Juliana a maid?",
       "What is the hidden vial for?",
       "Why is Juliana being punished?",
-      "Who the noblewoman is and her power over Juliana"
+      "Who the noblewoman is and her relation to Juliana"
     ],
     "hook_moment": "Chilling 'Then let her suffer' followed by a whip-crack strike"
   },
@@ -3019,7 +3019,7 @@
       "open_question": "Will the noblewoman discover the hidden antidote and remedy journal in Juliana's apron?",
       "tension": 4
     },
-    "why": "Violent opening stops thumbs, but the ending is a quiet setup rather than a peak, and the stakes are unclear.",
+    "why": "Violent opening stops thumbs, but the ending is a quiet reveal with no urgent question.",
     "method": "pipeline",
     "duration": 52.400000000000006,
     "checks": {
@@ -3052,15 +3052,15 @@
     "judge_disagreement": 0,
     "safety": {
       "level": "sensitive",
-      "reason": "Riding crop strike and physical humiliation of a woman"
+      "reason": "Riding crop strike and cruel physical punishment"
     },
     "confusions": [
-      "Why Juliana pretends to be a maid",
+      "Who the noblewoman is and her relation to Juliana",
+      "Why Juliana is disguised as a maid",
       "What the hidden remedy vial is for",
-      "Who the noblewoman is to Juliana",
-      "Who is the noblewoman and why is she punishing Juliana?"
+      "What the hidden antidote vial is for"
     ],
-    "hook_moment": "Crop whip cracks; Juliana doubles over in pain"
+    "hook_moment": "Riding crop whip crack, Juliana doubled over in pain"
   },
   {
     "segments": [
@@ -3129,7 +3129,7 @@
       "Why Juliana is disguised as a maid",
       "What the remedy journal does",
       "Who the noblewoman is to her",
-      "Why Juliana pretends to be a maid"
+      "Why Juliana is posing as a maid"
     ],
     "hook_moment": "Noblewoman jabs a riding crop into Prudence's face"
   },
@@ -3161,7 +3161,7 @@
       "open_question": "Will Juliana return to Ashburg and face Catherine's cruelty again?",
       "tension": 4
     },
-    "why": "The poison reveal is intriguing, but the dialogue-heavy middle is slow and the ending feels settled.",
+    "why": "One-word shock works, but the scene is talk-driven and the victim is unclear, so it's weaker standalone.",
     "method": "pipeline",
     "duration": 33.3,
     "checks": {
@@ -3187,22 +3187,22 @@
     "promo_id": "C-E25-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.5,
+      "hook": 4.0,
       "cliffhanger": 3.0,
       "standalone": 2.5
     },
     "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": ""
+      "reason": "Poisoning discussed; nothing graphic shown"
     },
     "confusions": [
-      "Who is 'her' being poisoned?",
-      "Who is Prudence and why does she matter?",
-      "Who is being poisoned, and who is Prudence?",
-      "Why is Juliana going back there?"
+      "Who is being poisoned and who 'her' is",
+      "Why Juliana's medicine work is dangerous",
+      "What Alexander fears about Juliana going back",
+      "Who is being poisoned, and who is Prudence?"
     ],
-    "hook_moment": "Juliana whispers 'Arsenic' as Alexander clenches a fist"
+    "hook_moment": "Juliana's flat 'Arsenic.' lands as a bombshell"
   },
   {
     "segments": [
@@ -3232,7 +3232,7 @@
       "open_question": "Where did Juliana really get the ring, and who is she?",
       "tension": 4
     },
-    "why": "The poisoning bombshell and the signet-ring reveal create a strong mystery. The family relationships are unclear, which weakens standalone appeal.",
+    "why": "Poisoning plus a sudden grab and 'Where did you get this ring?' ends on a must-know question. Strong, self-contained ad.",
     "method": "pipeline",
     "duration": 59.5,
     "checks": {
@@ -3259,7 +3259,7 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 4.5,
-      "cliffhanger": 4.5,
+      "cliffhanger": 5.0,
       "standalone": 3.5
     },
     "judge_disagreement": 1,
@@ -3268,12 +3268,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who Rupert and Catherine are to the Duchess",
-      "Juliana's history and why she is a maid",
-      "Why is the signet ring so important to the Duchess?",
-      "What is the ring's history with Juliana?"
+      "Why the Duchess thinks Rupert and Catherine poisoned her",
+      "Who Juliana is and why she's a maid",
+      "Why the signet ring matters so much",
+      "Why is the signet ring so important to the Duchess?"
     ],
-    "hook_moment": "Duchess screams that Rupert and Catherine are poisoning her"
+    "hook_moment": "Duchess's trembling line: 'They are poisoning me in my own bed'"
   },
   {
     "segments": [
@@ -3303,7 +3303,7 @@
       "open_question": "Will the Duchess reveal Juliana's true identity, and what does the ring mean?",
       "tension": 5
     },
-    "why": "Clear mystery built on the ring. The 'Where did you get this ring?' ending creates a strong hook to watch on.",
+    "why": "Strong shock reaction and a sharp 'Where did you get this ring?' question make a good hook and cliffhanger.",
     "method": "pipeline",
     "duration": 30.08,
     "checks": {
@@ -3329,8 +3329,8 @@
     "promo_id": "C-E26-02",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.0,
-      "cliffhanger": 4.5,
+      "hook": 3.5,
+      "cliffhanger": 4.0,
       "standalone": 3.0
     },
     "judge_disagreement": 1,
@@ -3339,12 +3339,12 @@
       "reason": ""
     },
     "confusions": [
-      "Why does the ring matter so much to the Duchess?",
-      "Who is Juliana to the Duchess?",
+      "Why the signet ring matters so much",
       "Who the Dowager Duchess is to Juliana",
-      "Why the signet ring is so significant"
+      "Why the Duchess is so terrified",
+      "Why the ring matters so much"
     ],
-    "hook_moment": "Duchess's sudden gasp and drained face as she stares at Juliana's hand"
+    "hook_moment": "Duchess's gasp of shock, staring at Juliana's hand"
   },
   {
     "segments": [
@@ -3412,7 +3412,7 @@
     "scores": {
       "hook": 3.5,
       "cliffhanger": 4.5,
-      "standalone": 3.0
+      "standalone": 3.5
     },
     "judge_disagreement": 1,
     "safety": {
@@ -3423,7 +3423,7 @@
       "Why does the Duchess recognize this ring so intensely?",
       "Who is Juliana's husband, really?",
       "Who is pounding on the doors, and why?",
-      "Who the Dowager Duchess is to Juliana"
+      "Who is the lost son, and why does the ring matter?"
     ],
     "hook_moment": "\"Where did you get this ring? Speak to me!\""
   },
@@ -3455,7 +3455,7 @@
       "open_question": "Who is pounding at the door, and will Juliana ever reveal Alexander's name?",
       "tension": 4
     },
-    "why": "Emotional reveal with a strong hook; the pounding doors add a fresh threat that pulls viewers forward.",
+    "why": "Emotional hook and a pounding-door cutoff, though the family link is confusing.",
     "method": "pipeline",
     "duration": 21.699999999999996,
     "checks": {
@@ -3491,10 +3491,10 @@
       "reason": ""
     },
     "confusions": [
-      "Why does the ring prove the Duchess's son is alive?",
-      "Who is Juliana's husband, and why does it matter?",
-      "Whose ring it is and who the lost son is",
-      "Who Juliana's husband is in this story"
+      "Whose ring this is and why it matters",
+      "Who the Duchess's lost son is to Juliana",
+      "Why Juliana's husband's name matters",
+      "Whose ring it is and who the lost son is"
     ],
     "hook_moment": "Weeping Duchess: 'My lost son wore that exact ring.'"
   },
@@ -3526,7 +3526,7 @@
       "open_question": "Will Juliana escape the trap closing around her, or be condemned for poisoning?",
       "tension": 5
     },
-    "why": "A tight accusation-and-capture sequence ending in a cut to black with a trapped heroine. Clear enough to follow.",
+    "why": "One-word hook and a clear frame-up ending with Juliana dragged away make a compelling trap question.",
     "method": "pipeline",
     "duration": 35.400000000000006,
     "checks": {
@@ -3554,7 +3554,7 @@
     "scores": {
       "hook": 4.0,
       "cliffhanger": 4.5,
-      "standalone": 3.5
+      "standalone": 3.0
     },
     "judge_disagreement": 1,
     "safety": {
@@ -3562,12 +3562,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is 'Her Grace', and why is she being poisoned?",
-      "Why does Lady Catherine frame Juliana?",
-      "Who the Duchess is and her condition",
-      "Why Juliana was in the chamber"
+      "Who the Duchess is to Juliana",
+      "Why Catherine is framing Juliana",
+      "Who the Blond Nobleman is",
+      "Who is the Duchess, and why is she being poisoned?"
     ],
-    "hook_moment": "A single word, 'Poison.', lands as a bombshell"
+    "hook_moment": "Single word 'Poison.' opens a tense accusation"
   },
   {
     "segments": [
@@ -3597,7 +3597,7 @@
       "open_question": "Will the weakened Duchess survive once Juliana is dragged away?",
       "tension": 3
     },
-    "why": "Cut on 'They have been—' with Juliana dragged away makes a sharp cliffhanger. The opening is a mid-scene shout, so it doesn't hit hard on its own.",
+    "why": "Poisoning accusation, a collapse mid-sentence ('They have been—'), and a guard dragging Juliana away. Excellent cliffhanger.",
     "method": "pipeline",
     "duration": 21.3,
     "checks": {
@@ -3630,15 +3630,15 @@
     "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": "Restraint by guard only, no gore"
+      "reason": ""
     },
     "confusions": [
-      "Who Rupert and Catherine are",
-      "Why the Duchess was poisoned and by whom",
-      "Who Catherine and Rupert are",
-      "Who Juliana is to the Duchess"
+      "Who 'she' is who saved the Duchess",
+      "What poison, and who gave it",
+      "Who Rupert and Catherine are to the Duchess",
+      "Who poisoned the Duchess, and what did Juliana save her from?"
     ],
-    "hook_moment": "Duchess shouts 'She saved me!' at a bedside standoff"
+    "hook_moment": "Duchess shouts 'She saved me!' in a fierce, accusatory tone"
   },
   {
     "segments": [
@@ -3668,7 +3668,7 @@
       "open_question": "Will Juliana survive the dark cells, and can she prove her innocence in time?",
       "tension": 5
     },
-    "why": "Strong villain-versus-heroine humiliation with a gallows threat ending; the gist lands even without backstory.",
+    "why": "Strong villainy and a gallows threat cut to black make viewers desperate to see Juliana's fate.",
     "method": "pipeline",
     "duration": 40.3,
     "checks": {
@@ -3694,22 +3694,22 @@
     "promo_id": "C-E28-02",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.5,
+      "hook": 4.0,
       "cliffhanger": 5.0,
       "standalone": 3.0
     },
-    "judge_disagreement": 1,
+    "judge_disagreement": 0,
     "safety": {
       "level": "ok",
-      "reason": ""
+      "reason": "Humiliation and threat of execution, typical genre content."
     },
     "confusions": [
-      "Why is Catherine humiliating Juliana, and what is their history?",
-      "What is the herbarium book and why is it dangerous?",
-      "Who is the blond nobleman giving orders?",
-      "Why the herbarium book is so damaging"
+      "Why the herbarium book matters",
+      "Why Juliana is being dragged away",
+      "Catherine's history with Juliana",
+      "Why is the herbarium book so dangerous to Juliana?"
     ],
-    "hook_moment": "Catherine's cruel taunt, then Juliana's frantic scream 'Do not speak about my husband!'"
+    "hook_moment": "Cruel mockery of 'the disgraced daughter' as Catherine circles Juliana"
   },
   {
     "segments": [
@@ -3810,7 +3810,7 @@
       "open_question": "Can anyone stop the conspirators from framing Juliana for witchcraft tomorrow?",
       "tension": 4
     },
-    "why": "Villainous plotting is compelling, but it opens mid-conversation and needs prior context to land.",
+    "why": "Chilling framing plot ends on 'She becomes a witch', a powerful unanswered question.",
     "method": "pipeline",
     "duration": 57.7,
     "checks": {
@@ -3836,22 +3836,22 @@
     "promo_id": "C-E30-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.0,
-      "cliffhanger": 4.5,
+      "hook": 3.5,
+      "cliffhanger": 5.0,
       "standalone": 3.0
     },
     "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": "Conspiracy talk about hanging, not depicted"
+      "reason": "Conspiracy talk and threats, no violence shown"
     },
     "confusions": [
-      "Who Juliana and the Dowager are",
-      "What the botanical ledger proves",
-      "Why witchcraft framing targets Juliana",
+      "Who the Elder Nobleman is to Catherine and Rupert",
+      "Whose botanical ledger is being used",
+      "Who the Dowager is and why she matters",
       "Who is the Dowager and why does she matter?"
     ],
-    "hook_moment": "Stunned line: witchcraft is a capital charge"
+    "hook_moment": "Sinister 'Then call it witchcraft' line, shocked reaction"
   },
   {
     "segments": [
@@ -3881,7 +3881,7 @@
       "open_question": "Will Juliana survive the magistrate's trial tomorrow, or will she hang as a witch?",
       "tension": 5
     },
-    "why": "Villains plotting a framed execution is a strong bombshell. The 'She becomes a witch' line gives a clear cliffhanger before the cut.",
+    "why": "Villains' conspiracy is a clear threat, and 'She becomes a witch' ending into the chained-prisoner image is high-tension.",
     "method": "pipeline",
     "duration": 56.610000000000014,
     "checks": {
@@ -3908,7 +3908,7 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 4.0,
-      "cliffhanger": 4.0,
+      "cliffhanger": 5.0,
       "standalone": 3.0
     },
     "judge_disagreement": 0,
@@ -3917,12 +3917,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is Juliana, and why is she called a witch's daughter?",
-      "What is the 'botanical ledger' and why does it matter?",
-      "Why is Juliana being framed as a witch?",
-      "Who is the Dowager and why is she dying?"
+      "Who Catherine and Rupert are to Juliana",
+      "What the 'witch' accusation means for Juliana",
+      "Why the nobleman plots to hang her",
+      "Who the Dowager is and why she matters"
     ],
-    "hook_moment": "Nobleman orders the trial rigged so 'the State hang her'"
+    "hook_moment": "Nobleman orders framing and hanging of a woman"
   },
   {
     "segments": [
@@ -3952,7 +3952,7 @@
       "open_question": "Will Catherine's searing iron blind or kill Juliana, or will someone stop her?",
       "tension": 5
     },
-    "why": "A glowing iron stopping inches from an eye is a peak cliffhanger. The torture theme may need ad review.",
+    "why": "Cliffhanger of a glowing iron inches from an eye is very strong, but the opening is slow and the torture content needs review.",
     "method": "pipeline",
     "duration": 35.8,
     "checks": {
@@ -3978,22 +3978,22 @@
     "promo_id": "C-E31-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 4.0,
+      "hook": 3.0,
       "cliffhanger": 5.0,
       "standalone": 3.0
     },
     "judge_disagreement": 0,
     "safety": {
       "level": "sensitive",
-      "reason": "Torture imagery: red-hot iron near captive's face, chained captive"
+      "reason": "Torture imagery, burning book, glowing iron near eye"
     },
     "confusions": [
-      "Why is Juliana bowing to Catherine, and why is she chained?",
-      "What is the book, and why does it matter so much?",
-      "Why Juliana is chained in a dungeon",
-      "Who Catherine is and her grudge"
+      "What the botanical book means to Juliana",
+      "Why Catherine is torturing Juliana",
+      "Who Juliana is and why she bows",
+      "Why does the book matter so much to Juliana?"
     ],
-    "hook_moment": "'If you were truly powerful, Catherine, you wouldn't need me to bow.'"
+    "hook_moment": "Juliana's accusatory line; burning begins at 8 seconds"
   },
   {
     "segments": [
@@ -4023,7 +4023,7 @@
       "open_question": "Will Catherine's searing iron blind or kill Juliana, or will someone stop her?",
       "tension": 5
     },
-    "why": "Peak tension with the iron inches from the eye ensures a must-know cliffhanger, though the torture theme needs review.",
+    "why": "Instant visual shock and a glowing iron inches from an eye give a strong cliffhanger, though the cruelty may draw review.",
     "method": "pipeline",
     "duration": 27.0,
     "checks": {
@@ -4049,22 +4049,22 @@
     "promo_id": "C-E31-02",
     "judge_rounds": 2,
     "scores": {
-      "hook": 4.5,
+      "hook": 5.0,
       "cliffhanger": 5.0,
       "standalone": 4.0
     },
-    "judge_disagreement": 1,
+    "judge_disagreement": 0,
     "safety": {
       "level": "sensitive",
-      "reason": "Torture-themed: branding iron near captive's face, chains"
+      "reason": "Torture threat with hot iron near face; no injury shown"
     },
     "confusions": [
-      "Why is Juliana chained?",
-      "Why does Catherine hate her so much?",
-      "Why Juliana is chained and what her mother's book means",
-      "Why Catherine hates Juliana so much"
+      "Why the book matters beyond Juliana's mother",
+      "How Catherine holds such power over Juliana",
+      "Why Juliana is chained in the dungeon",
+      "Why is Juliana chained, and who is Catherine to her?"
     ],
-    "hook_moment": "Red-hot poker pressed onto a burning book page"
+    "hook_moment": "Red-hot poker presses into a book with smoke and hiss"
   },
   {
     "segments": [
@@ -4094,7 +4094,7 @@
       "open_question": "What false story has the Lord written, and can Juliana survive it?",
       "tension": 4
     },
-    "why": "Chilling villainy and a strong 'I have already written the story' ending, though the setup is less immediate.",
+    "why": "Chilling setup and an ominous final line, but the opening is a bit flat for a thumb-stopper.",
     "method": "pipeline",
     "duration": 24.5,
     "checks": {
@@ -4130,12 +4130,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is Toby and what did she do for him?",
-      "What is the Lord's motive for framing the maid?",
-      "Who 'she' is and why she's accused of witchcraft",
-      "Who Toby is and what happened to him"
+      "Who Toby is and why he matters",
+      "Who 'she' is and what she did",
+      "What the written story means for the maid",
+      "Who 'she' is and why she's accused of witchcraft"
     ],
-    "hook_moment": "Lord's cold 'That is witchcraft' cuts into the maid's pleading"
+    "hook_moment": "Lord coldly declares 'That is witchcraft.'"
   },
   {
     "segments": [
@@ -4192,7 +4192,7 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 2.5,
-      "cliffhanger": 3.5,
+      "cliffhanger": 4.0,
       "standalone": 4.0
     },
     "judge_disagreement": 1,
@@ -4204,7 +4204,7 @@
       "Why Lady Juliana is on trial",
       "What the 'treatments' were",
       "Who the Lord is",
-      "What crime Lady Juliana is accused of"
+      "What the accused is actually charged with"
     ],
     "hook_moment": "Trembling maid is pressed by a judge about the accused"
   },
@@ -4263,10 +4263,10 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 3.0,
-      "cliffhanger": 3.5,
+      "cliffhanger": 4.0,
       "standalone": 3.0
     },
-    "judge_disagreement": 1,
+    "judge_disagreement": 0,
     "safety": {
       "level": "ok",
       "reason": ""
@@ -4275,7 +4275,7 @@
       "Who Prudence is and her role",
       "Who 'she' refers to",
       "Why the witness testimony matters",
-      "Who the accused woman is and what she is charged with"
+      "Who is Prudence and who is she accusing?"
     ],
     "hook_moment": "Tearful witness says 'She used herbs and her mother's book'"
   },
@@ -4307,7 +4307,7 @@
       "open_question": "Will her refusal to repent be treated as proof she knowingly practiced witchcraft?",
       "tension": 4
     },
-    "why": "Clear witch-trial stakes and defiant heroine; the judge's ominous warning creates a strong pull to see the verdict.",
+    "why": "Clear stakes: a woman refusing to recant witchcraft charges. Strong, legible courtroom tension.",
     "method": "pipeline",
     "duration": 51.70000000000002,
     "checks": {
@@ -4333,22 +4333,22 @@
     "promo_id": "C-E34-03",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.0,
+      "hook": 3.5,
       "cliffhanger": 4.0,
       "standalone": 4.0
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "ok",
       "reason": ""
     },
     "confusions": [
-      "Who were the victims and what was the poisoning?",
-      "What does the grimoire have to do with it?",
-      "What are the herbs and why is it witchcraft?",
-      "What is the burned grimoire's significance?"
+      "Who the Lord is to Juliana",
+      "What the burned grimoire represents",
+      "Why herbs count as witchcraft here",
+      "What are the herbs and why is it witchcraft?"
     ],
-    "hook_moment": "Lord accuses Juliana: 'The people call it poisoning!'"
+    "hook_moment": "'The people call it poisoning!' accusation lands in a courtroom"
   },
   {
     "segments": [
@@ -4449,7 +4449,7 @@
       "open_question": "Can Alexander reach Juliana before the wedding and her execution?",
       "tension": 5
     },
-    "why": "A death sentence with a two-day deadline gives an urgent question. Names are unclear, but the stakes are instantly felt.",
+    "why": "Immediate death-sentence shock and a 'two days from now' deadline create urgent tension, though the 'she' is unclear.",
     "method": "pipeline",
     "duration": 20.0,
     "checks": {
@@ -4485,12 +4485,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is 'she', and what did she do?",
-      "Who is Rupert, and what wedding is happening?",
       "Who 'she' is and why she faces execution",
-      "Who rupert and Catherine are"
+      "Why the wedding is deadly for Alexander",
+      "Who is the woman being sentenced to execution?",
+      "Who are Rupert and Catherine, and why does the wedding matter?"
     ],
-    "hook_moment": "'She is to be executed.' An instant death sentence bombshell"
+    "hook_moment": "'She is to be executed.' stuns Alexander immediately"
   },
   {
     "segments": [
@@ -4520,7 +4520,7 @@
       "open_question": "What will the returned Duke do to Rupert and Catherine before the wedding?",
       "tension": 4
     },
-    "why": "Hard-hitting vengeance vow with a dramatic cut to black; the implied revenge hooks strongly despite unclear backstory.",
+    "why": "Explosive vow of revenge, with a 'dead Duke coming home' button. Gripping even with missing backstory.",
     "method": "pipeline",
     "duration": 40.25,
     "checks": {
@@ -4546,9 +4546,9 @@
     "promo_id": "C-E36-03",
     "judge_rounds": 2,
     "scores": {
-      "hook": 4.0,
+      "hook": 4.5,
       "cliffhanger": 4.5,
-      "standalone": 3.0
+      "standalone": 3.5
     },
     "judge_disagreement": 1,
     "safety": {
@@ -4556,12 +4556,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is the dead Duke and why is Alexander his heir?",
-      "Who killed whom, and why is Alexander seeking revenge?",
-      "Who the wedding involves and why it's sinister",
-      "Who 'they' are that took his home"
+      "Who the dead Duke is to Alexander",
+      "Who 'they' are and who took his wife",
+      "Why Alexander has been wronged",
+      "Who the 'dead Duke' is in the reveal"
     ],
-    "hook_moment": "Alexander's deadly line 'killing my wife afterward' mid-sentence"
+    "hook_moment": "'...and killing my wife afterward.' Shocking vengeful declaration"
   },
   {
     "segments": [
@@ -4618,10 +4618,10 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 3.0,
-      "cliffhanger": 3.5,
+      "cliffhanger": 4.0,
       "standalone": 3.0
     },
-    "judge_disagreement": 1,
+    "judge_disagreement": 0,
     "safety": {
       "level": "ok",
       "reason": ""
@@ -4630,7 +4630,7 @@
       "Who condemned Juliana, and for what crime?",
       "Whose wedding is beginning, and why is she next?",
       "Who is Alexander, and why is he in danger?",
-      "Who condemned Juliana and on what charge"
+      "Who is Alexander and why is the wedding a threat?"
     ],
     "hook_moment": "\"Do you know they condemned me?\" grief opening"
   },
@@ -4662,7 +4662,7 @@
       "open_question": "Will Juliana be executed before Alexander's secret is protected, and will she survive?",
       "tension": 5
     },
-    "why": "Defiant tone is appealing, but the warm, hopeful ending lacks peak tension, and the setup is hard to follow.",
+    "why": "Defiant line and the 'I'm next' stakes work, but the bells-and-smile ending is more reflective than urgent.",
     "method": "pipeline",
     "duration": 27.11,
     "checks": {
@@ -4688,9 +4688,9 @@
     "promo_id": "C-E38-02",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.0,
-      "cliffhanger": 3.0,
-      "standalone": 2.5
+      "hook": 3.5,
+      "cliffhanger": 3.5,
+      "standalone": 3.0
     },
     "judge_disagreement": 1,
     "safety": {
@@ -4698,12 +4698,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who are 'them' and why do they want her husband?",
-      "Whose wedding is beginning, and why is she jailed?",
-      "Who is Alexander, and why is he her husband?",
-      "Who 'them' are and why she's imprisoned"
+      "Who 'they' are and what they want with her husband",
+      "What the wedding is and why she is next",
+      "Why Juliana is imprisoned in the dungeon",
+      "Who is Alexander, and is he her husband?"
     ],
-    "hook_moment": "Defiant line 'I will not give them my husband' over a dungeon cell"
+    "hook_moment": "'I will not give them my husband' in chains, defiant"
   },
   {
     "segments": [
@@ -4743,7 +4743,7 @@
       "open_question": "Will the loyalists slip inside the cathedral unseen and succeed?",
       "tension": 3
     },
-    "why": "Ends on a strong heist-style cliffhanger with guards down. Two storylines and a repeated opening line weaken standalone clarity.",
+    "why": "Ends on a peak-tension cathedral infiltration, but the jump between storylines is confusing for a cold viewer.",
     "method": "pipeline",
     "duration": 54.8,
     "checks": {
@@ -4769,22 +4769,22 @@
     "promo_id": "C-E38-03",
     "judge_rounds": 2,
     "scores": {
-      "hook": 2.0,
-      "cliffhanger": 4.0,
+      "hook": 2.5,
+      "cliffhanger": 4.5,
       "standalone": 2.0
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
-      "level": "ok",
-      "reason": ""
+      "level": "sensitive",
+      "reason": "Guard choked unconscious in sleeper hold"
     },
     "confusions": [
-      "Who are the loyalists, and what is their plot?",
-      "Who is Alexander, and why does Juliana whisper his name?",
-      "Why does the cathedral matter?",
-      "Why Juliana is imprisoned and who 'next' refers to"
+      "Who the loyalists are and what they plan",
+      "Why men are storming the cathedral",
+      "Why Juliana is in a dungeon",
+      "Why Juliana is in a dungeon and who Alexander is"
     ],
-    "hook_moment": "Quiet line 'Then I suppose I'm next' with no strong visual"
+    "hook_moment": "Juliana's defiant smile whispering 'Alexander...' behind bars"
   },
   {
     "segments": [
@@ -4814,7 +4814,7 @@
       "open_question": "Will Alexander reach Juliana before her execution, and take back his house?",
       "tension": 5
     },
-    "why": "A dead-man-returns hook with a dramatic vow to reclaim his wife and home. The name inconsistency and unclear wife's identity may confuse new viewers.",
+    "why": "Strong comeback hook and a vow to bring his wife home. Inconsistent surname and an unnamed wife weaken the standalone clarity.",
     "method": "pipeline",
     "duration": 35.41,
     "checks": {
@@ -4850,10 +4850,10 @@
       "reason": ""
     },
     "confusions": [
-      "Ashwin versus Ashburn: is the name the same man",
-      "Who the wife is and why he was buried",
-      "Who is Juliana, and why is she his wife?",
-      "Why was Alexander buried three years ago?"
+      "Ashwin versus Ashburn: is it the same man?",
+      "Who the wife is and why she's lost",
+      "Why he was buried three years ago",
+      "Who is Juliana, and why is she his wife?"
     ],
     "hook_moment": "'They buried Alexander Ashwin three years ago. Today, he comes home.'"
   },
@@ -4885,7 +4885,7 @@
       "open_question": "Will Juliana be killed before Alexander's men breach the cathedral?",
       "tension": 5
     },
-    "why": "Chilling final line 'its witch will be dead' creates a strong urgent question despite a slow start.",
+    "why": "Ending threat 'its witch will be dead' is a strong cliffhanger, but standalone confusion weakens it.",
     "method": "pipeline",
     "duration": 51.2,
     "checks": {
@@ -4913,20 +4913,20 @@
     "scores": {
       "hook": 3.5,
       "cliffhanger": 4.5,
-      "standalone": 2.5
+      "standalone": 2.0
     },
     "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": "Death threat stated, nothing depicted"
+      "reason": "Murderous threat spoken, no violence shown"
     },
     "confusions": [
       "Who Juliana is and why she is targeted",
-      "What the wedding means for the plot",
-      "Who the elder nobleman is",
+      "Whose wedding is being sabotaged",
+      "Who the elder nobleman and royal guard are",
       "Who is 'she', and why is she being targeted?"
     ],
-    "hook_moment": "Cold line: she won't be seeing anything for long"
+    "hook_moment": "Lord Harrington: 'She won't be seeing anything for long'"
   },
   {
     "segments": [
@@ -4956,7 +4956,7 @@
       "open_question": "Are the armed figures emerging from the smoke rescuers or new captors for Juliana?",
       "tension": 4
     },
-    "why": "The explosion and rescue reveal create peak tension, and the chained-woman hook is punchy.",
+    "why": "The cathedral explosion and armed figures create a huge, unanswered cliffhanger, though the setup needs context.",
     "method": "pipeline",
     "duration": 38.09,
     "checks": {
@@ -4992,12 +4992,12 @@
       "reason": ""
     },
     "confusions": [
-      "Why Juliana is chained and who Catherine is",
-      "Who the armed figures are",
-      "Why Juliana is chained and who she is",
-      "Who Catherine and Rupert are to her"
+      "Why Juliana is chained and who Rupert is",
+      "What the Ashburgh title means",
+      "Why is Juliana chained, and who is she to Rupert?",
+      "Who are the armed figures emerging from the smoke?"
     ],
-    "hook_moment": "Juliana's defiant line about 'one chained woman' over a low-angle hero shot"
+    "hook_moment": "Chained Juliana defiantly mocks Catherine's power play"
   },
   {
     "segments": [
@@ -5098,7 +5098,7 @@
       "open_question": "What will Alexander do to Rupert, and will he reclaim everything he lost?",
       "tension": 4
     },
-    "why": "A dead-man-returns reveal with a revenge threat works well, though the reunion lacks context for newcomers.",
+    "why": "Dead-man-returns bombshell is instantly gripping, with a revenge threat that pulls viewers forward.",
     "method": "pipeline",
     "duration": 47.0,
     "checks": {
@@ -5124,7 +5124,7 @@
     "promo_id": "C-E42-02",
     "judge_rounds": 2,
     "scores": {
-      "hook": 4.5,
+      "hook": 5.0,
       "cliffhanger": 4.0,
       "standalone": 3.5
     },
@@ -5134,12 +5134,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who is Alexander, and why was he thought dead?",
-      "What did Rupert steal, and why does Alexander want revenge?",
-      "Who Rupert is and what he stole",
-      "Why Alexander was thought dead"
+      "What Rupert supposedly stole",
+      "Alexander's relationship to Juliana and Catherine",
+      "Why Alexander was thought dead",
+      "Who Rupert is and what he stole"
     ],
-    "hook_moment": "Blond nobleman's shocked 'You cannot be him. Alexander died!'"
+    "hook_moment": "'You cannot be him. Alexander died!' stops the scroll"
   },
   {
     "segments": [
@@ -5240,7 +5240,7 @@
       "open_question": "Will Lord Sterling escape the constable, and what will he reveal or do next?",
       "tension": 4
     },
-    "why": "Strong accusation plot and a tense, trapped-villain ending. The opening is slow, but the payoff at the door is a clear cliffhanger.",
+    "why": "Strong courtroom-style reveal with a satisfying trap at the end. Its opening names the key players, so it's easier to follow than E.",
     "method": "pipeline",
     "duration": 54.36000000000001,
     "checks": {
@@ -5268,20 +5268,20 @@
     "scores": {
       "hook": 3.0,
       "cliffhanger": 4.0,
-      "standalone": 3.5
+      "standalone": 3.0
     },
-    "judge_disagreement": 2,
+    "judge_disagreement": 0,
     "safety": {
       "level": "ok",
       "reason": ""
     },
     "confusions": [
-      "Why Sterling is accused and what his role was",
-      "What the red-ribboned document means",
-      "What the 'sold my men' accusation means",
-      "The red-ribboned war document's significance"
+      "Why Alexander is declared dead yet standing there",
+      "What Sterling did and why he's fleeing",
+      "What the red-ribboned war document proves",
+      "Who Lord Henry Sterling and Rupert Ashburn are"
     ],
-    "hook_moment": "Official names 'Lord Henry Sterling' in a damning, deliberate tone"
+    "hook_moment": "Crown Official publicly names Lord Sterling and Rupert, accusing them"
   },
   {
     "segments": [
@@ -5311,7 +5311,7 @@
       "open_question": "Will Lord Sterling escape the constable, and what will he reveal or do next?",
       "tension": 4
     },
-    "why": "Strong accusation and a public unmasking; Sterling's caught-escape ending creates a clear question.",
+    "why": "Strong betrayal reveal with a satisfying trapped-villain ending, though the plot details need some explaining.",
     "method": "pipeline",
     "duration": 45.96000000000001,
     "checks": {
@@ -5338,21 +5338,21 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 4.0,
-      "cliffhanger": 4.0,
-      "standalone": 4.0
+      "cliffhanger": 3.5,
+      "standalone": 3.5
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": ""
+      "reason": "Accusations and confrontation; no violence shown"
     },
     "confusions": [
-      "What is the war document and what happened to Alexander?",
-      "Why was he believed dead?",
-      "Why Alexander was thought dead",
-      "Who Lord Sterling is and why he runs"
+      "Why Alexander was declared dead and by whom",
+      "What the red-ribboned war document means",
+      "Why Sterling is running from the constable",
+      "Who is Alexander, and why was he declared dead?"
     ],
-    "hook_moment": "Alexander roars 'You sold my men to the enemy.'"
+    "hook_moment": "Alexander's 'You sold my men to the enemy' lands hard"
   },
   {
     "segments": [
@@ -5382,7 +5382,7 @@
       "open_question": "Will Lord Sterling escape the constable, and what will he reveal or do next?",
       "tension": 4
     },
-    "why": "Same strong ending as Clip A, but it starts without the accusation that names Sterling. Sterling feels like a stranger, which weakens the setup.",
+    "why": "Same ending as A but opens mid-scene with no setup. Strangers would struggle to know who matters, so it's weaker than A.",
     "method": "pipeline",
     "duration": 28.960000000000008,
     "checks": {
@@ -5408,9 +5408,9 @@
     "promo_id": "C-E43-04",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.0,
-      "cliffhanger": 3.5,
-      "standalone": 3.0
+      "hook": 3.5,
+      "cliffhanger": 4.0,
+      "standalone": 2.0
     },
     "judge_disagreement": 1,
     "safety": {
@@ -5418,12 +5418,12 @@
       "reason": ""
     },
     "confusions": [
-      "Who Lord Sterling is and why he flees",
-      "What the document or false title implies",
-      "Who Alexander Ashburn is and why he is declared dead",
-      "Why Sterling is trying to escape"
+      "Who Duke Alexander is and why he's dead",
+      "Who Rupert and Lord Sterling are",
+      "What Sterling did to be caught",
+      "Who Alexander Ashburn is and why he's declared dead"
     ],
-    "hook_moment": "Crown official declares Duke Alexander Ashburn dead"
+    "hook_moment": "Official declares a Duke dead and his title transferred falsely"
   },
   {
     "segments": [
@@ -5492,7 +5492,7 @@
       "Who is the Constable, and what is in the dossier?",
       "Why did Alexander vanish, and why doesn't he remember?",
       "Why are Juliana and Alexander connected?",
-      "Why Rupert is being arrested"
+      "Who is Rupert, and why is he being dragged away?"
     ],
     "hook_moment": "Rupert forced to his knees while shouting 'Get your hands off me!'"
   },
@@ -5524,7 +5524,7 @@
       "open_question": "Why did Alexander choose the chained Juliana over Catherine, and what happens to her now?",
       "tension": 4
     },
-    "why": "Rich emotional drama and a 'Her?!' reveal, but the slow opening and reliance on past history weaken the hook.",
+    "why": "Emotional romance drama with a shocking final reveal, but dense backstory slows the opening.",
     "method": "pipeline",
     "duration": 56.400000000000006,
     "checks": {
@@ -5560,12 +5560,12 @@
       "reason": ""
     },
     "confusions": [
-      "Why doesn't Alexander remember Catherine?",
-      "Why is Juliana in chains and why does Alexander choose her?",
-      "Who Rupert is to Catherine and Alexander",
-      "Why Alexander has lost his memory"
+      "Who Alexander is and why Catherine mourned him",
+      "Why Rupert is restrained",
+      "Who Juliana is in chains",
+      "Who Rupert is and why he's restrained"
     ],
-    "hook_moment": "Rupert forced into dust, screaming 'Catherine!' during a ruined wedding."
+    "hook_moment": "Guard forces Rupert into dust while he screams for Catherine"
   },
   {
     "segments": [
@@ -5595,7 +5595,7 @@
       "open_question": "Why did Alexander choose the chained Juliana over Catherine, and what happens to her now?",
       "tension": 4
     },
-    "why": "The 'Her?!' reveal pays off well, but the amnesia and rivalry plot require prior context.",
+    "why": "The 'Her?!' reveal is a sharp ending, but the amnesia and rivalry backstory make the opening hard to follow cold.",
     "method": "pipeline",
     "duration": 29.200000000000003,
     "checks": {
@@ -5621,9 +5621,9 @@
     "promo_id": "C-E44-03",
     "judge_rounds": 2,
     "scores": {
-      "hook": 2.0,
+      "hook": 2.5,
       "cliffhanger": 4.0,
-      "standalone": 2.5
+      "standalone": 3.0
     },
     "judge_disagreement": 1,
     "safety": {
@@ -5633,10 +5633,10 @@
     "confusions": [
       "Why Alexander doesn't remember Catherine",
       "Who Rupert is and why he is guarded",
-      "Juliana's role in chains",
-      "Who Catherine is to Alexander and what was promised"
+      "Why Juliana is in iron chains",
+      "Why Catherine was supposed to be the Duchess"
     ],
-    "hook_moment": "Quiet hand rejection; no immediate shock in the first three seconds"
+    "hook_moment": "Alexander rejects Catherine's touch, leaving her hand hanging"
   },
   {
     "segments": [
@@ -5666,7 +5666,7 @@
       "open_question": "Why did Alexander choose the chained Juliana over Catherine, and what happens to her now?",
       "tension": 4
     },
-    "why": "Sharp, but starts mid-argument with no setup, so it confuses newcomers; the 'Her?!' ending still lands.",
+    "why": "Sharp rejection and 'Her?!' twist are strong, but starting mid-argument leaves viewers lost.",
     "method": "pipeline",
     "duration": 21.200000000000003,
     "checks": {
@@ -5692,7 +5692,7 @@
     "promo_id": "C-E44-04",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.5,
+      "hook": 4.0,
       "cliffhanger": 4.0,
       "standalone": 2.5
     },
@@ -5702,12 +5702,12 @@
       "reason": ""
     },
     "confusions": [
-      "What is the history between Alexander and Catherine?",
-      "Why is Juliana shackled, and who is she to Alexander?",
-      "Who Juliana is to Alexander and why she is chained",
-      "What Catherine did to earn his rejection"
+      "Who Catherine and Alexander are to each other",
+      "What 'Duchess' refers to",
+      "Why Juliana is in chains",
+      "Why is Juliana in chains at the doorway?"
     ],
-    "hook_moment": "Alexander's cold 'You were never my Duchess' to a weeping Catherine."
+    "hook_moment": "'You were never my Duchess.' cold rejection on screen"
   },
   {
     "segments": [
@@ -5879,7 +5879,7 @@
       "open_question": "Will Catherine's scheme destroy Juliana's claim to being Alexander's wife?",
       "tension": 4
     },
-    "why": "The 'you are not his lawful wife' reversal is a strong twist, but legal jargon slows the pace.",
+    "why": "The invalid-marriage bombshell is clear and the villain's smirk ends on a strong question, though Catherine's stake is unexplained.",
     "method": "pipeline",
     "duration": 33.349999999999994,
     "checks": {
@@ -5905,22 +5905,22 @@
     "promo_id": "C-E45-03",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.0,
+      "hook": 4.0,
       "cliffhanger": 4.0,
-      "standalone": 3.0
+      "standalone": 3.5
     },
-    "judge_disagreement": 0,
+    "judge_disagreement": 1,
     "safety": {
       "level": "ok",
       "reason": ""
     },
     "confusions": [
-      "Why the marriage is legally invalid",
       "Who Catherine is and why she smirks",
-      "Ashburton's status and what 'Duchess' means here",
-      "Why a Crown marriage license matters here"
+      "Why the Crown can annul a ducal marriage",
+      "Who Catherine is and why she smiles",
+      "Why the marriage is invalid under Crown law"
     ],
-    "hook_moment": "Priest's booming 'No one will bow yet!' draws attention"
+    "hook_moment": "Priest's booming 'No one will bow yet!' halts the ceremony"
   },
   {
     "segments": [
@@ -5950,7 +5950,7 @@
       "open_question": "What is Catherine's scheme in the ten days, and can the couple survive it?",
       "tension": 4
     },
-    "why": "The menacing priest and Catherine's wicked smile give a strong ending, but the stakes are murky.",
+    "why": "Ending of Catherine's predatory smile creates a hook, but the opening is talky and stakes are muddy.",
     "method": "pipeline",
     "duration": 25.000000000000014,
     "checks": {
@@ -5983,15 +5983,15 @@
     "judge_disagreement": 0,
     "safety": {
       "level": "ok",
-      "reason": ""
+      "reason": "Tense threats only; no violence shown"
     },
     "confusions": [
-      "What is the 'wager' and why does it matter?",
-      "Why would losing her happen twice?",
-      "Who is the woman Catherine and what is her plan?",
+      "Why losing 'her twice' matters and who 'her' is",
+      "What the council ruling and ten-day deadline mean",
+      "Who Catherine is and her link to Alexander",
       "Who is 'her' and why would she be lost?"
     ],
-    "hook_moment": "Priest threatens Alexander with a ten-day deadline"
+    "hook_moment": "Priest's 'Ten days' threat is mostly dialogue, not visual"
   },
   {
     "segments": [
@@ -6031,7 +6031,7 @@
       "open_question": "What secret plan is Catherine setting in motion to stay at Ashbourne?",
       "tension": 3
     },
-    "why": "Sharp threat and a villainous smile at the end create a strong question. Relationships are fuzzy without prior context.",
+    "why": "Sharp villain threat and a predatory final smile create a clear deadline question, though the politics need context.",
     "method": "pipeline",
     "duration": 46.20000000000002,
     "checks": {
@@ -6067,12 +6067,12 @@
       "reason": ""
     },
     "confusions": [
-      "What does 'lose her twice' mean, and who is 'her'?",
-      "Who is Catherine, and how is she tied to Alexander?",
-      "Who is Catherine, and what is her role?",
-      "What is the council ruling, and why does it matter?"
+      "What 'lose her twice' and the ten days mean",
+      "Who the council and Duke are to Alexander",
+      "Catherine's role and why she smiles wickedly",
+      "Who is Catherine, and what is her role?"
     ],
-    "hook_moment": "Priest threatens the Duke: 'this county watches you lose her twice'"
+    "hook_moment": "High Priest's chilling 'watches you lose her twice' threat"
   },
   {
     "segments": [
@@ -6151,7 +6151,7 @@
       "Why guards raised weapons on the Duke",
       "What 'ten days' refers to",
       "Catherine's relationship to Alexander",
-      "Why the Crown raised iron on the Duke"
+      "Why the Crown turns on the Duke"
     ],
     "hook_moment": "Halberds pointed at Alexander's chest in a chapel standoff"
   },
@@ -6183,7 +6183,7 @@
       "open_question": "Will someone spot the priest coming to Catherine's chambers tonight?",
       "tension": 3
     },
-    "why": "Villainous scheming and a locked-door reveal hook viewers, but the opening is verbose and the plot is hard to parse.",
+    "why": "Villainous energy and an unfinished warning give pull, but the opening is wordy and relationships are unclear.",
     "method": "pipeline",
     "duration": 58.2,
     "checks": {
@@ -6209,22 +6209,22 @@
     "promo_id": "C-E48-01",
     "judge_rounds": 2,
     "scores": {
-      "hook": 3.5,
+      "hook": 3.0,
       "cliffhanger": 4.0,
       "standalone": 3.0
     },
-    "judge_disagreement": 1,
+    "judge_disagreement": 0,
     "safety": {
       "level": "ok",
-      "reason": ""
+      "reason": "Scheming and threats; no violence shown"
     },
     "confusions": [
-      "What is the healer's crown?",
-      "Who is Agnes and what is Catherine planning?",
-      "Who is Father Thomas?",
-      "What is the healer's crown and why was it stripped?"
+      "Who Catherine is to Alexander and why she hates him",
+      "What the 'healer's crown' and 'ten days' mean",
+      "Who Agnes is and what the lock is for",
+      "Who 'him' is when Agnes says 'If someone sees him'"
     ],
-    "hook_moment": "Catherine threatens the healer: 'rolls back into the gutter'"
+    "hook_moment": "Catherine's cold 'Two words' threat opens the scene"
   },
   {
     "segments": [
@@ -6293,7 +6293,7 @@
       "Who is Father Thomas, and what is his role?",
       "Why does Catherine need a secret priest visit?",
       "What is the hearing, and what is Catherine planning?",
-      "Who the Duke is and what the hearing decides"
+      "Who is Father Thomas and what did he do?"
     ],
     "hook_moment": "\"And doors can be closed from the other side.\""
   },
@@ -6325,7 +6325,7 @@
       "open_question": "Will Father Thomas arrive unseen, and what will the secret meeting set in motion?",
       "tension": 4
     },
-    "why": "Good scheming and a secret-visit ending, but the opening is talky and the plot is hard to follow cold.",
+    "why": "Opens on talk rather than action; the secret priest visit ending is intriguing but low-key.",
     "method": "pipeline",
     "duration": 39.2,
     "checks": {
@@ -6353,20 +6353,20 @@
     "scores": {
       "hook": 3.5,
       "cliffhanger": 4.0,
-      "standalone": 2.5
+      "standalone": 3.0
     },
     "judge_disagreement": 1,
     "safety": {
       "level": "ok",
-      "reason": "Scheming and bribery, no violence shown"
+      "reason": "Scheming dialogue and bribery, no violence"
     },
     "confusions": [
-      "Who Father Thomas is and his role",
-      "What the upcoming hearing is",
-      "Why Catherine humiliated in the chapel",
+      "Who Agnes and Father Thomas are",
+      "What the scheme is and who it targets",
+      "Why the bailiffs are watching the roads",
       "Who she humiliated in the chapel and why"
     ],
-    "hook_moment": "Catherine's hissing line about chapel humiliation"
+    "hook_moment": "Catherine's bitter line about being humiliated in chapel"
   },
   {
     "segments": [
@@ -6467,7 +6467,7 @@
       "open_question": "Will Father Thomas arrive unseen, and what will the secret meeting set in motion?",
       "tension": 4
     },
-    "why": "Intriguing conspiracy, but mid-conversation opening and no clear stakes make it easy to scroll past.",
+    "why": "Intriguing scheming, but low-stakes opening and vague secret plot lack a visceral hook for scrollers.",
     "method": "pipeline",
     "duration": 26.400000000000006,
     "checks": {
@@ -6494,7 +6494,7 @@
     "judge_rounds": 2,
     "scores": {
       "hook": 2.5,
-      "cliffhanger": 3.5,
+      "cliffhanger": 3.0,
       "standalone": 2.0
     },
     "judge_disagreement": 1,
@@ -6503,11 +6503,11 @@
       "reason": ""
     },
     "confusions": [
-      "Who is Father Thomas and why must he visit secretly?",
-      "What is the upcoming hearing and why does it matter?",
-      "Who is Agnes to Catherine, and what is the purse for?",
-      "Who Father Thomas and Agnes are"
+      "Who Agnes is and her role",
+      "Who 'him' is, and why he must stay hidden",
+      "What the hearing is and why it matters",
+      "Who is Father Thomas, and what did he do?"
     ],
-    "hook_moment": "Catherine's scheming defiance: 'I'm going back into that house.'"
+    "hook_moment": "Catherine's defiant line about going back into 'that house'"
   }
 ]

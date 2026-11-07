@@ -333,6 +333,135 @@ def _build_report(
 
 
 # ---------------------------------------------------------------------------
+# Calibration: mixed pipeline + baseline batches
+# ---------------------------------------------------------------------------
+
+def run_calibration(
+    judged_pipeline: list[dict],
+    judged_baseline: list[dict],
+    show,
+    *,
+    n_batches: int = 6,
+    seed: int = 7,
+    tag_prefix: str = "judge_cal",
+) -> tuple[list[dict], dict]:
+    """Build n_batches of 8 clips (4 pipeline + 4 baseline), judge them, return results.
+
+    Returns (raw_batches, calibration_data).
+    """
+    rng = random.Random(seed)
+    pipeline_pool = [p for p in judged_pipeline if p.get("scores")]
+    baseline_pool = [p for p in judged_baseline if p.get("scores")]
+
+    raw_batches: list[dict] = []
+    batch_results: list[dict] = []
+
+    n_pipeline_per = 4
+    n_baseline_per = 4
+
+    for b_idx in range(n_batches):
+        pipe_sample = rng.sample(pipeline_pool, min(n_pipeline_per, len(pipeline_pool)))
+        base_sample = rng.sample(baseline_pool, min(n_baseline_per, len(baseline_pool)))
+        combined = [(p, "pipeline") for p in pipe_sample] + [(p, "baseline") for p in base_sample]
+        rng.shuffle(combined)
+
+        labels = _LABELS[: len(combined)]
+        label_map = {label: p["promo_id"] for label, (p, _) in zip(labels, combined)}
+        label_method = {label: m for label, (_, m) in zip(labels, combined)}
+        tag = f"{tag_prefix}:b{b_idx + 1:02d}"
+
+        batch_promos = [(label, p) for label, (p, _) in zip(labels, combined)]
+        clips_text = _build_clips_text(batch_promos, show)
+
+        try:
+            response = _llm.complete_json("judge", {"clips": clips_text}, tag=tag)
+            validated = _validate_response(response, labels)
+            raw_batches.append({
+                "batch": b_idx + 1,
+                "label_map": label_map,
+                "label_method": label_method,
+                "result": {"clips": {lb: validated.get(lb) for lb in labels}},
+            })
+            batch_entry: dict = {"batch": b_idx + 1, "entries": []}
+            for label in labels:
+                entry = validated.get(label)
+                if entry:
+                    batch_entry["entries"].append({
+                        "label": label,
+                        "promo_id": label_map[label],
+                        "method": label_method[label],
+                        "hook": entry["hook"],
+                        "cliffhanger": entry["cliffhanger"],
+                        "standalone": entry["standalone"],
+                        "safety": entry.get("safety", "ok"),
+                    })
+            batch_results.append(batch_entry)
+
+        except _llm.LLMError as exc:
+            raw_batches.append({
+                "batch": b_idx + 1,
+                "label_map": label_map,
+                "label_method": label_method,
+                "result": {"error": str(exc)},
+            })
+
+    # Aggregate by method
+    method_scores: dict[str, dict[str, list[float]]] = {
+        "pipeline": {"hook": [], "cliffhanger": [], "standalone": []},
+        "baseline": {"hook": [], "cliffhanger": [], "standalone": []},
+    }
+    for batch_entry in batch_results:
+        for e in batch_entry["entries"]:
+            m = e["method"]
+            if m in method_scores:
+                for f in ("hook", "cliffhanger", "standalone"):
+                    method_scores[m][f].append(e[f])
+
+    def _mean(vals: list[float]) -> float | None:
+        return round(sum(vals) / len(vals), 2) if vals else None
+
+    summary: dict[str, dict] = {}
+    for m, scores in method_scores.items():
+        summary[m] = {f: _mean(scores[f]) for f in ("hook", "cliffhanger", "standalone")}
+        summary[m]["n"] = len(scores["hook"])
+
+    calibration_data = {
+        "n_batches": n_batches,
+        "seed": seed,
+        "batches": batch_results,
+        "summary": summary,
+    }
+
+    return raw_batches, calibration_data
+
+
+def _calibration_report_section(calibration_data: dict) -> str:
+    summary = calibration_data.get("summary", {})
+    lines = ["\n## Calibration (Mixed Batches)\n"]
+    lines.append(
+        f"Mixed batches: {calibration_data['n_batches']} batches of 8 "
+        f"(4 pipeline + 4 baseline, seed={calibration_data['seed']})\n"
+    )
+    lines.append("| Group    | n  | hook | cliffhanger | standalone |")
+    lines.append("|----------|----|------|-------------|------------|")
+
+    def _mean_score(m: dict, field: str) -> str:
+        v = m.get(field)
+        return f"{v:.2f}" if v is not None else "n/a"
+
+    for group in ("pipeline", "baseline"):
+        m = summary.get(group, {})
+        n = m.get("n", 0)
+        lines.append(
+            f"| {group.capitalize():<8} | {n:<2} | "
+            f"{_mean_score(m, 'hook'):<4} | "
+            f"{_mean_score(m, 'cliffhanger'):<11} | "
+            f"{_mean_score(m, 'standalone'):<10} |"
+        )
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
@@ -341,10 +470,46 @@ def main() -> None:
     parser.add_argument("show_dir", type=Path, metavar="show_folder")
     parser.add_argument("--limit-batches", type=int, default=None,
                         help="Limit to N batches of round 1 only (pilot mode)")
+    parser.add_argument("--calibrate", action="store_true",
+                        help="Run mixed-batch calibration (requires judged.json + judged_baseline.json)")
     args = parser.parse_args()
 
     show = load_show(args.show_dir)
     slug = show.slug
+    out_dir = Path.cwd() / "outputs" / slug / "judge"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    if args.calibrate:
+        # Load existing judged results
+        judged_path = out_dir / "judged.json"
+        judged_bl_path = out_dir / "judged_baseline.json"
+        if not judged_path.exists():
+            print(f"ERROR: {judged_path} not found — run judge first", file=sys.stderr)
+            sys.exit(1)
+        if not judged_bl_path.exists():
+            print(f"ERROR: {judged_bl_path} not found — run judge first", file=sys.stderr)
+            sys.exit(1)
+
+        judged = json.loads(judged_path.read_text(encoding="utf-8"))
+        judged_baseline = json.loads(judged_bl_path.read_text(encoding="utf-8"))
+
+        _, calibration_data = run_calibration(judged, judged_baseline, show)
+
+        (out_dir / "calibration.json").write_text(
+            json.dumps(calibration_data, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
+        # Append calibration section to judge_report.md
+        cal_section = _calibration_report_section(calibration_data)
+        report_path = out_dir / "judge_report.md"
+        existing = report_path.read_text(encoding="utf-8") if report_path.exists() else ""
+        # Remove any existing calibration section before appending
+        if "\n## Calibration" in existing:
+            existing = existing[:existing.index("\n## Calibration")]
+        report_path.write_text(existing.rstrip() + "\n" + cal_section + "\n", encoding="utf-8")
+
+        print(cal_section)
+        return
 
     # Load candidates
     cands_path = Path.cwd() / "outputs" / slug / "candidates" / "candidates.json"
@@ -353,9 +518,6 @@ def main() -> None:
         sys.exit(1)
 
     candidates: list[dict] = json.loads(cands_path.read_text(encoding="utf-8"))
-
-    out_dir = Path.cwd() / "outputs" / slug / "judge"
-    out_dir.mkdir(parents=True, exist_ok=True)
 
     # Judge candidates
     raw_batches, judged = run_judge(
@@ -382,6 +544,11 @@ def main() -> None:
     (out_dir / "judged.json").write_text(
         json.dumps(judged, indent=2, ensure_ascii=False), encoding="utf-8"
     )
+
+    if judged_baseline is not None:
+        (out_dir / "judged_baseline.json").write_text(
+            json.dumps(judged_baseline, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
 
     report = _build_report(judged, raw_batches, judged_baseline)
     (out_dir / "judge_report.md").write_text(report, encoding="utf-8")

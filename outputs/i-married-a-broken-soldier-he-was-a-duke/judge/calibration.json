@@ -1,0 +1,482 @@
+{
+  "n_batches": 6,
+  "seed": 7,
+  "batches": [
+    {
+      "batch": 1,
+      "entries": [
+        {
+          "label": "A",
+          "promo_id": "C-E46-01",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "B",
+          "promo_id": "C-E28-01",
+          "method": "pipeline",
+          "hook": 3,
+          "cliffhanger": 5,
+          "standalone": 4,
+          "safety": "ok"
+        },
+        {
+          "label": "C",
+          "promo_id": "BASE-E07",
+          "method": "baseline",
+          "hook": 3,
+          "cliffhanger": 1,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "D",
+          "promo_id": "C-E12-02",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "E",
+          "promo_id": "BASE-E35",
+          "method": "baseline",
+          "hook": 3,
+          "cliffhanger": 5,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "F",
+          "promo_id": "C-E24-01",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 3,
+          "standalone": 2,
+          "safety": "sensitive"
+        },
+        {
+          "label": "G",
+          "promo_id": "BASE-E04",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 2,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "H",
+          "promo_id": "BASE-E05",
+          "method": "baseline",
+          "hook": 3,
+          "cliffhanger": 2,
+          "standalone": 3,
+          "safety": "ok"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "entries": [
+        {
+          "label": "A",
+          "promo_id": "C-E16-03",
+          "method": "pipeline",
+          "hook": 5,
+          "cliffhanger": 2,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "B",
+          "promo_id": "BASE-E28",
+          "method": "baseline",
+          "hook": 3,
+          "cliffhanger": 4,
+          "standalone": 4,
+          "safety": "ok"
+        },
+        {
+          "label": "C",
+          "promo_id": "C-E05-01",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "D",
+          "promo_id": "C-E31-01",
+          "method": "pipeline",
+          "hook": 3,
+          "cliffhanger": 5,
+          "standalone": 4,
+          "safety": "sensitive"
+        },
+        {
+          "label": "E",
+          "promo_id": "BASE-E06",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 1,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "F",
+          "promo_id": "BASE-E36",
+          "method": "baseline",
+          "hook": 4,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "G",
+          "promo_id": "BASE-E04",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 2,
+          "standalone": 4,
+          "safety": "ok"
+        },
+        {
+          "label": "H",
+          "promo_id": "C-E30-01",
+          "method": "pipeline",
+          "hook": 3,
+          "cliffhanger": 5,
+          "standalone": 3,
+          "safety": "ok"
+        }
+      ]
+    },
+    {
+      "batch": 3,
+      "entries": [
+        {
+          "label": "A",
+          "promo_id": "C-E42-02",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 4,
+          "standalone": 4,
+          "safety": "ok"
+        },
+        {
+          "label": "B",
+          "promo_id": "BASE-E19",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 2,
+          "standalone": 2,
+          "safety": "ok"
+        },
+        {
+          "label": "C",
+          "promo_id": "C-E04-01",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 2,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "D",
+          "promo_id": "BASE-E10",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 1,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "E",
+          "promo_id": "BASE-E27",
+          "method": "baseline",
+          "hook": 3,
+          "cliffhanger": 5,
+          "standalone": 4,
+          "safety": "ok"
+        },
+        {
+          "label": "F",
+          "promo_id": "C-E03-01",
+          "method": "pipeline",
+          "hook": 5,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "G",
+          "promo_id": "BASE-E09",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "H",
+          "promo_id": "C-E16-01",
+          "method": "pipeline",
+          "hook": 5,
+          "cliffhanger": 3,
+          "standalone": 3,
+          "safety": "sensitive"
+        }
+      ]
+    },
+    {
+      "batch": 4,
+      "entries": [
+        {
+          "label": "A",
+          "promo_id": "C-E26-03",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 5,
+          "standalone": 4,
+          "safety": "ok"
+        },
+        {
+          "label": "B",
+          "promo_id": "BASE-E40",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 3,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "C",
+          "promo_id": "C-E09-01",
+          "method": "pipeline",
+          "hook": 3,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "D",
+          "promo_id": "C-E42-01",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 4,
+          "standalone": 4,
+          "safety": "ok"
+        },
+        {
+          "label": "E",
+          "promo_id": "C-E05-01",
+          "method": "pipeline",
+          "hook": 3,
+          "cliffhanger": 4,
+          "standalone": 4,
+          "safety": "ok"
+        },
+        {
+          "label": "F",
+          "promo_id": "BASE-E37",
+          "method": "baseline",
+          "hook": 4,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "G",
+          "promo_id": "BASE-E04",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 1,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "H",
+          "promo_id": "BASE-E14",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        }
+      ]
+    },
+    {
+      "batch": 5,
+      "entries": [
+        {
+          "label": "A",
+          "promo_id": "BASE-E16",
+          "method": "baseline",
+          "hook": 4,
+          "cliffhanger": 2,
+          "standalone": 3,
+          "safety": "sensitive"
+        },
+        {
+          "label": "B",
+          "promo_id": "C-E26-02",
+          "method": "pipeline",
+          "hook": 3,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "C",
+          "promo_id": "C-E23-01",
+          "method": "pipeline",
+          "hook": 5,
+          "cliffhanger": 5,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "D",
+          "promo_id": "BASE-E50",
+          "method": "baseline",
+          "hook": 3,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "unsafe"
+        },
+        {
+          "label": "E",
+          "promo_id": "C-E16-04",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 2,
+          "standalone": 2,
+          "safety": "sensitive"
+        },
+        {
+          "label": "F",
+          "promo_id": "C-E13-03",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 3,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "G",
+          "promo_id": "BASE-E06",
+          "method": "baseline",
+          "hook": 1,
+          "cliffhanger": 1,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "H",
+          "promo_id": "BASE-E45",
+          "method": "baseline",
+          "hook": 5,
+          "cliffhanger": 4,
+          "standalone": 4,
+          "safety": "ok"
+        }
+      ]
+    },
+    {
+      "batch": 6,
+      "entries": [
+        {
+          "label": "A",
+          "promo_id": "BASE-E49",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 3,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "B",
+          "promo_id": "C-E13-01",
+          "method": "pipeline",
+          "hook": 3,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "sensitive"
+        },
+        {
+          "label": "C",
+          "promo_id": "C-E38-02",
+          "method": "pipeline",
+          "hook": 3,
+          "cliffhanger": 3,
+          "standalone": 2,
+          "safety": "ok"
+        },
+        {
+          "label": "D",
+          "promo_id": "C-E30-01",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 5,
+          "standalone": 4,
+          "safety": "ok"
+        },
+        {
+          "label": "E",
+          "promo_id": "BASE-E32",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 5,
+          "standalone": 3,
+          "safety": "sensitive"
+        },
+        {
+          "label": "F",
+          "promo_id": "BASE-E22",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 4,
+          "standalone": 3,
+          "safety": "ok"
+        },
+        {
+          "label": "G",
+          "promo_id": "C-E11-01",
+          "method": "pipeline",
+          "hook": 4,
+          "cliffhanger": 4,
+          "standalone": 4,
+          "safety": "ok"
+        },
+        {
+          "label": "H",
+          "promo_id": "BASE-E10",
+          "method": "baseline",
+          "hook": 2,
+          "cliffhanger": 2,
+          "standalone": 3,
+          "safety": "ok"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "pipeline": {
+      "hook": 3.83,
+      "cliffhanger": 3.83,
+      "standalone": 3.21,
+      "n": 24
+    },
+    "baseline": {
+      "hook": 2.58,
+      "cliffhanger": 2.92,
+      "standalone": 3.12,
+      "n": 24
+    }
+  }
+}

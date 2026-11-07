@@ -110,8 +110,8 @@ Count: 0
 | Metric | Value |
 |---|---|
 | Calls | 50 |
-| Cached | 3 |
-| Uncached | 47 |
+| Cached | 50 |
+| Uncached | 0 |
 | Prompt tokens | 305626 |
 | Completion tokens | 82887 |
 | Total tokens | 388513 |
