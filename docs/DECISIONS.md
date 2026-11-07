@@ -104,3 +104,19 @@ Format: decision → why → alternatives rejected. Add a new entry every time w
 - **Model**: Haiku 5.5 everywhere (~$0.25 for the full show). The judge can be upgraded to Sonnet via `LLM_MODEL_JUDGE` only if the judge's own consistency metric says it's needed.
 - **Guardrails**: a spend log with cost per call, a $6 budget cap, and `--spend`.
 - **Kept**: 19 episodes of gemini-2.5-flash beats (archived) for a model comparison.
+
+### D26 — Overlap de-duplication happens after judging, not before
+- **Evidence**: candidates fell from 91 to 50 because A3.3 removed overlapping clips using beat scores, which contradicts D21. Overlapping clips with different hooks are alternative cuts of the same promo.
+- **Decision**: candidates remove only exact duplicates; Task 06 removes overlaps using the judge's scores.
+- **Deferred**: jump-cut promos (hook + ~15 s, cut, ~20 s before the cliffhanger). 525 pairings were > 60 s because cliffhangers cluster at episode ends. Added only if the top 20 is weak.
+
+### D27 — Redact the script's own "cliffhanger" labels from judge input
+- **Evidence**: the top clip's last line read "...cutting to an intense, heart-stopping cliffhanger." The writers label cliffhangers in 22 episodes, so the judge was being told the answer. This biases toward clips ending at episode ends (hurts the comparison's fairness, especially for baselines).
+- **Fix**: `format_clip` replaces "cliffhanger" with "moment"; the judge was re-run; before/after numbers recorded.
+
+### D28 — Ranking: hook-weighted score, safety, overlap clusters, variety
+- Score = 0.4 hook + 0.3 cliffhanger + 0.3 standalone (the first 3 s decide whether anyone watches).
+- Unsafe excluded; sensitive −0.5 and flagged for review.
+- Overlapping clips → the best-judged one is the main promo; the others are listed as alternative cuts for the editor.
+- Top 10 = at most one per episode; ties → earlier episode (new viewers start at Ep 1).
+- Mixed-batch calibration (pipeline + baseline in the same batch) checks the headline comparison.

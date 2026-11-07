@@ -36,6 +36,7 @@ Show: *I Married a Broken Soldier. He was a Duke* — 50 episodes, one `.txt` sc
 7. **Gemini 2.5 bills hidden "thinking" tokens**: the ping showed prompt 31 + completion 18 = 49, but total = 83, so cost estimates must use `total_tokens`, not prompt + completion.
 8. **Free-tier quota is ~20 requests/day for gemini-2.5-flash** (measured: 1 ping + 3 pilot + 16 episodes = 20, then 429s). Resets at midnight **Pacific** time (13:30 IST), not UTC. Google no longer publishes the numbers; check AI Studio per project. New accounts can't use gemini-2.5-flash at all (404, "no longer available to new users").
 9. **Claude via the OpenAI-compatible endpoint**: `response_format: json_object` → 400; `temperature` < 1 → 400 on Claude 4.7+; thinking is on by default and billed but not returned; no prompt caching through this layer.
+10. **Hooks and cliffhangers are usually > 60 s apart within an episode.** Cliffhangers cluster at episode ends; hooks are spread throughout. 525 hook→cliffhanger pairings exceeded 60 s.
 
 ## Story arc (for judging "makes sense on its own")
 - Ep 1–5: jilted at the altar for her sister, disowned, marries a scarred stranger.
