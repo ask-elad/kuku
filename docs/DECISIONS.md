@@ -97,3 +97,10 @@ Format: decision → why → alternatives rejected. Add a new entry every time w
 
 ### D24 — Baseline judged by the same judge
 - **Why**: turns "our promos look good" into a measured comparison. Baselines are batched only with baselines.
+
+### D25 — Switch to Claude API (Haiku 5.5); Gemini kept as fallback
+- **Why**: Gemini free tier = 20 requests/day, and new accounts can't use 2.5-flash. The project needs ~95 calls.
+- **How**: Anthropic's OpenAI-compatible endpoint, so `llm.py` stays the same design; switching = `.env` change. Two compatibility fixes: no `response_format` (json_object → 400) and no `temperature` (< 1 → 400 on Claude 4.7+).
+- **Model**: Haiku 5.5 everywhere (~$0.25 for the full show). The judge can be upgraded to Sonnet via `LLM_MODEL_JUDGE` only if the judge's own consistency metric says it's needed.
+- **Guardrails**: a spend log with cost per call, a $6 budget cap, and `--spend`.
+- **Kept**: 19 episodes of gemini-2.5-flash beats (archived) for a model comparison.

@@ -36,6 +36,8 @@ who today watches every episode by hand.
 5. **Secrets come from `.env`.** Never hard-code or print API keys.
 6. **Raw outputs are never hand-edited.** `outputs/` holds exactly what the tool produced.
 
+- **One run at a time.** Run LLM jobs in the foreground and wait for them. Never start a second run of anything while one is still going; check for running processes first. If a command goes to the background on its own, wait for it, and don't launch it again.
+
 ## Repo map
 | Path | Purpose |
 |---|---|

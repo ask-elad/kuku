@@ -103,6 +103,7 @@ Print PASS/FAIL per check, with the actual value. If the evals file is missing, 
 - [ ] `git status`: `outputs/.../beats/`, `evals/` and `prompts/beats.md` appear; no `data/`, `build/`, `cache/` or `logs/`
 
 ## Result
+- > **Note (D25):** The runs below were on Gemini (2.5-flash pilot + 19 episodes, archived in `beats__gemini-2.5-flash/`). They stopped at the free-tier quota. The final run is on Claude Haiku 5.5. See Task 03b and the updated report below.
 
 ### Files built
 - `src/promo_finder/scriptfmt.py` — `format_blocks(blocks, scenes=None) -> str`

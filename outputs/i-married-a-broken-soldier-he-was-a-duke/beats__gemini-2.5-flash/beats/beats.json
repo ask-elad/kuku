@@ -1,0 +1,20 @@
+{
+  "show": "I Married a Broken Soldier. He was a Duke",
+  "slug": "i-married-a-broken-soldier-he-was-a-duke",
+  "episodes": [
+    {
+      "episode": 19,
+      "hooks": [],
+      "cliffhangers": [],
+      "ending": {},
+      "errors": [
+        "LLMError: Model or endpoint not found: Error code: 404"
+      ],
+      "stats": {
+        "invalid_item": 0,
+        "invalid_id": 0,
+        "total_ids_returned": 0
+      }
+    }
+  ]
+}
