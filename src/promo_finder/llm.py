@@ -28,16 +28,67 @@ _MIN_INTERVAL: float = float(os.environ.get("LLM_MIN_INTERVAL_S", "6.5"))
 _MAX_TOKENS: int = int(os.environ.get("LLM_MAX_TOKENS", "16000"))
 _CACHE_ENABLED: bool = os.environ.get("LLM_CACHE", "1") != "0"
 
+_TEMPERATURE_STR: str = os.environ.get("LLM_TEMPERATURE", "0")
+_TEMPERATURE: float | str = (
+    "omit" if _TEMPERATURE_STR.lower() == "omit" else float(_TEMPERATURE_STR)
+)
+
+_JSON_MODE: str = os.environ.get("LLM_JSON_MODE", "json_object")  # "json_object" or "off"
+
+_EXTRA_HEADERS_STR: str | None = os.environ.get("LLM_EXTRA_HEADERS")
+
+_budget_str = os.environ.get("LLM_BUDGET_USD")
+_BUDGET_USD: float | None = float(_budget_str) if _budget_str else None
+
 _REPO_ROOT = Path(__file__).parent.parent.parent
 _PROMPTS_DIR = _REPO_ROOT / "prompts"
 _CACHE_DIR = _REPO_ROOT / "cache" / "llm"
 _LOG_PATH = _REPO_ROOT / "logs" / "llm_usage.csv"
+_PRICES_PATH = _REPO_ROOT / "prices.json"
+
+# ---------------------------------------------------------------------------
+# Prices
+# ---------------------------------------------------------------------------
+def _load_prices() -> dict:
+    if _PRICES_PATH.exists():
+        return json.loads(_PRICES_PATH.read_text(encoding="utf-8"))
+    return {}
+
+
+_PRICES: dict = _load_prices()
+_unknown_model_warned: set[str] = set()
+
+
+def _compute_cost(model: str, cached: bool, prompt_tokens: int,
+                  completion_tokens: int) -> str:
+    """Return cost as a 6-decimal string, '' for unknown models, '0.000000' for cached."""
+    if cached:
+        return "0.000000"
+    prices = _PRICES.get(model)
+    if prices is None:
+        if model not in _unknown_model_warned:
+            _unknown_model_warned.add(model)
+            import sys
+            print(
+                f"Warning: no price data for model {model!r}; cost_usd will be blank",
+                file=sys.stderr,
+            )
+        return ""
+    cost = (prompt_tokens * prices["in"] + completion_tokens * prices["out"]) / 1e6
+    return f"{cost:.6f}"
+
 
 # ---------------------------------------------------------------------------
 # State
 # ---------------------------------------------------------------------------
 _last_call_time: float = 0.0
 _json_mode_rejected: bool = False
+_csv_header_checked: bool = False
+
+_CSV_HEADER = [
+    "time", "tag", "model", "cached",
+    "prompt_tokens", "completion_tokens", "total_tokens", "latency_s", "cost_usd",
+]
 
 
 class LLMError(RuntimeError):
@@ -49,11 +100,22 @@ class LLMQuotaExhausted(LLMError):
     pass
 
 
+class LLMBudgetExceeded(LLMError):
+    """Raised when the configured spend budget is reached."""
+    pass
+
+
 # ---------------------------------------------------------------------------
 # Client factory (replaceable in tests)
 # ---------------------------------------------------------------------------
 def _client() -> openai.OpenAI:
-    return openai.OpenAI(base_url=_BASE_URL, api_key=_API_KEY)
+    kwargs: dict[str, Any] = {"base_url": _BASE_URL, "api_key": _API_KEY}
+    if _EXTRA_HEADERS_STR:
+        try:
+            kwargs["default_headers"] = json.loads(_EXTRA_HEADERS_STR)
+        except json.JSONDecodeError as exc:
+            raise LLMError(f"LLM_EXTRA_HEADERS is not valid JSON: {exc}") from exc
+    return openai.OpenAI(**kwargs)
 
 
 # ---------------------------------------------------------------------------
@@ -71,7 +133,9 @@ def _load_prompt(prompt_name: str, variables: dict[str, str]) -> tuple[str | Non
     def replacer(m: re.Match) -> str:
         name = m.group(1)
         if name not in variables:
-            raise LLMError(f"Prompt '{prompt_name}' uses placeholder '{{{{{name}}}}}' but it was not supplied")
+            raise LLMError(
+                f"Prompt '{prompt_name}' uses placeholder '{{{{{name}}}}}' but it was not supplied"
+            )
         used.add(name)
         return str(variables[name])
 
@@ -92,8 +156,8 @@ def _load_prompt(prompt_name: str, variables: dict[str, str]) -> tuple[str | Non
 # ---------------------------------------------------------------------------
 # Cache
 # ---------------------------------------------------------------------------
-def _cache_key(model: str, messages: list[dict], temperature: float,
-               max_tokens: int, json_mode: bool) -> str:
+def _cache_key(model: str, messages: list[dict], temperature: float | str,
+               max_tokens: int, json_mode: str) -> str:
     payload = json.dumps(
         {"model": model, "messages": messages, "temperature": temperature,
          "max_tokens": max_tokens, "json_mode": json_mode},
@@ -123,20 +187,42 @@ def _cache_save(key: str, entry: dict) -> None:
 # ---------------------------------------------------------------------------
 # Usage log
 # ---------------------------------------------------------------------------
+def _migrate_log_if_needed() -> None:
+    """If existing CSV has outdated headers, rename to .old.csv and start fresh."""
+    if not _LOG_PATH.exists():
+        return
+    with _LOG_PATH.open(encoding="utf-8") as f:
+        reader = csv.reader(f)
+        try:
+            header = next(reader)
+        except StopIteration:
+            return
+    if header != _CSV_HEADER:
+        old_path = _LOG_PATH.with_suffix(".old.csv")
+        _LOG_PATH.rename(old_path)
+
+
 def _log_usage(tag: str, model: str, cached: bool, prompt_tokens: int,
                completion_tokens: int, total_tokens: int, latency_s: float) -> None:
+    global _csv_header_checked
+    if not _csv_header_checked:
+        _csv_header_checked = True
+        _migrate_log_if_needed()
+
+    cost_usd = _compute_cost(model, cached, prompt_tokens, completion_tokens)
+
     _LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
     write_header = not _LOG_PATH.exists()
     with _LOG_PATH.open("a", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         if write_header:
-            writer.writerow(["time", "tag", "model", "cached",
-                             "prompt_tokens", "completion_tokens", "total_tokens", "latency_s"])
+            writer.writerow(_CSV_HEADER)
         writer.writerow([
             time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
             tag, model, str(cached).lower(),
             prompt_tokens, completion_tokens, total_tokens,
             f"{latency_s:.3f}",
+            cost_usd,
         ])
 
 
@@ -173,22 +259,56 @@ def _wait_for_rate_limit() -> None:
 
 
 # ---------------------------------------------------------------------------
+# Budget guard
+# ---------------------------------------------------------------------------
+def _check_budget() -> None:
+    if _BUDGET_USD is None:
+        return
+    if not _LOG_PATH.exists():
+        return
+    total = 0.0
+    with _LOG_PATH.open(encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            cost_str = row.get("cost_usd", "")
+            if cost_str:
+                try:
+                    total += float(cost_str)
+                except ValueError:
+                    pass
+    if total >= _BUDGET_USD:
+        raise LLMBudgetExceeded(
+            f"Budget cap: ${total:.4f} spent >= ${_BUDGET_USD:.2f} limit"
+        )
+
+
+# ---------------------------------------------------------------------------
+# Model resolution
+# ---------------------------------------------------------------------------
+def _resolve_model(tag: str) -> str:
+    """Return per-stage env override (LLM_MODEL_<STAGE>), else _MODEL."""
+    stage = tag.split(":")[0].upper()
+    return os.environ.get(f"LLM_MODEL_{stage}", _MODEL)
+
+
+# ---------------------------------------------------------------------------
 # Core call with retry
 # ---------------------------------------------------------------------------
 _RETRY_DELAYS = [5, 10, 20, 40, 80]
 
 
-def _call_api(client: openai.OpenAI, messages: list[dict], temperature: float,
-              max_tokens: int, use_json_mode: bool) -> tuple[str, str, dict]:
+def _call_api(client: openai.OpenAI, model: str, messages: list[dict],
+              temperature: float | str, max_tokens: int,
+              use_json_mode: bool) -> tuple[str, str, dict]:
     """Return (content, finish_reason, usage_dict). May raise LLMError."""
     global _json_mode_rejected
 
     kwargs: dict[str, Any] = {
-        "model": _MODEL,
+        "model": model,
         "messages": messages,
-        "temperature": temperature,
         "max_tokens": max_tokens,
     }
+    if temperature != "omit":
+        kwargs["temperature"] = temperature
     if use_json_mode and not _json_mode_rejected:
         kwargs["response_format"] = {"type": "json_object"}
 
@@ -210,7 +330,6 @@ def _call_api(client: openai.OpenAI, messages: list[dict], temperature: float,
             if use_json_mode and not _json_mode_rejected and "response_format" in body:
                 _json_mode_rejected = True
                 kwargs.pop("response_format", None)
-                # retry immediately without response_format
                 continue
             raise LLMError(f"Bad request: {exc}") from exc
 
@@ -245,13 +364,11 @@ def _call_api(client: openai.OpenAI, messages: list[dict], temperature: float,
 
 
 def _is_daily_quota(exc: Exception) -> bool:
-    """Return True if a RateLimitError indicates the daily quota is exhausted."""
     body = str(exc).lower()
     return "perday" in body or "per day" in body or "daily" in body
 
 
 def _parse_retry_after(exc: Exception) -> float:
-    """Extract Retry-After seconds from exception headers if available."""
     try:
         headers = exc.response.headers  # type: ignore[attr-defined]
         val = headers.get("retry-after") or headers.get("Retry-After")
@@ -266,14 +383,18 @@ def _parse_retry_after(exc: Exception) -> float:
 # Public interface
 # ---------------------------------------------------------------------------
 def complete_json(prompt_name: str, variables: dict, *, tag: str,
-                  temperature: float = 0.0) -> dict:
+                  temperature: float | None = None) -> dict:
     system_msg, user_msg = _load_prompt(prompt_name, variables)
     messages: list[dict] = []
     if system_msg:
         messages.append({"role": "system", "content": system_msg})
     messages.append({"role": "user", "content": user_msg})
 
-    key = _cache_key(_MODEL, messages, temperature, _MAX_TOKENS, json_mode=True)
+    eff_model = _resolve_model(tag)
+    eff_temp: float | str = _TEMPERATURE if temperature is None else temperature
+    use_json = _JSON_MODE == "json_object"
+
+    key = _cache_key(eff_model, messages, eff_temp, _MAX_TOKENS, _JSON_MODE)
     cached_entry = _cache_load(key)
     if cached_entry:
         _log_usage(tag, cached_entry["model"], True,
@@ -282,11 +403,12 @@ def complete_json(prompt_name: str, variables: dict, *, tag: str,
                    cached_entry["usage"]["total_tokens"], 0.0)
         return _parse_json_object(cached_entry["response_text"])
 
+    _check_budget()
     _wait_for_rate_limit()
     client = _client()
     t0 = time.monotonic()
     content, finish_reason, usage = _call_api(
-        client, messages, temperature, _MAX_TOKENS, use_json_mode=True
+        client, eff_model, messages, eff_temp, _MAX_TOKENS, use_json
     )
     latency = time.monotonic() - t0
 
@@ -296,18 +418,17 @@ def complete_json(prompt_name: str, variables: dict, *, tag: str,
             "Raise LLM_MAX_TOKENS to get a complete answer."
         )
 
-    _cache_save(key, {"model": _MODEL, "messages": messages,
-                      "temperature": temperature, "max_tokens": _MAX_TOKENS,
+    _cache_save(key, {"model": eff_model, "messages": messages,
+                      "temperature": eff_temp, "max_tokens": _MAX_TOKENS,
                       "response_text": content, "finish_reason": finish_reason,
                       "usage": usage})
-    _log_usage(tag, _MODEL, False,
+    _log_usage(tag, eff_model, False,
                usage["prompt_tokens"], usage["completion_tokens"],
                usage["total_tokens"], latency)
 
     try:
         return _parse_json_object(content)
     except ValueError as first_exc:
-        # one repair retry
         repair_messages = messages + [
             {"role": "assistant", "content": content},
             {"role": "user", "content": (
@@ -315,13 +436,14 @@ def complete_json(prompt_name: str, variables: dict, *, tag: str,
                 "Reply with valid JSON only, no explanation, no markdown fences."
             )},
         ]
+        _check_budget()
         _wait_for_rate_limit()
         t0 = time.monotonic()
         content2, finish_reason2, usage2 = _call_api(
-            client, repair_messages, temperature, _MAX_TOKENS, use_json_mode=True
+            client, eff_model, repair_messages, eff_temp, _MAX_TOKENS, use_json
         )
         latency2 = time.monotonic() - t0
-        _log_usage(tag + ":repair", _MODEL, False,
+        _log_usage(tag + ":repair", eff_model, False,
                    usage2["prompt_tokens"], usage2["completion_tokens"],
                    usage2["total_tokens"], latency2)
         try:
@@ -334,14 +456,18 @@ def complete_json(prompt_name: str, variables: dict, *, tag: str,
 
 
 def complete_text(prompt_name: str, variables: dict, *, tag: str,
-                  temperature: float = 0.0) -> str:
+                  temperature: float | None = None) -> str:
     system_msg, user_msg = _load_prompt(prompt_name, variables)
     messages: list[dict] = []
     if system_msg:
         messages.append({"role": "system", "content": system_msg})
     messages.append({"role": "user", "content": user_msg})
 
-    key = _cache_key(_MODEL, messages, temperature, _MAX_TOKENS, json_mode=False)
+    eff_model = _resolve_model(tag)
+    eff_temp: float | str = _TEMPERATURE if temperature is None else temperature
+    use_json = _JSON_MODE == "json_object"
+
+    key = _cache_key(eff_model, messages, eff_temp, _MAX_TOKENS, _JSON_MODE)
     cached_entry = _cache_load(key)
     if cached_entry:
         _log_usage(tag, cached_entry["model"], True,
@@ -350,11 +476,12 @@ def complete_text(prompt_name: str, variables: dict, *, tag: str,
                    cached_entry["usage"]["total_tokens"], 0.0)
         return cached_entry["response_text"]
 
+    _check_budget()
     _wait_for_rate_limit()
     client = _client()
     t0 = time.monotonic()
     content, finish_reason, usage = _call_api(
-        client, messages, temperature, _MAX_TOKENS, use_json_mode=False
+        client, eff_model, messages, eff_temp, _MAX_TOKENS, use_json
     )
     latency = time.monotonic() - t0
 
@@ -364,11 +491,11 @@ def complete_text(prompt_name: str, variables: dict, *, tag: str,
             "Raise LLM_MAX_TOKENS to get a complete answer."
         )
 
-    _cache_save(key, {"model": _MODEL, "messages": messages,
-                      "temperature": temperature, "max_tokens": _MAX_TOKENS,
+    _cache_save(key, {"model": eff_model, "messages": messages,
+                      "temperature": eff_temp, "max_tokens": _MAX_TOKENS,
                       "response_text": content, "finish_reason": finish_reason,
                       "usage": usage})
-    _log_usage(tag, _MODEL, False,
+    _log_usage(tag, eff_model, False,
                usage["prompt_tokens"], usage["completion_tokens"],
                usage["total_tokens"], latency)
     return content
@@ -384,22 +511,29 @@ def _main() -> None:
     args = sys.argv[1:]
     if "--ping" in args:
         host = urlparse(_BASE_URL).netloc or _BASE_URL
-        print(f"Endpoint : {host}")
-        print(f"Model    : {_MODEL}")
+        ping_model = _resolve_model("ping")
+        has_headers = _EXTRA_HEADERS_STR is not None
+
+        print(f"Endpoint       : {host}")
+        print(f"Model (ping)   : {ping_model}")
+        print(f"Temperature    : {_TEMPERATURE_STR}")
+        print(f"JSON mode      : {_JSON_MODE}")
+        print(f"Extra headers  : {'yes (values hidden)' if has_headers else 'no'}")
         print()
 
         t0 = time.monotonic()
         result = complete_json("ping", {"word": "promo"}, tag="ping")
         latency = time.monotonic() - t0
-        # read usage from last log row
         rows = list(csv.DictReader(_LOG_PATH.open(encoding="utf-8")))
         last = rows[-1]
-        print(f"Result   : {result}")
-        print(f"Tokens   : prompt={last['prompt_tokens']} "
+        cost_str = last.get("cost_usd", "")
+        print(f"Result         : {result}")
+        print(f"Tokens         : prompt={last['prompt_tokens']} "
               f"completion={last['completion_tokens']} "
               f"total={last['total_tokens']}")
-        print(f"Latency  : {latency:.2f}s")
-        print(f"Cached   : {last['cached']}")
+        print(f"Cost           : {'$' + cost_str if cost_str else 'unknown'}")
+        print(f"Latency        : {latency:.2f}s")
+        print(f"Cached         : {last['cached']}")
         print()
 
         t0 = time.monotonic()
@@ -407,9 +541,42 @@ def _main() -> None:
         latency2 = time.monotonic() - t0
         rows2 = list(csv.DictReader(_LOG_PATH.open(encoding="utf-8")))
         last2 = rows2[-1]
-        print(f"Result   : {result2}")
-        print(f"Latency  : {latency2:.4f}s")
-        print(f"Cached   : {last2['cached']}  ← should be true")
+        print(f"Result         : {result2}")
+        print(f"Latency        : {latency2:.4f}s")
+        print(f"Cached         : {last2['cached']}  ← should be true")
+
+    elif "--spend" in args:
+        if not _LOG_PATH.exists():
+            print("No usage log found.")
+            sys.exit(0)
+        total = 0.0
+        by_model: dict[str, float] = {}
+        by_stage: dict[str, float] = {}
+        unknown_models: set[str] = set()
+        with _LOG_PATH.open(encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                cost_str = row.get("cost_usd", "")
+                if not cost_str:
+                    m = row.get("model", "")
+                    if m:
+                        unknown_models.add(m)
+                    continue
+                cost = float(cost_str)
+                total += cost
+                m = row.get("model", "unknown")
+                by_model[m] = by_model.get(m, 0.0) + cost
+                tag = row.get("tag", "")
+                stage = tag.split(":")[0] if tag else "unknown"
+                by_stage[stage] = by_stage.get(stage, 0.0) + cost
+        print(f"Total spend : ${total:.4f}")
+        print("\nBy model:")
+        for m, c in sorted(by_model.items()):
+            print(f"  {m}: ${c:.4f}")
+        print("\nBy stage:")
+        for s, c in sorted(by_stage.items()):
+            print(f"  {s}: ${c:.4f}")
+        if unknown_models:
+            print(f"\nNote: cost unknown for model(s): {sorted(unknown_models)}")
 
     elif "--list-models" in args:
         client = _client()
@@ -421,7 +588,7 @@ def _main() -> None:
         except Exception as exc:
             print(f"Could not list models: {exc}")
     else:
-        print("Usage: python -m promo_finder.llm [--ping | --list-models]")
+        print("Usage: python -m promo_finder.llm [--ping | --spend | --list-models]")
 
 
 if __name__ == "__main__":

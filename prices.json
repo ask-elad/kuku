@@ -1,0 +1,7 @@
+{
+  "_note": "USD per 1M tokens. Claude Haiku 5.5 rate is for prompts <= 100k tokens.",
+  "claude-haiku-5-5":  {"in": 0.10, "out": 0.50},
+  "claude-sonnet-5-5": {"in": 2.00, "out": 10.00},
+  "gemini-2.5-flash":  {"in": 0.00, "out": 0.00},
+  "gemini-3.8-flash":  {"in": 0.00, "out": 0.00}
+}

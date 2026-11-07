@@ -1,0 +1,283 @@
+{
+  "show": "I Married a Broken Soldier. He was a Duke",
+  "slug": "i-married-a-broken-soldier-he-was-a-duke",
+  "episodes": [
+    {
+      "episode": 1,
+      "hooks": [
+        {
+          "block_id": "E01-B027",
+          "type": "reveal",
+          "stop_power": 5,
+          "why": "Bride arrives at the altar only to hear another woman say he's marrying her.",
+          "context_needed": "none",
+          "block_type": "DIALOGUE",
+          "start": 39.1,
+          "end": 41.2,
+          "clean_start": 39.1
+        },
+        {
+          "block_id": "E01-B087",
+          "type": "humiliation",
+          "stop_power": 4,
+          "why": "Groom publicly degrades his bride at the altar as plain and low value.",
+          "context_needed": "none",
+          "block_type": "DIALOGUE",
+          "start": 124.2,
+          "end": 127.5,
+          "clean_start": 124.2
+        },
+        {
+          "block_id": "E01-B041",
+          "type": "shocking_line",
+          "stop_power": 4,
+          "why": "Groom callously dismisses his weeping bride at the altar with zero remorse.",
+          "context_needed": "fiancé abandons bride at altar",
+          "block_type": "DIALOGUE",
+          "start": 60.1,
+          "end": 61.8,
+          "clean_start": 60.1
+        },
+        {
+          "block_id": "E01-B075",
+          "type": "humiliation",
+          "stop_power": 4,
+          "why": "Cruel sister tells the abandoned bride their family only ever tolerated her.",
+          "context_needed": "none",
+          "block_type": "DIALOGUE",
+          "start": 107.5,
+          "end": 110.8,
+          "clean_start": 107.5
+        },
+        {
+          "block_id": "E01-B013",
+          "type": "shocking_line",
+          "stop_power": 3,
+          "why": "Matriarch bluntly stops bride mid-aisle to tell her the groom isn't waiting.",
+          "context_needed": "bride walking down aisle",
+          "block_type": "DIALOGUE",
+          "start": 18.0,
+          "end": 19.4,
+          "clean_start": 18.0
+        }
+      ],
+      "cliffhangers": [
+        {
+          "block_id": "E01-B094",
+          "tension": 4,
+          "open_question": "How will Juliana avenge this ruthless public betrayal by her entire family?",
+          "block_type": "SOUND_FX",
+          "start": 135.0,
+          "end": 137.5
+        },
+        {
+          "block_id": "E01-B027",
+          "tension": 4,
+          "open_question": "How will the bride react to her sister stealing her groom at the altar?",
+          "block_type": "DIALOGUE",
+          "start": 39.1,
+          "end": 41.2
+        },
+        {
+          "block_id": "E01-B061",
+          "tension": 3,
+          "open_question": "Will Juliana's father speak up, or has he completely cast her aside?",
+          "block_type": "ACTION",
+          "start": 89.5,
+          "end": 90.8
+        },
+        {
+          "block_id": "E01-B084",
+          "tension": 3,
+          "open_question": "What will Juliana do after being ruthlessly discarded by her betrothed?",
+          "block_type": "DIALOGUE",
+          "start": 119.8,
+          "end": 122.3
+        }
+      ],
+      "ending": {
+        "ends_on_cliffhanger": true,
+        "ending_type": "cliffhanger",
+        "note": "Juliana's despair transforms into cold defiance as ominous music swells to cut to black."
+      },
+      "errors": [],
+      "stats": {
+        "invalid_item": 0,
+        "invalid_id": 0,
+        "total_ids_returned": 9
+      }
+    },
+    {
+      "episode": 7,
+      "hooks": [
+        {
+          "block_id": "E07-B032",
+          "type": "threat",
+          "stop_power": 4,
+          "why": "Aggressive nobleman lunges forward, threatening to make her husband disappear.",
+          "context_needed": "none",
+          "block_type": "DIALOGUE",
+          "start": 65.6,
+          "end": 68.5,
+          "clean_start": 65.6
+        },
+        {
+          "block_id": "E07-B041",
+          "type": "rescue",
+          "stop_power": 4,
+          "why": "A towering, scarred woodsman suddenly looms over an arrogant noble.",
+          "context_needed": "none",
+          "block_type": "CAMERA",
+          "start": 81.0,
+          "end": 83.5,
+          "clean_start": 81.0
+        },
+        {
+          "block_id": "E07-B011",
+          "type": "humiliation",
+          "stop_power": 3,
+          "why": "Wealthy man brutally mocks a woman for marrying a penniless soldier.",
+          "context_needed": "none",
+          "block_type": "DIALOGUE",
+          "start": 25.0,
+          "end": 29.8,
+          "clean_start": 25.0
+        },
+        {
+          "block_id": "E07-B017",
+          "type": "humiliation",
+          "stop_power": 3,
+          "why": "Cruel aristocrat insults a former lady's mud-stained hands.",
+          "context_needed": "Juliana was previously high-born",
+          "block_type": "DIALOGUE",
+          "start": 38.2,
+          "end": 39.8,
+          "clean_start": 38.2
+        }
+      ],
+      "cliffhangers": [
+        {
+          "block_id": "E07-B043",
+          "tension": 4,
+          "open_question": "Will the towering, silent husband violently strike down the terrified nobleman?",
+          "block_type": "CAMERA",
+          "start": 83.5,
+          "end": 88.0
+        },
+        {
+          "block_id": "E07-B032",
+          "tension": 4,
+          "open_question": "Will Gerald carry out his threat to eliminate Juliana's new husband?",
+          "block_type": "DIALOGUE",
+          "start": 65.6,
+          "end": 68.5
+        },
+        {
+          "block_id": "E07-B037",
+          "tension": 3,
+          "open_question": "How will the scarred husband handle the intruders harassing his wife?",
+          "block_type": "CAMERA",
+          "start": 74.0,
+          "end": 75.5
+        }
+      ],
+      "ending": {
+        "ends_on_cliffhanger": false,
+        "ending_type": "resolved",
+        "note": "The intruders flee in terror, leaving the couple in peaceful, mutual admiration."
+      },
+      "errors": [],
+      "stats": {
+        "invalid_item": 0,
+        "invalid_id": 0,
+        "total_ids_returned": 7
+      }
+    },
+    {
+      "episode": 23,
+      "hooks": [
+        {
+          "block_id": "E23-B040",
+          "type": "shocking_line",
+          "stop_power": 4,
+          "why": "A chilling accusation instantly turns a sickbed scene into an active murder mystery.",
+          "context_needed": "none",
+          "block_type": "DIALOGUE",
+          "start": 79.0,
+          "end": 81.5,
+          "clean_start": 79.0
+        },
+        {
+          "block_id": "E23-B045",
+          "type": "reveal",
+          "stop_power": 4,
+          "why": "Extreme close-up delivering the lethal poison's name with fierce, righteous fury.",
+          "context_needed": "A sick matriarch is secretly being poisoned",
+          "block_type": "DIALOGUE",
+          "start": 86.0,
+          "end": 88.0,
+          "clean_start": 86.0
+        },
+        {
+          "block_id": "E23-B006",
+          "type": "reveal",
+          "stop_power": 3,
+          "why": "Grotesque, blackened fingernails visually prove someone has inflicted foul play.",
+          "context_needed": "none",
+          "block_type": "CAMERA",
+          "start": 11.8,
+          "end": 16.8,
+          "clean_start": 11.8
+        },
+        {
+          "block_id": "E23-B047",
+          "type": "action",
+          "stop_power": 3,
+          "why": "A dying woman suddenly chokes and convulses violently in bed.",
+          "context_needed": "none",
+          "block_type": "CAMERA",
+          "start": 88.0,
+          "end": 91.0,
+          "clean_start": 88.0
+        }
+      ],
+      "cliffhangers": [
+        {
+          "block_id": "E23-B067",
+          "tension": 5,
+          "open_question": "Who is entering the room, and will Juliana be caught with the forbidden antidote?",
+          "block_type": "CAMERA",
+          "start": 129.5,
+          "end": 131.5
+        },
+        {
+          "block_id": "E23-B063",
+          "tension": 4,
+          "open_question": "Can Juliana conceal the antidote before the intruder enters the forbidden bedchamber?",
+          "block_type": "DIALOGUE",
+          "start": 118.8,
+          "end": 124.0
+        },
+        {
+          "block_id": "E23-B045",
+          "tension": 3,
+          "open_question": "Who is secretly poisoning the Duchess with arsenic, and can Juliana save her?",
+          "block_type": "DIALOGUE",
+          "start": 86.0,
+          "end": 88.0
+        }
+      ],
+      "ending": {
+        "ends_on_cliffhanger": true,
+        "ending_type": "cliffhanger",
+        "note": "The door handle turns and opens while Juliana is trapped mixing the antidote."
+      },
+      "errors": [],
+      "stats": {
+        "invalid_item": 0,
+        "invalid_id": 0,
+        "total_ids_returned": 7
+      }
+    }
+  ]
+}

@@ -116,4 +116,64 @@ LLM_BUDGET_USD=6.00
 - [ ] `git status`: `prices.json` and `.env.example` updated; no `.env`, `cache/` or `logs/`
 
 ## Result
-_(Claude Code fills this in.)_
+
+### What was built
+
+- `llm.py`: added `LLM_TEMPERATURE` ("omit" or float), `LLM_JSON_MODE` ("json_object"/"off"), `LLM_MODEL_<STAGE>` per-stage overrides, `LLM_EXTRA_HEADERS` JSON object for `default_headers`, `LLM_BUDGET_USD` cap with `LLMBudgetExceeded` guard. `_cache_key` now uses effective model, temperature (or "omit"), and JSON mode string — Gemini entries stay in cache without collision. `cost_usd` column added to CSV; old CSV auto-renamed to `.old.csv`. `--spend` subcommand added. `--ping` updated to show temperature/JSON/headers config.
+- `beats.py`: catches `LLMBudgetExceeded` exactly like `LLMQuotaExhausted` — stops run, writes report, lists remaining episodes.
+- `prices.json`: created at repo root.
+- `.env.example`: replaced with Claude-primary / Gemini-fallback blocks.
+- `outputs/<slug>/beats/`: moved to `beats__gemini-3.8-flash-pilot/` (held gemini-3.8-flash results).
+
+### How to run
+
+```
+# Tests
+python -m pytest tests/test_llm.py -v
+
+# Ping (from repo root)
+PYTHONPATH=src python -m promo_finder.llm --ping
+
+# Beats pilot
+PYTHONPATH=src python -m promo_finder.beats "data/raw/I Married a Broken Soldier. He was a Duke" --episodes 1,7,23
+
+# Spend report
+PYTHONPATH=src python -m promo_finder.llm --spend
+```
+
+### Claude pilot results (claude-haiku-5-5, episodes 1, 7, 23)
+
+| Metric | Value |
+|---|---|
+| Episodes done | 3 / 3 |
+| Hooks kept | 13 |
+| Cliffhangers kept | 5 |
+| Made-up ID rate | 0.0% (0/18) |
+| Total tokens | 22 241 |
+| Uncached calls | 3 |
+| Latency | ~2–3 s/ep |
+| **Total spend** | **$0.0039** |
+
+Eval: 3 PASS, 2 SKIP (episodes not in pilot). Zero invalid IDs — Claude follows the block-ID schema perfectly.
+
+### Spend from `--spend`
+
+```
+Total spend : $0.0039
+By model:
+  claude-haiku-5-5: $0.0039
+By stage:
+  beats: $0.0039
+  ping: $0.0000
+```
+
+### Surprising observations
+
+- Claude produces fewer cliffhangers than Gemini on the same episodes (5 vs ~8), but all were valid block IDs. May reflect tighter quality threshold rather than a failure.
+- Latency ~2–3 s/episode — much faster than gemini-3.8-flash (which hit 15–16 min/episode in the previous pilot).
+- Token counts (22k total for 3 eps) are consistent with the gemini-2.5-flash pilot.
+
+### Open questions
+
+- Cliffhanger count is lower than Gemini pilots — intentional or model conservatism? Worth watching on a full run.
+- Budget guard is set to $6.00; a full 23-episode run at this rate would cost ~$0.03. The cap is generous; may want to tighten it once cost/episode is better characterised.

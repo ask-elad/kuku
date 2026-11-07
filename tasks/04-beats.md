@@ -161,3 +161,58 @@ PYTHONPATH=src .venv/bin/python -m promo_finder.beats "data/raw/I Married a Brok
 ### Open questions
 - Will score inflation persist across all 50 episodes, or is it specific to these strong early/late-middle episodes?
 - Should the full run proceed? (Awaiting human go-ahead per task instructions.)
+
+---
+
+## Full run — Claude Haiku 5.5, all 50 episodes
+
+### Totals
+
+| Metric | Value |
+|---|---|
+| Episodes done | 50 / 50 |
+| Episodes failed (LLMError) | 0 |
+| Hooks kept | 201 |
+| Cliffhangers kept | 88 |
+| invalid_id | 0 |
+| invalid_item | 0 |
+| Made-up ID rate | 0.0% (0/290) |
+| Hooks with clean_start: null | 0 |
+
+### Token usage & cost
+
+| Metric | Value |
+|---|---|
+| Calls | 50 |
+| Cached | 3 (the 3 pilot episodes) |
+| Uncached | 47 |
+| Prompt tokens | 305,626 |
+| Completion tokens | 82,887 |
+| Total tokens | 388,513 |
+| **Total spend** | **$0.0720** |
+
+### Distributions
+
+**Hook types (201 total):** shocking_line×54, reveal×46, threat×32, humiliation×23, slap_or_violence×12, other×10, action×9, rescue×8, romance×7
+
+**Stop power:** 5→30, 4→113, 3→55, 2→3, 1→0 — score inflation mostly resolved; the full run shows the 3s and a few 2s that were absent from the pilot.
+
+**Tension:** 5→19, 4→33, 3→30, 2→6, 1→0
+
+**Cliffhanger block types:** DIALOGUE×43, CAMERA×31, SOUND_FX×9, ACTION×5
+
+### Eval results (all 5 gold checks — 5 PASS, 0 FAIL)
+
+- **PASS** `resolved_or_soft_endings E07` — `ends_on_cliffhanger=False` ✓
+- **PASS** `resolved_or_soft_endings E10` — `ends_on_cliffhanger=False` ✓
+- **PASS** `resolved_or_soft_endings E19` — `ends_on_cliffhanger=False` ✓
+- **PASS** `min_top_hook_power E01` — `best_stop_power=5` ≥ 4 ✓
+- **PASS** `cliff_types_near_end E23` — `type=CAMERA, end=02:11.50` ✓
+
+### Observations
+
+1. **Zero invalid IDs across all 290 returned** — Claude Haiku follows the block-ID format perfectly.
+2. **Score inflation reduced but not gone:** 3s appear (55 hooks), and a few 2s (3 hooks). Still no 1s.
+3. **E06 and E08 are outliers** — only 2–3 hooks, best stop_power 3, 1 cliffhanger — genuinely quieter episodes.
+4. **Cliffhangers skew DIALOGUE (43/88)** — the model uses CAMERA/SOUND_FX when available but most episode endings fall on spoken lines.
+5. **Cost: $0.072 for 50 episodes** (~$0.0014/episode). Well within the $6 budget.

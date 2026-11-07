@@ -11,7 +11,7 @@ import sys
 import time
 from pathlib import Path
 
-from .llm import LLMError, LLMQuotaExhausted, complete_json
+from .llm import LLMBudgetExceeded, LLMError, LLMQuotaExhausted, complete_json
 from .parse import make_slug
 from .scriptfmt import format_blocks
 from .show import load_show
@@ -201,7 +201,7 @@ def _process_episode(ep_dict: dict) -> dict:
             },
             tag=f"beats:E{ep_num:02d}",
         )
-    except LLMQuotaExhausted:
+    except (LLMQuotaExhausted, LLMBudgetExceeded):
         raise  # let run_beats propagate it to stop the whole run
     except LLMError as exc:
         return {
@@ -257,7 +257,7 @@ def run_beats(episodes: list[dict]) -> tuple[list[dict], list[int]]:
         try:
             result = _process_episode(ep)
             results.append(result)
-        except LLMQuotaExhausted:
+        except (LLMQuotaExhausted, LLMBudgetExceeded):
             remaining = [e["episode"] for e in episodes[i:]]
             return results, remaining
     return results, []
@@ -511,9 +511,9 @@ def main() -> None:
 
     if quota_remaining:
         remaining_str = ", ".join(f"E{n:02d}" for n in quota_remaining)
-        print(f"\nDAILY QUOTA EXHAUSTED — stopped early.")
+        print(f"\nSTOPPED EARLY — quota or budget limit reached.")
         print(f"Not attempted ({len(quota_remaining)}): {remaining_str}")
-        print("Swap the API key in .env and re-run.")
+        print("Check LLM_BUDGET_USD / API quota and re-run.")
 
     if evals_checks:
         print("\nEval results:")
