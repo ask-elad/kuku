@@ -120,3 +120,8 @@ Format: decision → why → alternatives rejected. Add a new entry every time w
 - Overlapping clips → the best-judged one is the main promo; the others are listed as alternative cuts for the editor.
 - Top 10 = at most one per episode; ties → earlier episode (new viewers start at Ep 1).
 - Mixed-batch calibration (pipeline + baseline in the same batch) checks the headline comparison.
+
+### D29 — Rank for the audience: new viewers vs existing viewers
+- **Evidence (top-10 review)**: late-story payoffs (E45, E42) ranked #1 and #5 and spoil the endgame; the premise clip (E03) sat at #6. "Earlier episode" only broke ties, so it almost never applied.
+- **Decision**: main list ranks by `score − 0.5 × episode position` (generic, not show-specific). Strong late-story promos go to a separate "existing viewers / retargeting" top 5 instead of being dropped.
+- **Review sheet** shows the unredacted text; only the judge sees the redacted version (D27).
