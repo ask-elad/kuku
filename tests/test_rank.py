@@ -490,13 +490,13 @@ def test_retargeting_only_from_last_third():
 
 
 def test_retargeting_one_per_episode():
-    """Retargeting set has at most one promo per starting episode."""
-    # 9 episodes: two non-overlapping promos per episode in the last third
+    """The displayed retargeting top 5 has at most one promo per starting episode."""
+    # 9 episodes: two non-overlapping promos per episode in the last third (eps 7-9)
     all_blocks = {ep: [_bl(f"E{ep:02d}-B001", "CAMERA", 0.0, 300.0)] for ep in range(1, 10)}
     show = _make_show(all_blocks)
 
     promos = []
-    for ep in range(7, 10):  # episodes 7, 8, 9
+    for ep in range(7, 10):  # episodes 7, 8, 9 — all retargeting (threshold=6)
         bid = f"E{ep:02d}-B001"
         for i in range(2):
             seg = {"episode": ep, "start": float(i * 100), "end": float(i * 100 + 30),
@@ -513,9 +513,21 @@ def test_retargeting_one_per_episode():
             })
 
     ranked, _ = rank_promos(promos, show)
-    retargeting = [p for p in ranked if p.get("audience") == "retargeting"]
-    ret_episodes = [min(s.get("episode", 9999) for s in p["segments"]) for p in retargeting]
-    assert len(ret_episodes) == len(set(ret_episodes)), "Duplicate episode in retargeting"
+    # audience=="retargeting" covers ALL last-third promos; simulate the display filter
+    # (top-5, one per episode, by raw score) and check it has no duplicates
+    all_ret = sorted(
+        [p for p in ranked if p.get("audience") == "retargeting"],
+        key=lambda x: (-x.get("score", 0.0), x["promo_id"]),
+    )
+    seen_ep: set[int] = set()
+    displayed: list[dict] = []
+    for p in all_ret:
+        first_ep = min(s.get("episode", 9999) for s in p["segments"])
+        if len(displayed) < 5 and first_ep not in seen_ep:
+            displayed.append(p)
+            seen_ep.add(first_ep)
+    ret_episodes = [min(s.get("episode", 9999) for s in p["segments"]) for p in displayed]
+    assert len(ret_episodes) == len(set(ret_episodes)), "Duplicate episode in displayed retargeting"
 
 
 def test_retargeting_max_five():
@@ -542,3 +554,72 @@ def test_retargeting_max_five():
     ranked, _ = rank_promos(promos, show)
     retargeting = [p for p in ranked if p.get("audience") == "retargeting"]
     assert len(retargeting) <= 5
+
+
+# ---------------------------------------------------------------------------
+# Audience exclusivity: top-10 ∩ retargeting = ∅
+# ---------------------------------------------------------------------------
+
+def test_no_overlap_between_top10_and_retargeting():
+    """A retargeting promo with the highest raw score must not appear in the top 10."""
+    # 15 episodes: ret_threshold=10; eps 1-10 acquisition, eps 11-15 retargeting.
+    # 10 acquisition promos fill rank 1-10; retargeting promo at ep11 (score=5.0) is rank 11+.
+    all_blocks = {ep: [_bl(f"E{ep:02d}-B001", "CAMERA", 0.0, 60.0)] for ep in range(1, 16)}
+    show = _make_show(all_blocks)
+
+    def _p(ep: int, hook: float = 3.0) -> dict:
+        bid = f"E{ep:02d}-B001"
+        return {
+            "promo_id": f"P-E{ep:02d}",
+            "segments": [{"episode": ep, "start": 0.0, "end": 30.0,
+                          "start_block": bid, "end_block": bid,
+                          "start_tc": "00:00.00", "end_tc": "00:30.00", "duration": 30.0}],
+            "hook": {"block_id": bid, "at": 0.0},
+            "cliffhanger": {"block_id": bid, "at": 25.0},
+            "beat_notes": {}, "why": "", "method": "pipeline", "duration": 30.0,
+            "checks": {}, "scores": {"hook": hook, "cliffhanger": hook, "standalone": hook},
+            "safety": {"level": "ok", "reason": ""}, "confusions": [], "judge_rounds": 2,
+        }
+
+    # Retargeting promo at E11 gets the top score (5.0); acquisition promos score 3.0
+    promos = [_p(ep) for ep in range(1, 11)] + [_p(11, hook=5.0)]
+    ranked, _ = rank_promos(promos, show)
+
+    top10_ids = {p["promo_id"] for p in ranked if p["rank"] <= 10}
+    ret_ids = {p["promo_id"] for p in ranked if p.get("audience") == "retargeting"}
+
+    assert top10_ids.isdisjoint(ret_ids), (
+        f"Overlap between top-10 and retargeting: {top10_ids & ret_ids}"
+    )
+    assert "P-E11" not in top10_ids, "Retargeting promo must not enter new-viewer top 10"
+    assert "P-E11" in ret_ids
+
+
+def test_retargeting_episode_second_promo_blocked_from_top10():
+    """Two non-overlapping promos from a retargeting episode: neither enters the top 10."""
+    # 15 episodes: ret_threshold=10; eps 1-10 acquisition fill the top 10; ep11 is retargeting.
+    all_blocks = {ep: [_bl(f"E{ep:02d}-B001", "CAMERA", 0.0, 300.0)] for ep in range(1, 16)}
+    show = _make_show(all_blocks)
+
+    def _p(pid: str, ep: int, start: float, hook: float = 5.0) -> dict:
+        bid = f"E{ep:02d}-B001"
+        return {
+            "promo_id": pid,
+            "segments": [{"episode": ep, "start": start, "end": start + 30.0,
+                          "start_block": bid, "end_block": bid,
+                          "start_tc": "00:00.00", "end_tc": "00:30.00", "duration": 30.0}],
+            "hook": {"block_id": bid, "at": 0.0},
+            "cliffhanger": {"block_id": bid, "at": 25.0},
+            "beat_notes": {}, "why": "", "method": "pipeline", "duration": 30.0,
+            "checks": {}, "scores": {"hook": hook, "cliffhanger": hook, "standalone": hook},
+            "safety": {"level": "ok", "reason": ""}, "confusions": [], "judge_rounds": 2,
+        }
+
+    # One promo per acquisition episode (eps 1-10) + two non-overlapping from ep11 (retargeting)
+    promos = [_p(f"P-E{ep:02d}", ep, 0.0) for ep in range(1, 11)]
+    promos += [_p("P-E11-A", 11, 0.0), _p("P-E11-B", 11, 100.0)]
+    ranked, _ = rank_promos(promos, show)
+
+    top10_ids = {p["promo_id"] for p in ranked if p["rank"] <= 10}
+    assert "P-E11-A" not in top10_ids
+    assert "P-E11-B" not in top10_ids

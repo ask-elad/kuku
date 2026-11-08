@@ -45,7 +45,8 @@ LLM_MODEL=claude-haiku-5-5
 
 # Fallback (Gemini) — comment the Claude block and uncomment:
 # LLM_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/
-# LLM_MODEL=gemini-2.5-flash
+# LLM_MODEL=gemini-3.8-flash
+# Note: new Google accounts cannot use gemini-2.5-flash; use gemini-3.8-flash instead.
 ```
 
 ## Pipeline overview

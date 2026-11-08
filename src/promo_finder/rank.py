@@ -207,62 +207,44 @@ def rank_promos(judged: list[dict], show) -> tuple[list[dict], list[dict]]:
         main["alternatives"] = alternatives
         main_promos.append(main)
 
-    # Compute acquisition_score for each main promo
+    # Compute acquisition_score and audience (by series position) for each main promo
+    ret_threshold = int(2 / 3 * n_episodes)
     for p in main_promos:
         first_ep = min(
             (s.get("episode", 9999) for s in p.get("segments", []) if s.get("episode") is not None),
             default=9999,
         )
         p["acquisition_score"] = _acquisition_score(p["score"], first_ep, n_episodes)
+        p["audience"] = "retargeting" if first_ep > ret_threshold else "acquisition"
 
-    # Sort by acquisition_score (new viewers first)
-    main_promos.sort(key=_acq_sort_key)
+    # Split into exclusive pools
+    acq_pool = sorted(
+        [p for p in main_promos if p["audience"] == "acquisition"],
+        key=_acq_sort_key,
+    )
+    ret_pool = [p for p in main_promos if p["audience"] == "retargeting"]
 
-    # Variety top 10: at most one per starting episode
+    # New-viewer top 10: acquisition-only, by acquisition_score, one per starting episode
     top10: list[dict] = []
-    seen_episodes: set[int] = set()
-    rest: list[dict] = []
-
-    for p in main_promos:
+    seen_acq_ep: set[int] = set()
+    rest_acq: list[dict] = []
+    for p in acq_pool:
         first_ep = min(
             (s.get("episode", 9999) for s in p.get("segments", []) if s.get("episode") is not None),
             default=9999,
         )
-        if len(top10) < _TOP_N and first_ep not in seen_episodes:
+        if len(top10) < _TOP_N and first_ep not in seen_acq_ep:
             top10.append(p)
-            seen_episodes.add(first_ep)
+            seen_acq_ep.add(first_ep)
         else:
-            rest.append(p)
+            rest_acq.append(p)
 
-    ranked = top10 + rest
+    # Ranks 11+: remaining acquisition + all retargeting, by acquisition_score
+    rest_all = sorted(rest_acq + ret_pool, key=_acq_sort_key)
+
+    ranked = top10 + rest_all
     for i, p in enumerate(ranked):
         p["rank"] = i + 1
-
-    # Retargeting: top-5 by raw score from last third of series, one per episode
-    ret_threshold = int(2 / 3 * n_episodes)
-    ret_candidates = sorted(
-        (
-            p for p in main_promos
-            if min(
-                (s.get("episode", 0) for s in p.get("segments", []) if s.get("episode") is not None),
-                default=0,
-            ) > ret_threshold
-        ),
-        key=lambda p: (-p["score"], p["promo_id"]),
-    )
-    retargeting_ids: set[str] = set()
-    seen_ret_ep: set[int] = set()
-    for p in ret_candidates:
-        first_ep = min(
-            (s.get("episode", 9999) for s in p.get("segments", []) if s.get("episode") is not None),
-            default=9999,
-        )
-        if len(retargeting_ids) < _RETARGETING_N and first_ep not in seen_ret_ep:
-            retargeting_ids.add(p["promo_id"])
-            seen_ret_ep.add(first_ep)
-
-    for p in ranked:
-        p["audience"] = "retargeting" if p["promo_id"] in retargeting_ids else "acquisition"
 
     return ranked, excluded
 
@@ -385,12 +367,23 @@ def _build_promos_md(
         )
     lines.append("")
 
-    # Retargeting top 5
+    # Retargeting top 5 — one per starting episode
     lines.append("## For existing viewers: retargeting (top 5)\n")
     if retargeting:
         lines.append("| Rank | Segments | Duration | Score | Hook | Why |")
         lines.append("|------|----------|----------|-------|------|-----|")
-        for p in sorted(retargeting, key=lambda x: -x.get("score", 0.0))[:_RETARGETING_N]:
+        seen_ret_ep: set[int] = set()
+        ret_display: list[dict] = []
+        for p in sorted(retargeting, key=lambda x: (-x.get("score", 0.0), x["promo_id"])):
+            first_ep = min(
+                (s.get("episode", 9999) for s in p.get("segments", [])
+                 if s.get("episode") is not None),
+                default=9999,
+            )
+            if len(ret_display) < _RETARGETING_N and first_ep not in seen_ret_ep:
+                ret_display.append(p)
+                seen_ret_ep.add(first_ep)
+        for p in ret_display:
             hook_text = (p.get("hook") or {}).get("text", "")
             lines.append(
                 f"| {p['rank']} | {_segments_str(p)} | {_fmt_duration(p.get('duration', 0.0))} "

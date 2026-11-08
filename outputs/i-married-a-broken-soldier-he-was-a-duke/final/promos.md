@@ -1,6 +1,6 @@
 # Promos — I Married a Broken Soldier. He was a Duke
 
-Model: claude-haiku-5-5  |  Date: 2026-11-07  |  Promos: 48  |  Spend: $0.2829
+Model: claude-haiku-5-5  |  Date: 2026-11-08  |  Promos: 48  |  Spend: $0.2829
 
 ## Post these first: new viewers (top 10)
 
@@ -10,20 +10,20 @@ Model: claude-haiku-5-5  |  Date: 2026-11-07  |  Promos: 48  |  Spend: $0.2829
 | 2 | E23 01:26.00–02:11.50 | 45.5s | 4.35 | 4.1255 | LADY JULIANA (Venomous, Resolute): Arsenic. | Sudden collapse and a door opening into a heart-stopping moment drive a strong c | — |
 | 3 | E26 00:56.00–01:55.50 | 59.5s | 4.35 | 4.0949 | DOWAGER DUCHESS (Trembling, Heartbroken): Rupert and Catheri | Poisoning plus a sudden grab and 'Where did you get this ring?' ends on a must-k | — |
 | 4 | E15 01:00.00–01:26.00 | 26.0s | 4.20 | 4.0571 | The Tall Thug hoists his heavy wooden club above his head to | Immediate menace and a rescue cut to a knife-edge standoff; the gist lands even  | — |
-| 5 | E45 00:54.00–01:53.00 | 59.0s | 4.40 | 3.9510 | ALEXANDER (Furious, Cold): You poisoned my mother. You tortu | A bombshell opening and a legitimacy twist ending make a strong ad. The earlier  | — |
-| 6 | E07 00:51.50–01:15.50 | 24.0s | 4.00 | 3.9388 | GERALD (Bitter, Sneering): You chose that scarred beggar ove | Clear rivalry and a menacing reveal of the husband walking out of the fog create | — |
-| 7 | E11 00:16.80–00:53.60 | 36.8s | 4.00 | 3.8980 | GERALD (Aggressive, Snarl): Your husband stole my gold pocke | Clear accusation and a constable search with an ominous 'Let them.' Easy to foll | — |
-| 8 | E31 02:13.00–02:40.00 | 27.0s | 4.20 | 3.8939 | Close-up of the red-hot poker pressing directly down into th | Instant visual shock and a glowing iron inches from an eye give a strong cliffha | needs_review |
-| 9 | E36 02:16.00–02:36.00 | 20.0s | 4.25 | 3.8929 | ALEXANDER'S MOTHER (Solemn, Shattered): She is to be execute | Immediate death-sentence shock and a 'two days from now' deadline create urgent  | — |
-| 10 | E42 00:30.50–01:17.50 | 47.0s | 4.25 | 3.8316 | BLOND NOBLEMAN (Denial, Shaken): You cannot be him. Alexande | Dead-man-returns bombshell is instantly gripping, with a revenge threat that pul | — |
+| 5 | E07 00:51.50–01:15.50 | 24.0s | 4.00 | 3.9388 | GERALD (Bitter, Sneering): You chose that scarred beggar ove | Clear rivalry and a menacing reveal of the husband walking out of the fog create | — |
+| 6 | E11 00:16.80–00:53.60 | 36.8s | 4.00 | 3.8980 | GERALD (Aggressive, Snarl): Your husband stole my gold pocke | Clear accusation and a constable search with an ominous 'Let them.' Easy to foll | — |
+| 7 | E31 02:13.00–02:40.00 | 27.0s | 4.20 | 3.8939 | Close-up of the red-hot poker pressing directly down into th | Instant visual shock and a glowing iron inches from an eye give a strong cliffha | needs_review |
+| 8 | E28 01:38.20–02:18.50 | 40.3s | 4.00 | 3.7245 | CATHERINE (Triumphant, Venomous): Lady Juliana Ashcroft. | Strong villainy and a gallows threat cut to black make viewers desperate to see  | — |
+| 9 | E30 01:34.60–02:31.21 | 56.6s | 4.00 | 3.7041 | ELDER NOBLEMAN (Authoritative, Command): Do not hide the evi | Villains' conspiracy is a clear threat, and 'She becomes a witch' ending into th | — |
+| 10 | E01 00:39.10–01:30.80 | 51.7s | 3.70 | 3.7000 | LADY IN GOLD GOWN (Gloating, Smug): Because he is marrying m | Public humiliation at a wedding is an easy, emotional hook, but the ending is an | — |
 
 ## For existing viewers: retargeting (top 5)
 
 | Rank | Segments | Duration | Score | Hook | Why |
 |------|----------|----------|-------|------|-----|
-| 5 | E45 00:54.00–01:53.00 | 59.0s | 4.40 | ALEXANDER (Furious, Cold): You poisoned my mother. You tortu | A bombshell opening and a legitimacy twist ending make a strong ad. The earlier  |
-| 9 | E36 02:16.00–02:36.00 | 20.0s | 4.25 | ALEXANDER'S MOTHER (Solemn, Shattered): She is to be execute | Immediate death-sentence shock and a 'two days from now' deadline create urgent  |
-| 10 | E42 00:30.50–01:17.50 | 47.0s | 4.25 | BLOND NOBLEMAN (Denial, Shaken): You cannot be him. Alexande | Dead-man-returns bombshell is instantly gripping, with a revenge threat that pul |
+| 11 | E45 00:54.00–01:53.00 | 59.0s | 4.40 | ALEXANDER (Furious, Cold): You poisoned my mother. You tortu | A bombshell opening and a legitimacy twist ending make a strong ad. The earlier  |
+| 12 | E36 02:16.00–02:36.00 | 20.0s | 4.25 | ALEXANDER'S MOTHER (Solemn, Shattered): She is to be execute | Immediate death-sentence shock and a 'two days from now' deadline create urgent  |
+| 14 | E42 00:30.50–01:17.50 | 47.0s | 4.25 | BLOND NOBLEMAN (Denial, Shaken): You cannot be him. Alexande | Dead-man-returns bombshell is instantly gripping, with a revenge threat that pul |
 | 24 | E41 00:58.00–01:36.09 | 38.1s | 3.85 | JULIANA (Defiant, Unbowed): You needed an entire chapel to f | The cathedral explosion and armed figures create a huge, unanswered cliffhanger, |
 | 25 | E43 00:19.20–01:15.20 | 56.0s | 3.85 | ROYAL GUARD (Calm, Resolute): No. He is your Duke. | A public exposure of a traitor with a clear villain and a damning reveal. Ends o |
 
@@ -71,16 +71,7 @@ Model: claude-haiku-5-5  |  Date: 2026-11-07  |  Promos: 48  |  Spend: $0.2829
 **Confusions**: Who Alexander is to Juliana; Why the thugs want the herbs; Why Alexander is called a veteran; Why thugs are destroying the herb garden
 **Alternative cuts**: C-E15-02 (score=4.15, 36.0s), C-E15-04 (score=3.85, 22.5s), C-E15-01 (score=3.50, 38.6s)
 
-### #5 — C-E45-01
-**Segments**: E45 00:54.00–01:53.00  |  **Duration**: 59.0s
-**Scores**: hook=5.0 cliff=4.5 stand=3.5 → **4.40**  acq=3.95
-**Hook** (at 00:00.00): "ALEXANDER (Furious, Cold): You poisoned my mother. You tortured my wife."
-**Cliffhanger**: "HIGH PRIEST (Unyielding, Condemning): You are not Alexander Ashburton's lawful wife."
-**Why**: A bombshell opening and a legitimacy twist ending make a strong ad. The earlier backstory gaps are forgivable because the reveal is self-contained.
-**Confusions**: Who did Catherine poison, and why does it matter?; Why was Juliana tortured, and by whom?; Why is the marriage legally disputed?; Who are Catherine, Rupert and Mary to Alexander?
-**Alternative cuts**: C-E45-02 (score=4.05, 47.0s), C-E45-03 (score=3.85, 33.3s)
-
-### #6 — C-E07-01
+### #5 — C-E07-01
 **Segments**: E07 00:51.50–01:15.50  |  **Duration**: 24.0s
 **Scores**: hook=4.0 cliff=4.5 stand=3.5 → **4.00**  acq=3.94
 **Hook** (at 00:00.00): "GERALD (Bitter, Sneering): You chose that scarred beggar over a life of comfort."
@@ -88,7 +79,7 @@ Model: claude-haiku-5-5  |  Date: 2026-11-07  |  Promos: 48  |  Spend: $0.2829
 **Why**: Clear rivalry and a menacing reveal of the husband walking out of the fog create a strong pull.
 **Confusions**: Who Gerald is to Juliana; Why the husband is called a beggar; What the forest figure will do; Who is the 'scarred beggar' and why he matters
 
-### #7 — C-E11-01
+### #6 — C-E11-01
 **Segments**: E11 00:16.80–00:53.60  |  **Duration**: 36.8s
 **Scores**: hook=4.0 cliff=4.0 stand=4.0 → **4.00**  acq=3.90
 **Hook** (at 00:00.00): "GERALD (Aggressive, Snarl): Your husband stole my gold pocket watch!"
@@ -97,7 +88,7 @@ Model: claude-haiku-5-5  |  Date: 2026-11-07  |  Promos: 48  |  Spend: $0.2829
 **Confusions**: Why Alexander agrees to the search; Whether the stolen watch is actually hidden; Who is Gerald to Juliana, and why does he hate her?; What is the gold pocket watch's significance?
 **Alternative cuts**: C-E11-02 (score=3.65, 24.3s), C-E10-02 (score=3.05, 56.9s)
 
-### #8 — C-E31-02  `needs_review`
+### #7 — C-E31-02  `needs_review`
 **Segments**: E31 02:13.00–02:40.00  |  **Duration**: 27.0s
 **Scores**: hook=5.0 cliff=5.0 stand=4.0 → **4.20**  acq=3.89
 **Hook** (at 00:00.00): "Close-up of the red-hot poker pressing directly down into the delicate open pages of the botanical book."
@@ -106,33 +97,7 @@ Model: claude-haiku-5-5  |  Date: 2026-11-07  |  Promos: 48  |  Spend: $0.2829
 **Confusions**: Why the book matters beyond Juliana's mother; How Catherine holds such power over Juliana; Why Juliana is chained in the dungeon; Why is Juliana chained, and who is Catherine to her?
 **Alternative cuts**: C-E31-01 (score=3.10, 35.8s)
 
-### #9 — C-E36-02
-**Segments**: E36 02:16.00–02:36.00  |  **Duration**: 20.0s
-**Scores**: hook=5.0 cliff=4.5 stand=3.0 → **4.25**  acq=3.89
-**Hook** (at 00:00.00): "ALEXANDER'S MOTHER (Solemn, Shattered): She is to be executed."
-**Cliffhanger**: "ALEXANDER'S MOTHER (Deadly Serious): Two days from now."
-**Why**: Immediate death-sentence shock and a 'two days from now' deadline create urgent tension, though the 'she' is unclear.
-**Confusions**: Who 'she' is and why she faces execution; Why the wedding is deadly for Alexander; Who is the woman being sentenced to execution?; Who are Rupert and Catherine, and why does the wedding matter?
-**Alternative cuts**: C-E36-01 (score=4.00, 50.1s)
-
-### #10 — C-E42-02
-**Segments**: E42 00:30.50–01:17.50  |  **Duration**: 47.0s
-**Scores**: hook=5.0 cliff=4.0 stand=3.5 → **4.25**  acq=3.83
-**Hook** (at 00:00.00): "BLOND NOBLEMAN (Denial, Shaken): You cannot be him. Alexander died!"
-**Cliffhanger**: "ALEXANDER (Grim, Vengeful): And now, Rupert... we settle what you stole."
-**Why**: Dead-man-returns bombshell is instantly gripping, with a revenge threat that pulls viewers forward.
-**Confusions**: What Rupert supposedly stole; Alexander's relationship to Juliana and Catherine; Why Alexander was thought dead; Who Rupert is and what he stole
-**Alternative cuts**: C-E42-01 (score=3.45, 50.8s)
-
-### #11 — C-E36-03
-**Segments**: E36 02:40.50–03:20.75  |  **Duration**: 40.2s
-**Scores**: hook=4.5 cliff=4.5 stand=3.5 → **4.20**  acq=3.84
-**Hook** (at 00:00.00): "ALEXANDER (Deadly, Throaty): ...and killing my wife afterward."
-**Cliffhanger**: "A heavy, ominous orchestral swell builds to a thunderous cliffhanger sting and reverberates into silence."
-**Why**: Explosive vow of revenge, with a 'dead Duke coming home' button. Gripping even with missing backstory.
-**Confusions**: Who the dead Duke is to Alexander; Who 'they' are and who took his wife; Why Alexander has been wronged; Who the 'dead Duke' is in the reveal
-
-### #12 — C-E28-02
+### #8 — C-E28-02
 **Segments**: E28 01:38.20–02:18.50  |  **Duration**: 40.3s
 **Scores**: hook=4.0 cliff=5.0 stand=3.0 → **4.00**  acq=3.72
 **Hook** (at 00:00.00): "CATHERINE (Triumphant, Venomous): Lady Juliana Ashcroft."
@@ -140,7 +105,7 @@ Model: claude-haiku-5-5  |  Date: 2026-11-07  |  Promos: 48  |  Spend: $0.2829
 **Why**: Strong villainy and a gallows threat cut to black make viewers desperate to see Juliana's fate.
 **Confusions**: Why the herbarium book matters; Why Juliana is being dragged away; Catherine's history with Juliana; Why is the herbarium book so dangerous to Juliana?
 
-### #13 — C-E30-02
+### #9 — C-E30-02
 **Segments**: E30 01:34.60–02:31.21  |  **Duration**: 56.6s
 **Scores**: hook=4.0 cliff=5.0 stand=3.0 → **4.00**  acq=3.70
 **Hook** (at 00:00.00): "ELDER NOBLEMAN (Authoritative, Command): Do not hide the evidence, manufacture it. Drag her before the magistrate tomorrow, frame the trial, buy the jury, and let the State hang her."
@@ -149,7 +114,7 @@ Model: claude-haiku-5-5  |  Date: 2026-11-07  |  Promos: 48  |  Spend: $0.2829
 **Confusions**: Who Catherine and Rupert are to Juliana; What the 'witch' accusation means for Juliana; Why the nobleman plots to hang her; Who the Dowager is and why she matters
 **Alternative cuts**: C-E30-01 (score=3.80, 57.7s)
 
-### #14 — C-E01-01
+### #10 — C-E01-01
 **Segments**: E01 00:39.10–01:30.80  |  **Duration**: 51.7s
 **Scores**: hook=4.0 cliff=3.0 stand=4.0 → **3.70**  acq=3.70
 **Hook** (at 00:00.00): "LADY IN GOLD GOWN (Gloating, Smug): Because he is marrying me."
@@ -157,6 +122,41 @@ Model: claude-haiku-5-5  |  Date: 2026-11-07  |  Promos: 48  |  Spend: $0.2829
 **Why**: Public humiliation at a wedding is an easy, emotional hook, but the ending is an emotional beat rather than a peak question.
 **Confusions**: Why Gerald married the Lady in Gold; Whether the father will ever help Juliana; Why is the sister marrying Gerald instead?; Who arranged the betrayal, and why?
 **Alternative cuts**: C-E01-02 (score=3.70, 44.0s), C-E01-03 (score=3.20, 30.7s)
+
+### #11 — C-E45-01
+**Segments**: E45 00:54.00–01:53.00  |  **Duration**: 59.0s
+**Scores**: hook=5.0 cliff=4.5 stand=3.5 → **4.40**  acq=3.95
+**Hook** (at 00:00.00): "ALEXANDER (Furious, Cold): You poisoned my mother. You tortured my wife."
+**Cliffhanger**: "HIGH PRIEST (Unyielding, Condemning): You are not Alexander Ashburton's lawful wife."
+**Why**: A bombshell opening and a legitimacy twist ending make a strong ad. The earlier backstory gaps are forgivable because the reveal is self-contained.
+**Confusions**: Who did Catherine poison, and why does it matter?; Why was Juliana tortured, and by whom?; Why is the marriage legally disputed?; Who are Catherine, Rupert and Mary to Alexander?
+**Alternative cuts**: C-E45-02 (score=4.05, 47.0s), C-E45-03 (score=3.85, 33.3s)
+
+### #12 — C-E36-02
+**Segments**: E36 02:16.00–02:36.00  |  **Duration**: 20.0s
+**Scores**: hook=5.0 cliff=4.5 stand=3.0 → **4.25**  acq=3.89
+**Hook** (at 00:00.00): "ALEXANDER'S MOTHER (Solemn, Shattered): She is to be executed."
+**Cliffhanger**: "ALEXANDER'S MOTHER (Deadly Serious): Two days from now."
+**Why**: Immediate death-sentence shock and a 'two days from now' deadline create urgent tension, though the 'she' is unclear.
+**Confusions**: Who 'she' is and why she faces execution; Why the wedding is deadly for Alexander; Who is the woman being sentenced to execution?; Who are Rupert and Catherine, and why does the wedding matter?
+**Alternative cuts**: C-E36-01 (score=4.00, 50.1s)
+
+### #13 — C-E36-03
+**Segments**: E36 02:40.50–03:20.75  |  **Duration**: 40.2s
+**Scores**: hook=4.5 cliff=4.5 stand=3.5 → **4.20**  acq=3.84
+**Hook** (at 00:00.00): "ALEXANDER (Deadly, Throaty): ...and killing my wife afterward."
+**Cliffhanger**: "A heavy, ominous orchestral swell builds to a thunderous cliffhanger sting and reverberates into silence."
+**Why**: Explosive vow of revenge, with a 'dead Duke coming home' button. Gripping even with missing backstory.
+**Confusions**: Who the dead Duke is to Alexander; Who 'they' are and who took his wife; Why Alexander has been wronged; Who the 'dead Duke' is in the reveal
+
+### #14 — C-E42-02
+**Segments**: E42 00:30.50–01:17.50  |  **Duration**: 47.0s
+**Scores**: hook=5.0 cliff=4.0 stand=3.5 → **4.25**  acq=3.83
+**Hook** (at 00:00.00): "BLOND NOBLEMAN (Denial, Shaken): You cannot be him. Alexander died!"
+**Cliffhanger**: "ALEXANDER (Grim, Vengeful): And now, Rupert... we settle what you stole."
+**Why**: Dead-man-returns bombshell is instantly gripping, with a revenge threat that pulls viewers forward.
+**Confusions**: What Rupert supposedly stole; Alexander's relationship to Juliana and Catherine; Why Alexander was thought dead; Who Rupert is and what he stole
+**Alternative cuts**: C-E42-01 (score=3.45, 50.8s)
 
 ### #15 — C-E24-03
 **Segments**: E24 01:07.50–01:32.00  |  **Duration**: 24.5s

@@ -244,67 +244,6 @@
   },
   {
     "rank": 5,
-    "promo_id": "C-E45-01",
-    "segments": [
-      {
-        "start_block": "E45-B040",
-        "end_block": "E45-B070",
-        "episode": 45,
-        "start": 54.0,
-        "end": 113.0,
-        "start_tc": "00:54.00",
-        "end_tc": "01:53.00",
-        "duration": 59.0
-      }
-    ],
-    "duration": 59.0,
-    "hook": {
-      "block_id": "E45-B040",
-      "at": 0.0,
-      "text": "ALEXANDER (Furious, Cold): You poisoned my mother. You tortured my wife."
-    },
-    "cliffhanger": {
-      "block_id": "E45-B070",
-      "at": 55.0,
-      "text": "HIGH PRIEST (Unyielding, Condemning): You are not Alexander Ashburton's lawful wife."
-    },
-    "scores": {
-      "hook": 5.0,
-      "cliffhanger": 4.5,
-      "standalone": 3.5
-    },
-    "score": 4.4,
-    "acquisition_score": 3.951,
-    "audience": "retargeting",
-    "safety": {
-      "level": "ok",
-      "reason": ""
-    },
-    "flags": [],
-    "confusions": [
-      "Who did Catherine poison, and why does it matter?",
-      "Why was Juliana tortured, and by whom?",
-      "Why is the marriage legally disputed?",
-      "Who are Catherine, Rupert and Mary to Alexander?"
-    ],
-    "why": "A bombshell opening and a legitimacy twist ending make a strong ad. The earlier backstory gaps are forgivable because the reveal is self-contained.",
-    "alternatives": [
-      {
-        "promo_id": "C-E45-02",
-        "score": 4.05,
-        "hook_text": "ALEXANDER (Proclaiming, Powerful): Lady Juliana Ashcroft is my lawful wife... and the Duchess of Ashburton!",
-        "duration": 46.95
-      },
-      {
-        "promo_id": "C-E45-03",
-        "score": 3.85,
-        "hook_text": "HIGH PRIEST (Booming, Stern): No one will bow yet!",
-        "duration": 33.349999999999994
-      }
-    ]
-  },
-  {
-    "rank": 6,
     "promo_id": "C-E07-01",
     "segments": [
       {
@@ -352,7 +291,7 @@
     "alternatives": []
   },
   {
-    "rank": 7,
+    "rank": 6,
     "promo_id": "C-E11-01",
     "segments": [
       {
@@ -413,7 +352,7 @@
     ]
   },
   {
-    "rank": 8,
+    "rank": 7,
     "promo_id": "C-E31-02",
     "segments": [
       {
@@ -470,165 +409,7 @@
     ]
   },
   {
-    "rank": 9,
-    "promo_id": "C-E36-02",
-    "segments": [
-      {
-        "start_block": "E36-B085",
-        "end_block": "E36-B096",
-        "episode": 36,
-        "start": 136.0,
-        "end": 156.0,
-        "start_tc": "02:16.00",
-        "end_tc": "02:36.00",
-        "duration": 20.0
-      }
-    ],
-    "duration": 20.0,
-    "hook": {
-      "block_id": "E36-B085",
-      "at": 0.0,
-      "text": "ALEXANDER'S MOTHER (Solemn, Shattered): She is to be executed."
-    },
-    "cliffhanger": {
-      "block_id": "E36-B096",
-      "at": 17.5,
-      "text": "ALEXANDER'S MOTHER (Deadly Serious): Two days from now."
-    },
-    "scores": {
-      "hook": 5.0,
-      "cliffhanger": 4.5,
-      "standalone": 3.0
-    },
-    "score": 4.25,
-    "acquisition_score": 3.8929,
-    "audience": "retargeting",
-    "safety": {
-      "level": "ok",
-      "reason": ""
-    },
-    "flags": [],
-    "confusions": [
-      "Who 'she' is and why she faces execution",
-      "Why the wedding is deadly for Alexander",
-      "Who is the woman being sentenced to execution?",
-      "Who are Rupert and Catherine, and why does the wedding matter?"
-    ],
-    "why": "Immediate death-sentence shock and a 'two days from now' deadline create urgent tension, though the 'she' is unclear.",
-    "alternatives": [
-      {
-        "promo_id": "C-E36-01",
-        "score": 4.0,
-        "hook_text": "ALEXANDER'S MOTHER (Despairing): Rupert and Catherine accused her of poisoning me!",
-        "duration": 50.099999999999994
-      }
-    ]
-  },
-  {
-    "rank": 10,
-    "promo_id": "C-E42-02",
-    "segments": [
-      {
-        "start_block": "E42-B021",
-        "end_block": "E42-B037",
-        "episode": 42,
-        "start": 30.5,
-        "end": 77.5,
-        "start_tc": "00:30.50",
-        "end_tc": "01:17.50",
-        "duration": 47.0
-      }
-    ],
-    "duration": 47.0,
-    "hook": {
-      "block_id": "E42-B021",
-      "at": 0.0,
-      "text": "BLOND NOBLEMAN (Denial, Shaken): You cannot be him. Alexander died!"
-    },
-    "cliffhanger": {
-      "block_id": "E42-B037",
-      "at": 43.3,
-      "text": "ALEXANDER (Grim, Vengeful): And now, Rupert... we settle what you stole."
-    },
-    "scores": {
-      "hook": 5.0,
-      "cliffhanger": 4.0,
-      "standalone": 3.5
-    },
-    "score": 4.25,
-    "acquisition_score": 3.8316,
-    "audience": "retargeting",
-    "safety": {
-      "level": "ok",
-      "reason": ""
-    },
-    "flags": [],
-    "confusions": [
-      "What Rupert supposedly stole",
-      "Alexander's relationship to Juliana and Catherine",
-      "Why Alexander was thought dead",
-      "Who Rupert is and what he stole"
-    ],
-    "why": "Dead-man-returns bombshell is instantly gripping, with a revenge threat that pulls viewers forward.",
-    "alternatives": [
-      {
-        "promo_id": "C-E42-01",
-        "score": 3.45,
-        "hook_text": "ROYAL GUARD (Firm, Reverent): Because we know who he is.",
-        "duration": 50.8
-      }
-    ]
-  },
-  {
-    "rank": 11,
-    "promo_id": "C-E36-03",
-    "segments": [
-      {
-        "start_block": "E36-B100",
-        "end_block": "E36-B121",
-        "episode": 36,
-        "start": 160.5,
-        "end": 200.75,
-        "start_tc": "02:40.50",
-        "end_tc": "03:20.75",
-        "duration": 40.25
-      }
-    ],
-    "duration": 40.25,
-    "hook": {
-      "block_id": "E36-B100",
-      "at": 0.0,
-      "text": "ALEXANDER (Deadly, Throaty): ...and killing my wife afterward."
-    },
-    "cliffhanger": {
-      "block_id": "E36-B121",
-      "at": 36.5,
-      "text": "A heavy, ominous orchestral swell builds to a thunderous cliffhanger sting and reverberates into silence."
-    },
-    "scores": {
-      "hook": 4.5,
-      "cliffhanger": 4.5,
-      "standalone": 3.5
-    },
-    "score": 4.2,
-    "acquisition_score": 3.8429,
-    "audience": "acquisition",
-    "safety": {
-      "level": "ok",
-      "reason": ""
-    },
-    "flags": [],
-    "confusions": [
-      "Who the dead Duke is to Alexander",
-      "Who 'they' are and who took his wife",
-      "Why Alexander has been wronged",
-      "Who the 'dead Duke' is in the reveal"
-    ],
-    "why": "Explosive vow of revenge, with a 'dead Duke coming home' button. Gripping even with missing backstory.",
-    "alternatives": []
-  },
-  {
-    "rank": 12,
+    "rank": 8,
     "promo_id": "C-E28-02",
     "segments": [
       {
@@ -676,7 +457,7 @@
     "alternatives": []
   },
   {
-    "rank": 13,
+    "rank": 9,
     "promo_id": "C-E30-02",
     "segments": [
       {
@@ -731,7 +512,7 @@
     ]
   },
   {
-    "rank": 14,
+    "rank": 10,
     "promo_id": "C-E01-01",
     "segments": [
       {
@@ -788,6 +569,225 @@
         "score": 3.2,
         "hook_text": "THE FORMER GROOM (Cold, Callous): I changed my mind.",
         "duration": 30.699999999999996
+      }
+    ]
+  },
+  {
+    "rank": 11,
+    "promo_id": "C-E45-01",
+    "segments": [
+      {
+        "start_block": "E45-B040",
+        "end_block": "E45-B070",
+        "episode": 45,
+        "start": 54.0,
+        "end": 113.0,
+        "start_tc": "00:54.00",
+        "end_tc": "01:53.00",
+        "duration": 59.0
+      }
+    ],
+    "duration": 59.0,
+    "hook": {
+      "block_id": "E45-B040",
+      "at": 0.0,
+      "text": "ALEXANDER (Furious, Cold): You poisoned my mother. You tortured my wife."
+    },
+    "cliffhanger": {
+      "block_id": "E45-B070",
+      "at": 55.0,
+      "text": "HIGH PRIEST (Unyielding, Condemning): You are not Alexander Ashburton's lawful wife."
+    },
+    "scores": {
+      "hook": 5.0,
+      "cliffhanger": 4.5,
+      "standalone": 3.5
+    },
+    "score": 4.4,
+    "acquisition_score": 3.951,
+    "audience": "retargeting",
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "flags": [],
+    "confusions": [
+      "Who did Catherine poison, and why does it matter?",
+      "Why was Juliana tortured, and by whom?",
+      "Why is the marriage legally disputed?",
+      "Who are Catherine, Rupert and Mary to Alexander?"
+    ],
+    "why": "A bombshell opening and a legitimacy twist ending make a strong ad. The earlier backstory gaps are forgivable because the reveal is self-contained.",
+    "alternatives": [
+      {
+        "promo_id": "C-E45-02",
+        "score": 4.05,
+        "hook_text": "ALEXANDER (Proclaiming, Powerful): Lady Juliana Ashcroft is my lawful wife... and the Duchess of Ashburton!",
+        "duration": 46.95
+      },
+      {
+        "promo_id": "C-E45-03",
+        "score": 3.85,
+        "hook_text": "HIGH PRIEST (Booming, Stern): No one will bow yet!",
+        "duration": 33.349999999999994
+      }
+    ]
+  },
+  {
+    "rank": 12,
+    "promo_id": "C-E36-02",
+    "segments": [
+      {
+        "start_block": "E36-B085",
+        "end_block": "E36-B096",
+        "episode": 36,
+        "start": 136.0,
+        "end": 156.0,
+        "start_tc": "02:16.00",
+        "end_tc": "02:36.00",
+        "duration": 20.0
+      }
+    ],
+    "duration": 20.0,
+    "hook": {
+      "block_id": "E36-B085",
+      "at": 0.0,
+      "text": "ALEXANDER'S MOTHER (Solemn, Shattered): She is to be executed."
+    },
+    "cliffhanger": {
+      "block_id": "E36-B096",
+      "at": 17.5,
+      "text": "ALEXANDER'S MOTHER (Deadly Serious): Two days from now."
+    },
+    "scores": {
+      "hook": 5.0,
+      "cliffhanger": 4.5,
+      "standalone": 3.0
+    },
+    "score": 4.25,
+    "acquisition_score": 3.8929,
+    "audience": "retargeting",
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "flags": [],
+    "confusions": [
+      "Who 'she' is and why she faces execution",
+      "Why the wedding is deadly for Alexander",
+      "Who is the woman being sentenced to execution?",
+      "Who are Rupert and Catherine, and why does the wedding matter?"
+    ],
+    "why": "Immediate death-sentence shock and a 'two days from now' deadline create urgent tension, though the 'she' is unclear.",
+    "alternatives": [
+      {
+        "promo_id": "C-E36-01",
+        "score": 4.0,
+        "hook_text": "ALEXANDER'S MOTHER (Despairing): Rupert and Catherine accused her of poisoning me!",
+        "duration": 50.099999999999994
+      }
+    ]
+  },
+  {
+    "rank": 13,
+    "promo_id": "C-E36-03",
+    "segments": [
+      {
+        "start_block": "E36-B100",
+        "end_block": "E36-B121",
+        "episode": 36,
+        "start": 160.5,
+        "end": 200.75,
+        "start_tc": "02:40.50",
+        "end_tc": "03:20.75",
+        "duration": 40.25
+      }
+    ],
+    "duration": 40.25,
+    "hook": {
+      "block_id": "E36-B100",
+      "at": 0.0,
+      "text": "ALEXANDER (Deadly, Throaty): ...and killing my wife afterward."
+    },
+    "cliffhanger": {
+      "block_id": "E36-B121",
+      "at": 36.5,
+      "text": "A heavy, ominous orchestral swell builds to a thunderous cliffhanger sting and reverberates into silence."
+    },
+    "scores": {
+      "hook": 4.5,
+      "cliffhanger": 4.5,
+      "standalone": 3.5
+    },
+    "score": 4.2,
+    "acquisition_score": 3.8429,
+    "audience": "retargeting",
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "flags": [],
+    "confusions": [
+      "Who the dead Duke is to Alexander",
+      "Who 'they' are and who took his wife",
+      "Why Alexander has been wronged",
+      "Who the 'dead Duke' is in the reveal"
+    ],
+    "why": "Explosive vow of revenge, with a 'dead Duke coming home' button. Gripping even with missing backstory.",
+    "alternatives": []
+  },
+  {
+    "rank": 14,
+    "promo_id": "C-E42-02",
+    "segments": [
+      {
+        "start_block": "E42-B021",
+        "end_block": "E42-B037",
+        "episode": 42,
+        "start": 30.5,
+        "end": 77.5,
+        "start_tc": "00:30.50",
+        "end_tc": "01:17.50",
+        "duration": 47.0
+      }
+    ],
+    "duration": 47.0,
+    "hook": {
+      "block_id": "E42-B021",
+      "at": 0.0,
+      "text": "BLOND NOBLEMAN (Denial, Shaken): You cannot be him. Alexander died!"
+    },
+    "cliffhanger": {
+      "block_id": "E42-B037",
+      "at": 43.3,
+      "text": "ALEXANDER (Grim, Vengeful): And now, Rupert... we settle what you stole."
+    },
+    "scores": {
+      "hook": 5.0,
+      "cliffhanger": 4.0,
+      "standalone": 3.5
+    },
+    "score": 4.25,
+    "acquisition_score": 3.8316,
+    "audience": "retargeting",
+    "safety": {
+      "level": "ok",
+      "reason": ""
+    },
+    "flags": [],
+    "confusions": [
+      "What Rupert supposedly stole",
+      "Alexander's relationship to Juliana and Catherine",
+      "Why Alexander was thought dead",
+      "Who Rupert is and what he stole"
+    ],
+    "why": "Dead-man-returns bombshell is instantly gripping, with a revenge threat that pulls viewers forward.",
+    "alternatives": [
+      {
+        "promo_id": "C-E42-01",
+        "score": 3.45,
+        "hook_text": "ROYAL GUARD (Firm, Reverent): Because we know who he is.",
+        "duration": 50.8
       }
     ]
   },
@@ -1201,7 +1201,7 @@
     },
     "score": 3.8,
     "acquisition_score": 3.4633,
-    "audience": "acquisition",
+    "audience": "retargeting",
     "safety": {
       "level": "ok",
       "reason": ""
@@ -1450,7 +1450,7 @@
     },
     "score": 3.7,
     "acquisition_score": 3.3122,
-    "audience": "acquisition",
+    "audience": "retargeting",
     "safety": {
       "level": "ok",
       "reason": ""
@@ -1498,7 +1498,7 @@
     },
     "score": 3.7,
     "acquisition_score": 3.2714,
-    "audience": "acquisition",
+    "audience": "retargeting",
     "safety": {
       "level": "ok",
       "reason": "Accusations and confrontation; no violence shown"
@@ -1679,7 +1679,7 @@
     },
     "score": 3.7,
     "acquisition_score": 3.2408,
-    "audience": "acquisition",
+    "audience": "retargeting",
     "safety": {
       "level": "ok",
       "reason": ""
@@ -1740,7 +1740,7 @@
     },
     "score": 3.7,
     "acquisition_score": 3.2204,
-    "audience": "acquisition",
+    "audience": "retargeting",
     "safety": {
       "level": "ok",
       "reason": ""
@@ -1916,7 +1916,7 @@
     },
     "score": 3.55,
     "acquisition_score": 3.1112,
-    "audience": "acquisition",
+    "audience": "retargeting",
     "safety": {
       "level": "ok",
       "reason": ""
@@ -2079,7 +2079,7 @@
     },
     "score": 3.4,
     "acquisition_score": 3.0633,
-    "audience": "acquisition",
+    "audience": "retargeting",
     "safety": {
       "level": "ok",
       "reason": ""
@@ -2182,7 +2182,7 @@
     },
     "score": 3.35,
     "acquisition_score": 2.9724,
-    "audience": "acquisition",
+    "audience": "retargeting",
     "safety": {
       "level": "ok",
       "reason": ""
@@ -2243,7 +2243,7 @@
     },
     "score": 3.35,
     "acquisition_score": 2.952,
-    "audience": "acquisition",
+    "audience": "retargeting",
     "safety": {
       "level": "ok",
       "reason": "Murderous threat spoken, no violence shown"
